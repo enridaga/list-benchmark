@@ -1,0 +1,50 @@
+@prefix midi: <http://purl.org/midi-ld/midi#> .
+@prefix midi-note: <http://purl.org/midi-ld/notes/> .
+@prefix midi-prog: <http://purl.org/midi-ld/programs/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+SELECT 
+	?track 
+	?event 
+	?alternatives 
+	?minor 
+	?tick 
+	?data 
+	?mpqn 
+	?denominator 
+	?metronome 
+	?numerator 
+	?note 
+	?thirtyseconds 
+	?scaleDegree
+	?velocity
+	?channel
+FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WHERE { 
+   ?track a midi:Track ;
+   midi:hasEvent ?event .
+   ?event a ?eventType ;
+   -- TODO Check this is a comprehensive list of event attributes
+   -- XXX There is an alternative form with 4 column 
+   OPTIONAL { ?event midi:alternatives ?alternatives } .
+   OPTIONAL { ?event midi:minor ?minor } .
+   OPTIONAL { ?event midi:tick ?tick } .
+   OPTIONAL { ?event midi:data ?data } .
+   OPTIONAL { ?event midi:bpm ?bpm } .
+   OPTIONAL { ?event midi:mpqn ?mpqn } .   
+   OPTIONAL { ?event midi:denominator ?denominator } .   
+   OPTIONAL { ?event midi:metronome ?metronome } .
+   OPTIONAL { ?event midi:numerator ?numerator } .
+   OPTIONAL { ?event midi:note ?note } .
+   OPTIONAL { ?event midi:thirtyseconds ?thirtyseconds } .
+   OPTIONAL { ?event midi:scaleDegree ?scaleDegree } .
+   OPTIONAL { ?event midi:velocity ?velocity } .
+   OPTIONAL { ?event midi:channel ?channel } .
+} 
+ORDER BY ?track ?event
+LIMIT %LIMIT%
+OFFSET %OFFSET%
