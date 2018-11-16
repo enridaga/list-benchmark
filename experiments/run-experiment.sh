@@ -40,7 +40,8 @@ fi
 
 suite=${2:-./experiments.txt}
 times=${3:-1}
-interrupt=${4:-300} # almost 5 minutes
+interval=${4:-5}
+interrupt=${5:-300} # almost 5 minutes
 result=results/$(basename "$suite")
 rm $result.* 2> /dev/null
 rm -f $result.monitor.* 2> /dev/null
@@ -54,7 +55,7 @@ do
   if [ ! -z "$experiment" ]; then
   for a in `seq $times`
   do
-    sleep 5
+    sleep $interval
     exec 1<&-
     exec 1<>$result.monitor.$count.$a
     errcho "$count $a - $experiment"
