@@ -6,5 +6,5 @@ queryfile=$1
 endpoint=http://data.open.ac.uk/sparql
 echo "Querying $endpoint, file $queryfile"
 query=`cat $queryfile|encodeURIComponent`
-curl -v "$endpoint" -d query="$query"
-sleep 1
+time curl -v "$endpoint" -d query="$query"
+#sleep 1

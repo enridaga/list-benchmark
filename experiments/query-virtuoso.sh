@@ -6,4 +6,4 @@ queryfile=$1
 endpoint=http://localhost:8890/sparql
 echo "Querying $endpoint, file $queryfile"
 query=`cat $queryfile|encodeURIComponent`
-curl -v "$endpoint" -d query="$query"
+time curl -v "$endpoint" -d query="$query"
