@@ -1,0 +1,51 @@
+Querying http://localhost:8890/sparql, file ../queries/P1-select2-seq.sparql
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* About to connect() to localhost port 8890 (#0)
+*   Trying ::1...
+* Connection refused
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8890 (#0)
+> POST /sparql HTTP/1.1
+> User-Agent: curl/7.29.0
+> Host: localhost:8890
+> Accept: */*
+> Content-Length: 1017
+> Content-Type: application/x-www-form-urlencoded
+> 
+} [data not shown]
+* upload completely sent off: 1017 out of 1017 bytes
+< HTTP/1.1 400 Bad Request
+< Server: Virtuoso/06.01.3127 (Linux) x86_64-redhat-linux-gnu  
+< Connection: Keep-Alive
+< Date: Fri, 16 Nov 2018 14:27:00 GMT
+< Accept-Ranges: bytes
+< Content-Type: text/plain
+< Content-Length: 794
+< 
+{ [data not shown]
+100  1811  100   794  100  1017   120k   154k --:--:-- --:--:-- --:--:--  165k
+* Connection #0 to host localhost left intact
+Virtuoso 37000 Error SP030: SPARQL compiler, line 19: syntax error at 'BIND' before '('
+
+SPARQL query:
+define sql:big-data-const 0 prefix midi: <http://purl.org/midi-ld/midi#> 
+prefix midi-note: <http://purl.org/midi-ld/notes/> 
+prefix midi-prog: <http://purl.org/midi-ld/programs/> 
+prefix prov: <http://www.w3.org/ns/prov#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix xml: <http://www.w3.org/XML/1998/namespace> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT
+	?track
+	?event
+	?attribute
+	?value
+FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WHERE {
+   ?track a midi:Track .
+   ?track midi:hasEvents [ ?seq ?event ]
+   BIND (SUBSTR(str(?seq), 44) AS ?index)
+} ORDER BY int(?index)
