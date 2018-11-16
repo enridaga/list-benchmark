@@ -26,7 +26,7 @@ SELECT
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE { 
    ?track a midi:Track ;
-   midi:hasEvent ?event .
+   midi:hasEvents ?event .
    ?event a ?eventType ;
    -- TODO Check this is a comprehensive list of event attributes
    -- XXX There is an alternative form with 4 column 
