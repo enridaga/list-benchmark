@@ -16,17 +16,17 @@ Querying http://localhost:8890/sparql, file ../queries/P1-select2-list.sparql
 } [data not shown]
 * upload completely sent off: 988 out of 988 bytes
 < HTTP/1.1 400 Bad Request
-< Server: Virtuoso/06.01.3127 (Linux) x86_64-redhat-linux-gnu  
+< Server: Virtuoso/07.20.3229 (Linux) x86_64-generic_glibc25-linux-gnu  
 < Connection: Keep-Alive
-< Date: Fri, 16 Nov 2018 13:08:59 GMT
+< Date: Fri, 16 Nov 2018 14:46:47 GMT
 < Accept-Ranges: bytes
 < Content-Type: text/plain
-< Content-Length: 779
+< Content-Length: 772
 < 
 { [data not shown]
-100  1767  100   779  100   988   112k   143k --:--:-- --:--:-- --:--:--  160k
+100  1760  100   772  100   988   100k   129k --:--:-- --:--:-- --:--:--  137k
 * Connection #0 to host localhost left intact
-Virtuoso 37000 Error SP030: SPARQL compiler, line 18: syntax error at '/' before 'rdf:rest'
+Virtuoso 37000 Error SP030: SPARQL compiler, line 18: syntax error at '*' before '/'
 
 SPARQL query:
 define sql:big-data-const 0 prefix midi: <http://purl.org/midi-ld/midi#> 
@@ -46,6 +46,6 @@ SELECT
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
    ?track a midi:Track .
-   ?track midi:hasEvents/rdf:rest*/rdf:first ?event .
+   ?track midi:hasEvents rdf:rest*/rdf:first ?event .
    ?event ?attribute ?value .
 } 
