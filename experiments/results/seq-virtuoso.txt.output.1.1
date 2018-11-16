@@ -10,23 +10,23 @@ Querying http://localhost:8890/sparql, file ../queries/P1-select2-seq.sparql
 > User-Agent: curl/7.29.0
 > Host: localhost:8890
 > Accept: */*
-> Content-Length: 1017
+> Content-Length: 1021
 > Content-Type: application/x-www-form-urlencoded
 > 
 } [data not shown]
-* upload completely sent off: 1017 out of 1017 bytes
+* upload completely sent off: 1021 out of 1021 bytes
 < HTTP/1.1 400 Bad Request
-< Server: Virtuoso/06.01.3127 (Linux) x86_64-redhat-linux-gnu  
+< Server: Virtuoso/07.20.3229 (Linux) x86_64-generic_glibc25-linux-gnu  
 < Connection: Keep-Alive
-< Date: Fri, 16 Nov 2018 14:27:00 GMT
+< Date: Fri, 16 Nov 2018 14:47:22 GMT
 < Accept-Ranges: bytes
 < Content-Type: text/plain
-< Content-Length: 794
+< Content-Length: 795
 < 
 { [data not shown]
-100  1811  100   794  100  1017   120k   154k --:--:-- --:--:-- --:--:--  165k
+100  1816  100   795  100  1021   105k   135k --:--:-- --:--:-- --:--:--  124k100  1816  100   795  100  1021   103k   132k --:--:-- --:--:-- --:--:--  124k
 * Connection #0 to host localhost left intact
-Virtuoso 37000 Error SP030: SPARQL compiler, line 19: syntax error at 'BIND' before '('
+Virtuoso 37000 Error SP030: SPARQL compiler, line 20: syntax error at 'int' before '('
 
 SPARQL query:
 define sql:big-data-const 0 prefix midi: <http://purl.org/midi-ld/midi#> 
@@ -46,6 +46,6 @@ SELECT
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
    ?track a midi:Track .
-   ?track midi:hasEvents [ ?seq ?event ]
+   ?track midi:hasEvents [ ?seq ?event ] .
    BIND (SUBSTR(str(?seq), 44) AS ?index)
 } ORDER BY int(?index)
