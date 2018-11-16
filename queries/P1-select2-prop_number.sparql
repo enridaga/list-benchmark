@@ -15,7 +15,7 @@ SELECT
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
    ?track a midi:Track .
-   ?track midi:hasEvents ?event .
+   ?track midi:hasEvent ?event .
    ?event midi:absoluteTick ?tick .
    ?event ?attribute ?value .
 } ORDER BY ?tick
