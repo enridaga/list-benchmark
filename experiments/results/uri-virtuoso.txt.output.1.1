@@ -1,0 +1,182 @@
+Querying http://localhost:8890/sparql, file ../queries/P1-select2-uri.sparql
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* About to connect() to localhost port 8890 (#0)
+*   Trying ::1...
+* Connection refused
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8890 (#0)
+> POST /sparql HTTP/1.1
+> User-Agent: curl/7.29.0
+> Host: localhost:8890
+> Accept: */*
+> Content-Length: 991
+> Content-Type: application/x-www-form-urlencoded
+> 
+} [data not shown]
+* upload completely sent off: 991 out of 991 bytes
+< HTTP/1.1 200 OK
+< Server: Virtuoso/06.01.3127 (Linux) x86_64-redhat-linux-gnu  
+< Connection: Keep-Alive
+< Date: Fri, 16 Nov 2018 13:08:13 GMT
+< Accept-Ranges: bytes
+< Content-Type: application/sparql-results+xml; charset=UTF-8
+< Content-Length: 10001
+< 
+{ [data not shown]
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="track"/>
+  <variable name="event"/>
+  <variable name="attribute"/>
+  <variable name="value"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track00</uri></binding>
+   <binding name="event"><bnode>nodeID://b10012</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track00/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track00</uri></binding>
+   <binding name="event"><bnode>nodeID://b10012</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b10013</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track01</uri></binding>
+   <binding name="event"><bnode>nodeID://b10020</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track01/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track01</uri></binding>
+   <binding name="event"><bnode>nodeID://b10020</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b10021</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track02</uri></binding>
+   <binding name="event"><bnode>nodeID://b11061</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track02/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track02</uri></binding>
+   <binding name="event"><bnode>nodeID://b11061</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b11062</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track03</uri></binding>
+   <binding name="event"><bnode>nodeID://b13573</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track03/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track03</uri></binding>
+   <binding name="event"><bnode>nodeID://b13573</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b13574</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track04</uri></binding>
+   <binding name="event"><bnode>nodeID://b15248</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track04/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track04</uri></binding>
+   <binding name="event"><bnode>nodeID://b15248</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b15249</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track05</uri></binding>
+   <binding name="event"><bnode>nodeID://b15311</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track05/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track05</uri></binding>
+   <binding name="event"><bnode>nodeID://b15311</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b15312</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track06</uri></binding>
+   <binding name="event"><bnode>nodeID://b15334</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track06/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track06</uri></binding>
+   <binding name="event"><bnode>nodeID://b15334</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b15335</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track07</uri></binding>
+   <binding name="event"><bnode>nodeID://b15473</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track07/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track07</uri></binding>
+   <binding name="event"><bnode>nodeID://b15473</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b15474</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track08</uri></binding>
+   <binding name="event"><bnode>nodeID://b15519</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track08/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track08</uri></binding>
+   <binding name="event"><bnode>nodeID://b15519</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b15520</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track09</uri></binding>
+   <binding name="event"><bnode>nodeID://b15563</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track09/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track09</uri></binding>
+   <binding name="event"><bnode>nodeID://b15563</bnode></b100 10992  100 10001  100   991  1756k   174k --:--:-- --:--:-- --:--:-- 1953k
+* Connection #0 to host localhost left intact
+inding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b15564</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track10</uri></binding>
+   <binding name="event"><bnode>nodeID://b18740</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track10/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track10</uri></binding>
+   <binding name="event"><bnode>nodeID://b18740</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b18741</bnode></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track11</uri></binding>
+   <binding name="event"><bnode>nodeID://b18743</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri></binding>
+   <binding name="value"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track11/event0000</uri></binding>
+  </result>
+  <result>
+   <binding name="track"><uri>http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track11</uri></binding>
+   <binding name="event"><bnode>nodeID://b18743</bnode></binding>
+   <binding name="attribute"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri></binding>
+   <binding name="value"><bnode>nodeID://b18744</bnode></binding>
+  </result>
+ </results>
+</sparql>

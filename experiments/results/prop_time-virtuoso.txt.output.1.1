@@ -1,0 +1,39 @@
+Querying http://localhost:8890/sparql, file ../queries/P1-select2-prop_time.sparql
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* About to connect() to localhost port 8890 (#0)
+*   Trying ::1...
+* Connection refused
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8890 (#0)
+> POST /sparql HTTP/1.1
+> User-Agent: curl/7.29.0
+> Host: localhost:8890
+> Accept: */*
+> Content-Length: 1036
+> Content-Type: application/x-www-form-urlencoded
+> Expect: 100-continue
+> 
+< HTTP/1.1 100 Continue
+} [data not shown]
+< HTTP/1.1 200 OK
+< Server: Virtuoso/06.01.3127 (Linux) x86_64-redhat-linux-gnu  
+< Connection: Keep-Alive
+< Date: Fri, 16 Nov 2018 13:14:57 GMT
+< Accept-Ranges: bytes
+< Content-Type: application/sparql-results+xml; charset=UTF-8
+< Content-Length: 377
+< 
+{ [data not shown]
+100  1413  100   377  100  1036  21783  59860 --:--:-- --:--:-- --:--:-- 60941
+* Connection #0 to host localhost left intact
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="track"/>
+  <variable name="event"/>
+  <variable name="attribute"/>
+  <variable name="value"/>
+ </head>
+ <results distinct="false" ordered="true">
+ </results>
+</sparql>
