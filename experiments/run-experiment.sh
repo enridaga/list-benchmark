@@ -28,10 +28,13 @@ function monitor {
 }
 
 [ -z "$1" ] && echo "Missing PID to monitor!" && exit 1
+[ -z "$2" ] && echo "Missing suite to execute!" && exit 1
 
 mpid=$1
 
-if ! kill -0 $mpid > /dev/null 2>&1; then
+if [ -n "$(ps -p $mpid -o pid=)" ]; then
+    echo "Process exists"
+else
     echo "Process $mpid does not exists" >&2 && exit 2
 fi
 
