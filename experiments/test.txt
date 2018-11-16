@@ -1,0 +1,2 @@
+./test.sh ../queries/P1-describe-uri.sparql
+./test.sh ../queries/P1-select2-uri.sparql

@@ -1,0 +1,1 @@
+./query-virtuoso.sh ../queries/P1-select2-prop_number.sparql
