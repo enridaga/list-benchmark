@@ -8,15 +8,15 @@ Querying http://data.open.ac.uk/sparql, file ../queries/P1-select2-uri.sparql
 > Host: data.open.ac.uk
 > User-Agent: curl/7.54.0
 > Accept: */*
-> Content-Length: 987
+> Content-Length: 990
 > Content-Type: application/x-www-form-urlencoded
 > 
-} [987 bytes data]
-* upload completely sent off: 987 out of 987 bytes
+} [990 bytes data]
+* upload completely sent off: 990 out of 990 bytes
 < HTTP/1.1 200 OK
-< Date: Fri, 16 Nov 2018 12:31:09 GMT
+< Date: Fri, 16 Nov 2018 16:25:03 GMT
 < Server: Fuseki (2.3.1)
-< Fuseki-Request-ID: 5443
+< Fuseki-Request-ID: 9604
 < Content-Type: application/sparql-results+json; charset=utf-8
 < Access-Control-Allow-Origin: *
 < X-SPARQL: http://data.open.ac.uk/sparql
@@ -25,7 +25,7 @@ Querying http://data.open.ac.uk/sparql, file ../queries/P1-select2-uri.sparql
 < Transfer-Encoding: chunked
 < 
 { [141 bytes data]
-100  1117    0   130  100   987   4008  30430 --:--:-- --:--:-- --:--:-- 30843
+100  1120    0   130  100   990   5521  42048 --:--:-- --:--:-- --:--:-- 43043
 * Closing connection 0
 {
   "head": {
@@ -37,3 +37,7 @@ Querying http://data.open.ac.uk/sparql, file ../queries/P1-select2-uri.sparql
     ]
   }
 }
+
+real	0m0.055s
+user	0m0.011s
+sys	0m0.016s
