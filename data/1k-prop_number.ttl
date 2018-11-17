@@ -12,16 +12,15 @@
         prov:Entity ;
     midi:format 0 ;
     midi:hasTrack <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> ;
-    midi:key "d minor" ;
     midi:resolution 1024 ;
-    prov:generatedAtTime "2018-11-16T17:54:34.482300"^^xsd:dateTime ;
+    prov:generatedAtTime "2018-11-18T00:34:48.875655"^^xsd:dateTime ;
     prov:wasAttributedTo <https://github.com/midi-ld/midi2rdf> ;
     prov:wasDerivedFrom <http://purl.org/midi-ld/file/8cf9897535d79e68c33a3076aa06d073> ;
     prov:wasGeneratedBy <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073-activity> .
 
 <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073-activity> a prov:Activity ;
-    prov:endedAtTime "2018-11-16T17:54:34.482300"^^xsd:dateTime ;
-    prov:startedAtTime "2018-11-16T17:54:33.652836"^^xsd:dateTime ;
+    prov:endedAtTime "2018-11-18T00:34:48.875655"^^xsd:dateTime ;
+    prov:startedAtTime "2018-11-18T00:34:48.685411"^^xsd:dateTime ;
     prov:used <http://purl.org/midi-ld/file/8cf9897535d79e68c33a3076aa06d073> ;
     prov:wasAssociatedWith <https://github.com/midi-ld/midi2rdf> .
 
@@ -1463,7 +1462,6 @@
     midi:absoluteTick 0 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1471,7 +1469,6 @@
     midi:absoluteTick 512 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1479,7 +1476,6 @@
     midi:absoluteTick 1024 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1487,7 +1483,6 @@
     midi:absoluteTick 1521 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -1495,7 +1490,6 @@
     midi:absoluteTick 1536 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -1503,7 +1497,6 @@
     midi:absoluteTick 2036 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -1511,7 +1504,6 @@
     midi:absoluteTick 2046 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -1519,7 +1511,6 @@
     midi:absoluteTick 2048 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -1527,7 +1518,6 @@
     midi:absoluteTick 2048 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1535,7 +1525,6 @@
     midi:absoluteTick 2048 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1543,7 +1532,6 @@
     midi:absoluteTick 3062 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -1565,7 +1553,6 @@
     midi:absoluteTick 3072 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1573,7 +1560,6 @@
     midi:absoluteTick 3072 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1581,7 +1567,6 @@
     midi:absoluteTick 3072 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1589,7 +1574,6 @@
     midi:absoluteTick 3072 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1597,7 +1581,6 @@
     midi:absoluteTick 3584 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1605,7 +1588,6 @@
     midi:absoluteTick 4096 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1613,7 +1595,6 @@
     midi:absoluteTick 4593 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -1621,7 +1602,6 @@
     midi:absoluteTick 4608 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -1629,7 +1609,6 @@
     midi:absoluteTick 5108 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -1637,7 +1616,6 @@
     midi:absoluteTick 5118 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -1645,7 +1623,6 @@
     midi:absoluteTick 5120 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -1653,7 +1630,6 @@
     midi:absoluteTick 5120 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1661,7 +1637,6 @@
     midi:absoluteTick 5120 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1669,7 +1644,6 @@
     midi:absoluteTick 6134 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -1691,7 +1665,6 @@
     midi:absoluteTick 6144 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1699,7 +1672,6 @@
     midi:absoluteTick 6144 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1707,7 +1679,6 @@
     midi:absoluteTick 6144 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1715,7 +1686,6 @@
     midi:absoluteTick 6144 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1723,7 +1693,6 @@
     midi:absoluteTick 6656 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1731,7 +1700,6 @@
     midi:absoluteTick 7168 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1739,7 +1707,6 @@
     midi:absoluteTick 7665 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -1747,7 +1714,6 @@
     midi:absoluteTick 7680 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -1755,7 +1721,6 @@
     midi:absoluteTick 8180 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -1763,7 +1728,6 @@
     midi:absoluteTick 8190 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -1771,7 +1735,6 @@
     midi:absoluteTick 8192 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -1779,7 +1742,6 @@
     midi:absoluteTick 8192 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1787,7 +1749,6 @@
     midi:absoluteTick 8192 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1795,7 +1756,6 @@
     midi:absoluteTick 9206 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -1817,7 +1777,6 @@
     midi:absoluteTick 9216 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1825,7 +1784,6 @@
     midi:absoluteTick 9216 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1833,7 +1791,6 @@
     midi:absoluteTick 9216 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1841,7 +1798,6 @@
     midi:absoluteTick 9216 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1849,7 +1805,6 @@
     midi:absoluteTick 9728 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1857,7 +1812,6 @@
     midi:absoluteTick 10240 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1865,7 +1819,6 @@
     midi:absoluteTick 10737 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -1873,7 +1826,6 @@
     midi:absoluteTick 10752 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -1881,7 +1833,6 @@
     midi:absoluteTick 11252 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -1889,7 +1840,6 @@
     midi:absoluteTick 11262 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -1897,7 +1847,6 @@
     midi:absoluteTick 11264 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -1905,7 +1854,6 @@
     midi:absoluteTick 11264 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1913,7 +1861,6 @@
     midi:absoluteTick 11264 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1921,7 +1868,6 @@
     midi:absoluteTick 12278 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -1943,7 +1889,6 @@
     midi:absoluteTick 12288 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1951,7 +1896,6 @@
     midi:absoluteTick 12288 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1959,7 +1903,6 @@
     midi:absoluteTick 12288 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -1967,7 +1910,6 @@
     midi:absoluteTick 12288 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -1975,7 +1917,6 @@
     midi:absoluteTick 12288 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -1983,7 +1924,6 @@
     midi:absoluteTick 12800 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1991,7 +1931,6 @@
     midi:absoluteTick 13312 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -1999,7 +1938,6 @@
     midi:absoluteTick 13809 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2007,7 +1945,6 @@
     midi:absoluteTick 13824 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -2015,7 +1952,6 @@
     midi:absoluteTick 13824 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2023,7 +1959,6 @@
     midi:absoluteTick 13824 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2031,7 +1966,6 @@
     midi:absoluteTick 14324 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -2039,7 +1973,6 @@
     midi:absoluteTick 14334 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2047,7 +1980,6 @@
     midi:absoluteTick 14336 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -2055,7 +1987,6 @@
     midi:absoluteTick 14336 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2063,7 +1994,6 @@
     midi:absoluteTick 14336 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2071,7 +2001,6 @@
     midi:absoluteTick 15350 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2093,7 +2022,6 @@
     midi:absoluteTick 15360 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2101,7 +2029,6 @@
     midi:absoluteTick 15360 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2109,7 +2036,6 @@
     midi:absoluteTick 15360 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2117,7 +2043,6 @@
     midi:absoluteTick 15360 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2125,7 +2050,6 @@
     midi:absoluteTick 15360 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2133,7 +2057,6 @@
     midi:absoluteTick 15360 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2141,7 +2064,6 @@
     midi:absoluteTick 15872 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2149,7 +2071,6 @@
     midi:absoluteTick 16384 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2157,7 +2078,6 @@
     midi:absoluteTick 16881 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2165,7 +2085,6 @@
     midi:absoluteTick 16896 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -2173,7 +2092,6 @@
     midi:absoluteTick 16896 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2181,7 +2099,6 @@
     midi:absoluteTick 16896 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2189,7 +2106,6 @@
     midi:absoluteTick 17396 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -2197,7 +2113,6 @@
     midi:absoluteTick 17406 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2205,7 +2120,6 @@
     midi:absoluteTick 17408 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -2213,7 +2127,6 @@
     midi:absoluteTick 17408 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2221,7 +2134,6 @@
     midi:absoluteTick 17408 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2229,7 +2141,6 @@
     midi:absoluteTick 17408 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2237,7 +2148,6 @@
     midi:absoluteTick 17408 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2245,7 +2155,6 @@
     midi:absoluteTick 18422 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2267,7 +2176,6 @@
     midi:absoluteTick 18432 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2275,7 +2183,6 @@
     midi:absoluteTick 18432 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2283,7 +2190,6 @@
     midi:absoluteTick 18432 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2291,7 +2197,6 @@
     midi:absoluteTick 18432 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2299,7 +2204,6 @@
     midi:absoluteTick 18944 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2307,7 +2211,6 @@
     midi:absoluteTick 19456 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2315,7 +2218,6 @@
     midi:absoluteTick 19953 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2323,7 +2225,6 @@
     midi:absoluteTick 19968 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -2331,7 +2232,6 @@
     midi:absoluteTick 20468 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -2339,7 +2239,6 @@
     midi:absoluteTick 20478 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2347,7 +2246,6 @@
     midi:absoluteTick 20480 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -2355,7 +2253,6 @@
     midi:absoluteTick 20480 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2363,7 +2260,6 @@
     midi:absoluteTick 20480 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2371,7 +2267,6 @@
     midi:absoluteTick 21494 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2393,7 +2288,6 @@
     midi:absoluteTick 21504 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2401,7 +2295,6 @@
     midi:absoluteTick 21504 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2409,7 +2302,6 @@
     midi:absoluteTick 21504 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2417,7 +2309,6 @@
     midi:absoluteTick 21504 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2425,7 +2316,6 @@
     midi:absoluteTick 22016 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2433,7 +2323,6 @@
     midi:absoluteTick 22528 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2441,7 +2330,6 @@
     midi:absoluteTick 23025 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2449,7 +2337,6 @@
     midi:absoluteTick 23040 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -2457,7 +2344,6 @@
     midi:absoluteTick 23540 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -2465,7 +2351,6 @@
     midi:absoluteTick 23550 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2473,7 +2358,6 @@
     midi:absoluteTick 23552 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -2481,7 +2365,6 @@
     midi:absoluteTick 23552 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2489,7 +2372,6 @@
     midi:absoluteTick 23552 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2497,7 +2379,6 @@
     midi:absoluteTick 23552 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2505,7 +2386,6 @@
     midi:absoluteTick 24566 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2527,7 +2407,6 @@
     midi:absoluteTick 24576 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2535,7 +2414,6 @@
     midi:absoluteTick 24576 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2543,7 +2421,6 @@
     midi:absoluteTick 24576 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2551,7 +2428,6 @@
     midi:absoluteTick 24576 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2559,7 +2435,6 @@
     midi:absoluteTick 24576 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2567,7 +2442,6 @@
     midi:absoluteTick 25088 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2575,7 +2449,6 @@
     midi:absoluteTick 25600 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2583,7 +2456,6 @@
     midi:absoluteTick 26097 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2591,7 +2463,6 @@
     midi:absoluteTick 26112 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -2599,7 +2470,6 @@
     midi:absoluteTick 26112 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2607,7 +2477,6 @@
     midi:absoluteTick 26112 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2615,7 +2484,6 @@
     midi:absoluteTick 26612 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -2623,7 +2491,6 @@
     midi:absoluteTick 26622 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2631,7 +2498,6 @@
     midi:absoluteTick 26624 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -2639,7 +2505,6 @@
     midi:absoluteTick 26624 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2647,7 +2512,6 @@
     midi:absoluteTick 26624 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2655,7 +2519,6 @@
     midi:absoluteTick 27638 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2677,7 +2540,6 @@
     midi:absoluteTick 27648 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2685,7 +2547,6 @@
     midi:absoluteTick 27648 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2693,7 +2554,6 @@
     midi:absoluteTick 27648 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2701,7 +2561,6 @@
     midi:absoluteTick 27648 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2709,7 +2568,6 @@
     midi:absoluteTick 27648 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2717,7 +2575,6 @@
     midi:absoluteTick 27648 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2725,7 +2582,6 @@
     midi:absoluteTick 28160 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2733,7 +2589,6 @@
     midi:absoluteTick 28672 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2741,7 +2596,6 @@
     midi:absoluteTick 29169 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2749,7 +2603,6 @@
     midi:absoluteTick 29184 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -2757,7 +2610,6 @@
     midi:absoluteTick 29184 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2765,7 +2617,6 @@
     midi:absoluteTick 29184 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2773,7 +2624,6 @@
     midi:absoluteTick 29440 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 256 ;
     midi:velocity 0 .
 
@@ -2781,7 +2631,6 @@
     midi:absoluteTick 29440 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2789,7 +2638,6 @@
     midi:absoluteTick 29684 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 244 ;
     midi:velocity 0 .
 
@@ -2797,7 +2645,6 @@
     midi:absoluteTick 29694 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2805,7 +2652,6 @@
     midi:absoluteTick 29696 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -2813,7 +2659,6 @@
     midi:absoluteTick 29696 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -2821,7 +2666,6 @@
     midi:absoluteTick 29696 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2829,7 +2673,6 @@
     midi:absoluteTick 29696 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2837,7 +2680,6 @@
     midi:absoluteTick 29696 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2845,7 +2687,6 @@
     midi:absoluteTick 30710 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2867,7 +2708,6 @@
     midi:absoluteTick 30720 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2875,7 +2715,6 @@
     midi:absoluteTick 30720 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2883,7 +2722,6 @@
     midi:absoluteTick 30720 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -2891,7 +2729,6 @@
     midi:absoluteTick 30720 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2899,7 +2736,6 @@
     midi:absoluteTick 31232 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2907,7 +2743,6 @@
     midi:absoluteTick 31744 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -2915,7 +2750,6 @@
     midi:absoluteTick 32241 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -2923,7 +2757,6 @@
     midi:absoluteTick 32256 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -2931,7 +2764,6 @@
     midi:absoluteTick 32756 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -2939,7 +2771,6 @@
     midi:absoluteTick 32766 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -2947,7 +2778,6 @@
     midi:absoluteTick 32768 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -2955,7 +2785,6 @@
     midi:absoluteTick 32768 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2963,7 +2792,6 @@
     midi:absoluteTick 32768 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -2971,7 +2799,6 @@
     midi:absoluteTick 33782 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -2993,7 +2820,6 @@
     midi:absoluteTick 33792 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3001,7 +2827,6 @@
     midi:absoluteTick 33792 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3009,7 +2834,6 @@
     midi:absoluteTick 33792 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3017,7 +2841,6 @@
     midi:absoluteTick 33792 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3025,7 +2848,6 @@
     midi:absoluteTick 34304 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3033,7 +2855,6 @@
     midi:absoluteTick 34816 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3041,7 +2862,6 @@
     midi:absoluteTick 35313 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3049,7 +2869,6 @@
     midi:absoluteTick 35328 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -3057,7 +2876,6 @@
     midi:absoluteTick 35828 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3065,7 +2883,6 @@
     midi:absoluteTick 35838 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3073,7 +2890,6 @@
     midi:absoluteTick 35840 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -3081,7 +2897,6 @@
     midi:absoluteTick 35840 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3089,7 +2904,6 @@
     midi:absoluteTick 35840 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3097,7 +2911,6 @@
     midi:absoluteTick 35840 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3105,7 +2918,6 @@
     midi:absoluteTick 36854 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -3127,7 +2939,6 @@
     midi:absoluteTick 36864 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3135,7 +2946,6 @@
     midi:absoluteTick 36864 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3143,7 +2953,6 @@
     midi:absoluteTick 36864 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3151,7 +2960,6 @@
     midi:absoluteTick 36864 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3159,7 +2967,6 @@
     midi:absoluteTick 36864 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3167,7 +2974,6 @@
     midi:absoluteTick 37376 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -3175,7 +2981,6 @@
     midi:absoluteTick 37376 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/73> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3183,7 +2988,6 @@
     midi:absoluteTick 37376 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3191,7 +2995,6 @@
     midi:absoluteTick 37888 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/73> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -3199,7 +3002,6 @@
     midi:absoluteTick 37888 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3207,7 +3009,6 @@
     midi:absoluteTick 37888 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3215,7 +3016,6 @@
     midi:absoluteTick 38385 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3223,7 +3023,6 @@
     midi:absoluteTick 38400 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -3231,7 +3030,6 @@
     midi:absoluteTick 38400 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3239,7 +3037,6 @@
     midi:absoluteTick 38400 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3247,7 +3044,6 @@
     midi:absoluteTick 38900 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3255,7 +3051,6 @@
     midi:absoluteTick 38910 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3263,7 +3058,6 @@
     midi:absoluteTick 38912 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -3271,7 +3065,6 @@
     midi:absoluteTick 38912 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3279,7 +3072,6 @@
     midi:absoluteTick 38912 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3287,7 +3079,6 @@
     midi:absoluteTick 38912 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3295,7 +3086,6 @@
     midi:absoluteTick 39424 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -3303,7 +3093,6 @@
     midi:absoluteTick 39424 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3311,7 +3100,6 @@
     midi:absoluteTick 39926 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 502 ;
     midi:velocity 0 .
 
@@ -3333,7 +3121,6 @@
     midi:absoluteTick 39936 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3341,7 +3128,6 @@
     midi:absoluteTick 39936 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3349,7 +3135,6 @@
     midi:absoluteTick 39936 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3357,7 +3142,6 @@
     midi:absoluteTick 39936 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3365,7 +3149,6 @@
     midi:absoluteTick 39936 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3373,7 +3156,6 @@
     midi:absoluteTick 40107 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 171 ;
     midi:velocity 0 .
 
@@ -3381,7 +3163,6 @@
     midi:absoluteTick 40107 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3389,7 +3170,6 @@
     midi:absoluteTick 40277 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 170 ;
     midi:velocity 0 .
 
@@ -3397,7 +3177,6 @@
     midi:absoluteTick 40277 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3405,7 +3184,6 @@
     midi:absoluteTick 40448 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 171 ;
     midi:velocity 0 .
 
@@ -3413,7 +3191,6 @@
     midi:absoluteTick 40448 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3421,7 +3198,6 @@
     midi:absoluteTick 40448 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3429,7 +3205,6 @@
     midi:absoluteTick 40960 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3437,7 +3212,6 @@
     midi:absoluteTick 41457 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3445,7 +3219,6 @@
     midi:absoluteTick 41472 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -3453,7 +3226,6 @@
     midi:absoluteTick 41972 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3461,7 +3233,6 @@
     midi:absoluteTick 41982 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3469,7 +3240,6 @@
     midi:absoluteTick 41984 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -3477,7 +3247,6 @@
     midi:absoluteTick 41984 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3485,7 +3254,6 @@
     midi:absoluteTick 42998 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -3507,7 +3275,6 @@
     midi:absoluteTick 43008 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3515,7 +3282,6 @@
     midi:absoluteTick 43008 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3523,7 +3289,6 @@
     midi:absoluteTick 43008 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3531,7 +3296,6 @@
     midi:absoluteTick 43520 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3539,7 +3303,6 @@
     midi:absoluteTick 44032 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3547,7 +3310,6 @@
     midi:absoluteTick 44529 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3555,7 +3317,6 @@
     midi:absoluteTick 44544 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -3563,7 +3324,6 @@
     midi:absoluteTick 45044 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3571,7 +3331,6 @@
     midi:absoluteTick 45054 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3579,7 +3338,6 @@
     midi:absoluteTick 45056 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -3587,7 +3345,6 @@
     midi:absoluteTick 45056 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3595,7 +3352,6 @@
     midi:absoluteTick 46070 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -3617,7 +3373,6 @@
     midi:absoluteTick 46080 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3625,7 +3380,6 @@
     midi:absoluteTick 46080 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3633,7 +3387,6 @@
     midi:absoluteTick 46080 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3641,7 +3394,6 @@
     midi:absoluteTick 46592 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3649,7 +3401,6 @@
     midi:absoluteTick 47104 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3657,7 +3408,6 @@
     midi:absoluteTick 47601 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3665,7 +3415,6 @@
     midi:absoluteTick 47616 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -3673,7 +3422,6 @@
     midi:absoluteTick 48116 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3681,7 +3429,6 @@
     midi:absoluteTick 48126 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3689,7 +3436,6 @@
     midi:absoluteTick 48128 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -3697,7 +3443,6 @@
     midi:absoluteTick 48128 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3705,7 +3450,6 @@
     midi:absoluteTick 49142 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -3727,7 +3471,6 @@
     midi:absoluteTick 49152 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3735,7 +3478,6 @@
     midi:absoluteTick 49152 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3743,7 +3485,6 @@
     midi:absoluteTick 49152 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3751,7 +3492,6 @@
     midi:absoluteTick 49152 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3759,7 +3499,6 @@
     midi:absoluteTick 49152 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3767,7 +3506,6 @@
     midi:absoluteTick 49664 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3775,7 +3513,6 @@
     midi:absoluteTick 50176 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -3783,7 +3520,6 @@
     midi:absoluteTick 50176 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -3791,7 +3527,6 @@
     midi:absoluteTick 50176 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3799,7 +3534,6 @@
     midi:absoluteTick 50673 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3807,7 +3541,6 @@
     midi:absoluteTick 50688 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -3815,7 +3548,6 @@
     midi:absoluteTick 51188 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3823,7 +3555,6 @@
     midi:absoluteTick 51198 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3831,7 +3562,6 @@
     midi:absoluteTick 51200 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -3839,7 +3569,6 @@
     midi:absoluteTick 51200 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3847,7 +3576,6 @@
     midi:absoluteTick 52214 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -3869,7 +3597,6 @@
     midi:absoluteTick 52224 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3877,7 +3604,6 @@
     midi:absoluteTick 52224 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3885,7 +3611,6 @@
     midi:absoluteTick 52224 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3893,7 +3618,6 @@
     midi:absoluteTick 52736 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3901,7 +3625,6 @@
     midi:absoluteTick 53248 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -3909,7 +3632,6 @@
     midi:absoluteTick 53745 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -3917,7 +3639,6 @@
     midi:absoluteTick 53760 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -3925,7 +3646,6 @@
     midi:absoluteTick 54260 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -3933,7 +3653,6 @@
     midi:absoluteTick 54270 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -3941,7 +3660,6 @@
     midi:absoluteTick 54272 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -3949,7 +3667,6 @@
     midi:absoluteTick 54272 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -3957,7 +3674,6 @@
     midi:absoluteTick 55286 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -3979,7 +3695,6 @@
     midi:absoluteTick 55296 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3987,7 +3702,6 @@
     midi:absoluteTick 55296 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -3995,7 +3709,6 @@
     midi:absoluteTick 55296 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4003,7 +3716,6 @@
     midi:absoluteTick 55808 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4011,7 +3723,6 @@
     midi:absoluteTick 56320 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4019,7 +3730,6 @@
     midi:absoluteTick 56817 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -4027,7 +3737,6 @@
     midi:absoluteTick 56832 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -4035,7 +3744,6 @@
     midi:absoluteTick 57332 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -4043,7 +3751,6 @@
     midi:absoluteTick 57342 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -4051,7 +3758,6 @@
     midi:absoluteTick 57344 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -4059,7 +3765,6 @@
     midi:absoluteTick 57344 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4067,7 +3772,6 @@
     midi:absoluteTick 58358 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -4089,7 +3793,6 @@
     midi:absoluteTick 58368 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4097,7 +3800,6 @@
     midi:absoluteTick 58368 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4105,7 +3807,6 @@
     midi:absoluteTick 58368 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4113,7 +3814,6 @@
     midi:absoluteTick 58880 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4121,7 +3821,6 @@
     midi:absoluteTick 59392 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4129,7 +3828,6 @@
     midi:absoluteTick 59889 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -4137,7 +3835,6 @@
     midi:absoluteTick 59904 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -4145,7 +3842,6 @@
     midi:absoluteTick 60404 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -4153,7 +3849,6 @@
     midi:absoluteTick 60414 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -4161,7 +3856,6 @@
     midi:absoluteTick 60416 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -4169,7 +3863,6 @@
     midi:absoluteTick 60416 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4177,7 +3870,6 @@
     midi:absoluteTick 61430 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -4199,7 +3891,6 @@
     midi:absoluteTick 61440 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4207,7 +3898,6 @@
     midi:absoluteTick 61440 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4215,7 +3905,6 @@
     midi:absoluteTick 61440 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4223,7 +3912,6 @@
     midi:absoluteTick 61440 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4231,7 +3919,6 @@
     midi:absoluteTick 61440 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4239,7 +3926,6 @@
     midi:absoluteTick 61952 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -4247,7 +3933,6 @@
     midi:absoluteTick 61952 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4255,7 +3940,6 @@
     midi:absoluteTick 61952 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4263,7 +3947,6 @@
     midi:absoluteTick 62464 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -4271,7 +3954,6 @@
     midi:absoluteTick 62464 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4279,7 +3961,6 @@
     midi:absoluteTick 62464 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4287,7 +3968,6 @@
     midi:absoluteTick 62961 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -4295,7 +3975,6 @@
     midi:absoluteTick 62976 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -4303,7 +3982,6 @@
     midi:absoluteTick 63476 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -4311,7 +3989,6 @@
     midi:absoluteTick 63486 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -4319,7 +3996,6 @@
     midi:absoluteTick 63488 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -4327,7 +4003,6 @@
     midi:absoluteTick 63488 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4335,7 +4010,6 @@
     midi:absoluteTick 64502 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -4357,7 +4031,6 @@
     midi:absoluteTick 64512 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4365,7 +4038,6 @@
     midi:absoluteTick 64512 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4373,7 +4045,6 @@
     midi:absoluteTick 64512 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4381,7 +4052,6 @@
     midi:absoluteTick 65024 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4389,7 +4059,6 @@
     midi:absoluteTick 65536 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4397,7 +4066,6 @@
     midi:absoluteTick 66033 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -4405,7 +4073,6 @@
     midi:absoluteTick 66048 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -4413,7 +4080,6 @@
     midi:absoluteTick 66548 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -4421,7 +4087,6 @@
     midi:absoluteTick 66558 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -4429,7 +4094,6 @@
     midi:absoluteTick 66560 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -4437,7 +4101,6 @@
     midi:absoluteTick 66560 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4445,7 +4108,6 @@
     midi:absoluteTick 67574 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -4467,7 +4129,6 @@
     midi:absoluteTick 67584 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4475,7 +4136,6 @@
     midi:absoluteTick 67584 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4483,7 +4143,6 @@
     midi:absoluteTick 67584 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4491,7 +4150,6 @@
     midi:absoluteTick 68096 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4499,7 +4157,6 @@
     midi:absoluteTick 68608 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4507,7 +4164,6 @@
     midi:absoluteTick 69105 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -4515,7 +4171,6 @@
     midi:absoluteTick 69120 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -4523,7 +4178,6 @@
     midi:absoluteTick 69620 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -4531,7 +4185,6 @@
     midi:absoluteTick 69630 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -4539,7 +4192,6 @@
     midi:absoluteTick 69632 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -4547,7 +4199,6 @@
     midi:absoluteTick 69632 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4555,7 +4206,6 @@
     midi:absoluteTick 70646 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -4577,7 +4227,6 @@
     midi:absoluteTick 70656 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4585,7 +4234,6 @@
     midi:absoluteTick 70656 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4593,7 +4241,6 @@
     midi:absoluteTick 70656 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4601,7 +4248,6 @@
     midi:absoluteTick 71168 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4609,7 +4255,6 @@
     midi:absoluteTick 71680 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 48 .
 
@@ -4617,7 +4262,6 @@
     midi:absoluteTick 72177 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -4625,7 +4269,6 @@
     midi:absoluteTick 72192 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 48 .
 
@@ -4633,7 +4276,6 @@
     midi:absoluteTick 72692 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -4641,7 +4283,6 @@
     midi:absoluteTick 72702 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -4649,7 +4290,6 @@
     midi:absoluteTick 72704 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 2 ;
     midi:velocity 48 .
 
@@ -4657,7 +4297,6 @@
     midi:absoluteTick 72704 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 48 .
 
@@ -4665,7 +4304,6 @@
     midi:absoluteTick 73718 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -4687,7 +4325,6 @@
     midi:absoluteTick 73728 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4695,7 +4332,6 @@
     midi:absoluteTick 73728 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4703,7 +4339,6 @@
     midi:absoluteTick 73728 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4711,7 +4346,6 @@
     midi:absoluteTick 73728 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4719,7 +4353,6 @@
     midi:absoluteTick 73728 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 50 .
 
@@ -4727,7 +4360,6 @@
     midi:absoluteTick 73728 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 50 .
 
@@ -4749,7 +4381,6 @@
     midi:absoluteTick 76800 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4757,7 +4388,6 @@
     midi:absoluteTick 76800 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4765,7 +4395,6 @@
     midi:absoluteTick 76800 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4773,7 +4402,6 @@
     midi:absoluteTick 76800 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4781,7 +4409,6 @@
     midi:absoluteTick 76800 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 52 .
 
@@ -4789,7 +4416,6 @@
     midi:absoluteTick 76800 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 52 .
 
@@ -4811,7 +4437,6 @@
     midi:absoluteTick 79872 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4819,7 +4444,6 @@
     midi:absoluteTick 79872 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4827,7 +4451,6 @@
     midi:absoluteTick 79872 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4835,7 +4458,6 @@
     midi:absoluteTick 79872 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4843,7 +4465,6 @@
     midi:absoluteTick 79872 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 54 .
 
@@ -4851,7 +4472,6 @@
     midi:absoluteTick 79872 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 54 .
 
@@ -4859,7 +4479,6 @@
     midi:absoluteTick 80896 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -4867,7 +4486,6 @@
     midi:absoluteTick 80896 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/68> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4875,7 +4493,6 @@
     midi:absoluteTick 81408 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/68> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -4883,7 +4500,6 @@
     midi:absoluteTick 81408 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 58 .
 
@@ -4891,7 +4507,6 @@
     midi:absoluteTick 81920 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -4899,7 +4514,6 @@
     midi:absoluteTick 81920 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 63 .
 
@@ -4907,7 +4521,6 @@
     midi:absoluteTick 82432 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -4915,7 +4528,6 @@
     midi:absoluteTick 82432 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 67 .
 
@@ -4937,7 +4549,6 @@
     midi:absoluteTick 82944 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4945,7 +4556,6 @@
     midi:absoluteTick 82944 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4953,7 +4563,6 @@
     midi:absoluteTick 82944 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -4961,7 +4570,6 @@
     midi:absoluteTick 82944 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -4969,7 +4577,6 @@
     midi:absoluteTick 82944 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -4977,7 +4584,6 @@
     midi:absoluteTick 83456 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -4985,7 +4591,6 @@
     midi:absoluteTick 83968 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -4993,7 +4598,6 @@
     midi:absoluteTick 84465 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -5001,7 +4605,6 @@
     midi:absoluteTick 84480 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -5009,7 +4612,6 @@
     midi:absoluteTick 84480 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5017,7 +4619,6 @@
     midi:absoluteTick 84480 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5025,7 +4626,6 @@
     midi:absoluteTick 84980 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -5033,7 +4633,6 @@
     midi:absoluteTick 84990 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5041,7 +4640,6 @@
     midi:absoluteTick 84992 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -5049,7 +4647,6 @@
     midi:absoluteTick 84992 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5057,7 +4654,6 @@
     midi:absoluteTick 84992 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5065,7 +4661,6 @@
     midi:absoluteTick 86006 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -5087,7 +4682,6 @@
     midi:absoluteTick 86016 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5095,7 +4689,6 @@
     midi:absoluteTick 86016 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5103,7 +4696,6 @@
     midi:absoluteTick 86016 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5111,7 +4703,6 @@
     midi:absoluteTick 86016 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5119,7 +4710,6 @@
     midi:absoluteTick 86016 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/79> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5127,7 +4717,6 @@
     midi:absoluteTick 86016 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5135,7 +4724,6 @@
     midi:absoluteTick 86528 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5143,7 +4731,6 @@
     midi:absoluteTick 87040 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5151,7 +4738,6 @@
     midi:absoluteTick 87424 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 384 ;
     midi:velocity 74 .
 
@@ -5159,7 +4745,6 @@
     midi:absoluteTick 87537 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 113 ;
     midi:velocity 0 .
 
@@ -5167,7 +4752,6 @@
     midi:absoluteTick 87552 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/79> ;
-    midi:scaleDegree 4 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -5175,7 +4759,6 @@
     midi:absoluteTick 87552 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5183,7 +4766,6 @@
     midi:absoluteTick 87552 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5191,7 +4773,6 @@
     midi:absoluteTick 87552 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5199,7 +4780,6 @@
     midi:absoluteTick 88052 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -5207,7 +4787,6 @@
     midi:absoluteTick 88062 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5215,7 +4794,6 @@
     midi:absoluteTick 88064 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -5223,7 +4801,6 @@
     midi:absoluteTick 88064 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5231,7 +4808,6 @@
     midi:absoluteTick 88064 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5239,7 +4815,6 @@
     midi:absoluteTick 88576 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -5247,7 +4822,6 @@
     midi:absoluteTick 88576 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5255,7 +4829,6 @@
     midi:absoluteTick 89078 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 502 ;
     midi:velocity 0 .
 
@@ -5277,7 +4850,6 @@
     midi:absoluteTick 89088 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5285,7 +4857,6 @@
     midi:absoluteTick 89088 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5293,7 +4864,6 @@
     midi:absoluteTick 89088 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5301,7 +4871,6 @@
     midi:absoluteTick 89088 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5309,7 +4878,6 @@
     midi:absoluteTick 89600 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5317,7 +4885,6 @@
     midi:absoluteTick 90112 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5325,7 +4892,6 @@
     midi:absoluteTick 90609 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -5333,7 +4899,6 @@
     midi:absoluteTick 90624 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -5341,7 +4906,6 @@
     midi:absoluteTick 91124 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -5349,7 +4913,6 @@
     midi:absoluteTick 91134 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5357,7 +4920,6 @@
     midi:absoluteTick 91136 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -5365,7 +4927,6 @@
     midi:absoluteTick 91136 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5373,7 +4934,6 @@
     midi:absoluteTick 91136 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5381,7 +4941,6 @@
     midi:absoluteTick 92150 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -5403,7 +4962,6 @@
     midi:absoluteTick 92160 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5411,7 +4969,6 @@
     midi:absoluteTick 92160 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5419,7 +4976,6 @@
     midi:absoluteTick 92160 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5427,7 +4983,6 @@
     midi:absoluteTick 92160 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5435,7 +4990,6 @@
     midi:absoluteTick 92672 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5443,7 +4997,6 @@
     midi:absoluteTick 93184 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5451,7 +5004,6 @@
     midi:absoluteTick 93681 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -5459,7 +5011,6 @@
     midi:absoluteTick 93696 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -5467,7 +5018,6 @@
     midi:absoluteTick 94196 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -5475,7 +5025,6 @@
     midi:absoluteTick 94206 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5483,7 +5032,6 @@
     midi:absoluteTick 94208 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -5491,7 +5039,6 @@
     midi:absoluteTick 94208 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5499,7 +5046,6 @@
     midi:absoluteTick 94208 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5507,7 +5053,6 @@
     midi:absoluteTick 95222 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -5529,7 +5074,6 @@
     midi:absoluteTick 95232 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5537,7 +5081,6 @@
     midi:absoluteTick 95232 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5545,7 +5088,6 @@
     midi:absoluteTick 95232 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5553,7 +5095,6 @@
     midi:absoluteTick 95232 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5561,7 +5102,6 @@
     midi:absoluteTick 95232 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5569,7 +5109,6 @@
     midi:absoluteTick 95232 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5577,7 +5116,6 @@
     midi:absoluteTick 95744 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/76> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -5585,7 +5123,6 @@
     midi:absoluteTick 95744 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/79> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5593,7 +5130,6 @@
     midi:absoluteTick 95744 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5601,7 +5137,6 @@
     midi:absoluteTick 95949 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/79> ;
-    midi:scaleDegree 4 ;
     midi:tick 205 ;
     midi:velocity 0 .
 
@@ -5609,7 +5144,6 @@
     midi:absoluteTick 96256 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 307 ;
     midi:velocity 62 .
 
@@ -5617,7 +5151,6 @@
     midi:absoluteTick 96753 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -5625,7 +5158,6 @@
     midi:absoluteTick 96768 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 15 ;
     midi:velocity 74 .
 
@@ -5633,7 +5165,6 @@
     midi:absoluteTick 96768 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5641,7 +5172,6 @@
     midi:absoluteTick 97268 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -5649,7 +5179,6 @@
     midi:absoluteTick 97278 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5657,7 +5186,6 @@
     midi:absoluteTick 97280 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -5665,7 +5193,6 @@
     midi:absoluteTick 97280 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5673,7 +5200,6 @@
     midi:absoluteTick 97280 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5681,7 +5207,6 @@
     midi:absoluteTick 98294 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -5703,7 +5228,6 @@
     midi:absoluteTick 98304 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5711,7 +5235,6 @@
     midi:absoluteTick 98304 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5719,7 +5242,6 @@
     midi:absoluteTick 98304 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5727,7 +5249,6 @@
     midi:absoluteTick 98304 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5735,7 +5256,6 @@
     midi:absoluteTick 98304 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5743,7 +5263,6 @@
     midi:absoluteTick 98304 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5751,7 +5270,6 @@
     midi:absoluteTick 98816 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -5759,7 +5277,6 @@
     midi:absoluteTick 98816 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/79> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5767,7 +5284,6 @@
     midi:absoluteTick 98816 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5775,7 +5291,6 @@
     midi:absoluteTick 99226 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/79> ;
-    midi:scaleDegree 4 ;
     midi:tick 410 ;
     midi:velocity 0 .
 
@@ -5783,7 +5298,6 @@
     midi:absoluteTick 99328 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 102 ;
     midi:velocity 62 .
 
@@ -5791,7 +5305,6 @@
     midi:absoluteTick 99825 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -5799,7 +5312,6 @@
     midi:absoluteTick 99840 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 15 ;
     midi:velocity 74 .
 
@@ -5807,7 +5319,6 @@
     midi:absoluteTick 99840 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5815,7 +5326,6 @@
     midi:absoluteTick 100096 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 256 ;
     midi:velocity 0 .
 
@@ -5823,7 +5333,6 @@
     midi:absoluteTick 100096 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5831,7 +5340,6 @@
     midi:absoluteTick 100340 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 244 ;
     midi:velocity 0 .
 
@@ -5839,7 +5347,6 @@
     midi:absoluteTick 100350 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5847,7 +5354,6 @@
     midi:absoluteTick 100352 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -5855,7 +5361,6 @@
     midi:absoluteTick 100352 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -5863,7 +5368,6 @@
     midi:absoluteTick 100352 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5871,7 +5375,6 @@
     midi:absoluteTick 100352 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5879,7 +5382,6 @@
     midi:absoluteTick 100352 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5887,7 +5389,6 @@
     midi:absoluteTick 101366 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -5909,7 +5410,6 @@
     midi:absoluteTick 101376 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5917,7 +5417,6 @@
     midi:absoluteTick 101376 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5925,7 +5424,6 @@
     midi:absoluteTick 101376 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -5933,7 +5431,6 @@
     midi:absoluteTick 101376 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -5941,7 +5438,6 @@
     midi:absoluteTick 101888 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5949,7 +5445,6 @@
     midi:absoluteTick 102400 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -5957,7 +5452,6 @@
     midi:absoluteTick 102897 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -5965,7 +5459,6 @@
     midi:absoluteTick 102912 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -5973,7 +5466,6 @@
     midi:absoluteTick 103412 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -5981,7 +5473,6 @@
     midi:absoluteTick 103422 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -5989,7 +5480,6 @@
     midi:absoluteTick 103424 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -5997,7 +5487,6 @@
     midi:absoluteTick 103424 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6005,7 +5494,6 @@
     midi:absoluteTick 103424 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6013,7 +5501,6 @@
     midi:absoluteTick 104438 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -6035,7 +5522,6 @@
     midi:absoluteTick 104448 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6043,7 +5529,6 @@
     midi:absoluteTick 104448 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6051,7 +5536,6 @@
     midi:absoluteTick 104448 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6059,7 +5543,6 @@
     midi:absoluteTick 104448 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6067,7 +5550,6 @@
     midi:absoluteTick 104960 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6075,7 +5557,6 @@
     midi:absoluteTick 105472 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6083,7 +5564,6 @@
     midi:absoluteTick 105969 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -6091,7 +5571,6 @@
     midi:absoluteTick 105984 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -6099,7 +5578,6 @@
     midi:absoluteTick 106484 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -6107,7 +5585,6 @@
     midi:absoluteTick 106494 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -6115,7 +5592,6 @@
     midi:absoluteTick 106496 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -6123,7 +5599,6 @@
     midi:absoluteTick 106496 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6131,7 +5606,6 @@
     midi:absoluteTick 106496 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6139,7 +5613,6 @@
     midi:absoluteTick 107510 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -6161,7 +5634,6 @@
     midi:absoluteTick 107520 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6169,7 +5641,6 @@
     midi:absoluteTick 107520 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6177,7 +5648,6 @@
     midi:absoluteTick 107520 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6185,7 +5655,6 @@
     midi:absoluteTick 107520 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6193,7 +5662,6 @@
     midi:absoluteTick 107520 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6201,7 +5669,6 @@
     midi:absoluteTick 107520 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6209,7 +5676,6 @@
     midi:absoluteTick 108032 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -6217,7 +5683,6 @@
     midi:absoluteTick 108032 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/73> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6225,7 +5690,6 @@
     midi:absoluteTick 108032 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6233,7 +5697,6 @@
     midi:absoluteTick 108544 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/73> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -6241,7 +5704,6 @@
     midi:absoluteTick 108544 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6249,7 +5711,6 @@
     midi:absoluteTick 108544 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6257,7 +5718,6 @@
     midi:absoluteTick 109041 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -6265,7 +5725,6 @@
     midi:absoluteTick 109056 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 15 ;
     midi:velocity 0 .
 
@@ -6273,7 +5732,6 @@
     midi:absoluteTick 109056 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6281,7 +5739,6 @@
     midi:absoluteTick 109056 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6289,7 +5746,6 @@
     midi:absoluteTick 109556 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -6297,7 +5753,6 @@
     midi:absoluteTick 109566 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -6305,7 +5760,6 @@
     midi:absoluteTick 109568 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 2 ;
     midi:velocity 0 .
 
@@ -6313,7 +5767,6 @@
     midi:absoluteTick 109568 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6321,7 +5774,6 @@
     midi:absoluteTick 109568 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6329,7 +5781,6 @@
     midi:absoluteTick 109568 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6337,7 +5788,6 @@
     midi:absoluteTick 110080 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -6345,7 +5795,6 @@
     midi:absoluteTick 110080 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6353,7 +5802,6 @@
     midi:absoluteTick 110582 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 502 ;
     midi:velocity 0 .
 
@@ -6375,7 +5823,6 @@
     midi:absoluteTick 110592 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6383,7 +5830,6 @@
     midi:absoluteTick 110592 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6391,7 +5837,6 @@
     midi:absoluteTick 110592 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6399,7 +5844,6 @@
     midi:absoluteTick 110592 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6407,7 +5851,6 @@
     midi:absoluteTick 110592 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6415,7 +5858,6 @@
     midi:absoluteTick 110763 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 171 ;
     midi:velocity 0 .
 
@@ -6423,7 +5865,6 @@
     midi:absoluteTick 110763 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6431,7 +5872,6 @@
     midi:absoluteTick 110933 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 170 ;
     midi:velocity 0 .
 
@@ -6439,7 +5879,6 @@
     midi:absoluteTick 110933 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6447,7 +5886,6 @@
     midi:absoluteTick 111104 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 171 ;
     midi:velocity 0 .
 
@@ -6455,7 +5893,6 @@
     midi:absoluteTick 111104 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6463,7 +5900,6 @@
     midi:absoluteTick 111104 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6471,7 +5907,6 @@
     midi:absoluteTick 111616 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6479,7 +5914,6 @@
     midi:absoluteTick 112113 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -6487,7 +5921,6 @@
     midi:absoluteTick 112128 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -6495,7 +5928,6 @@
     midi:absoluteTick 112628 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -6503,7 +5935,6 @@
     midi:absoluteTick 112638 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -6511,7 +5942,6 @@
     midi:absoluteTick 112640 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -6519,7 +5949,6 @@
     midi:absoluteTick 112640 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6527,7 +5956,6 @@
     midi:absoluteTick 113654 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -6549,7 +5977,6 @@
     midi:absoluteTick 113664 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6557,7 +5984,6 @@
     midi:absoluteTick 113664 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6565,7 +5991,6 @@
     midi:absoluteTick 113664 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6573,7 +5998,6 @@
     midi:absoluteTick 114176 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6581,7 +6005,6 @@
     midi:absoluteTick 114688 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6589,7 +6012,6 @@
     midi:absoluteTick 115185 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -6597,7 +6019,6 @@
     midi:absoluteTick 115200 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -6605,7 +6026,6 @@
     midi:absoluteTick 115700 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -6613,7 +6033,6 @@
     midi:absoluteTick 115710 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -6621,7 +6040,6 @@
     midi:absoluteTick 115712 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -6629,7 +6047,6 @@
     midi:absoluteTick 115712 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6637,7 +6054,6 @@
     midi:absoluteTick 116726 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -6659,7 +6075,6 @@
     midi:absoluteTick 116736 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6667,7 +6082,6 @@
     midi:absoluteTick 116736 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6675,7 +6089,6 @@
     midi:absoluteTick 116736 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6683,7 +6096,6 @@
     midi:absoluteTick 117248 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6691,7 +6103,6 @@
     midi:absoluteTick 117760 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -6699,7 +6110,6 @@
     midi:absoluteTick 118257 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -6707,7 +6117,6 @@
     midi:absoluteTick 118272 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -6715,7 +6124,6 @@
     midi:absoluteTick 118772 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -6723,7 +6131,6 @@
     midi:absoluteTick 118782 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -6731,7 +6138,6 @@
     midi:absoluteTick 118784 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -6739,7 +6145,6 @@
     midi:absoluteTick 118784 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6747,7 +6152,6 @@
     midi:absoluteTick 119798 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/52> ;
-    midi:scaleDegree 2 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -6769,7 +6173,6 @@
     midi:absoluteTick 119808 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6777,7 +6180,6 @@
     midi:absoluteTick 119808 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6785,7 +6187,6 @@
     midi:absoluteTick 119808 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6793,7 +6194,6 @@
     midi:absoluteTick 119808 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6801,7 +6201,6 @@
     midi:absoluteTick 119808 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6809,7 +6208,6 @@
     midi:absoluteTick 119808 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6817,7 +6215,6 @@
     midi:absoluteTick 121344 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 1536 ;
     midi:velocity 0 .
 
@@ -6825,7 +6222,6 @@
     midi:absoluteTick 121344 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6833,7 +6229,6 @@
     midi:absoluteTick 121344 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6841,7 +6236,6 @@
     midi:absoluteTick 121344 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6849,7 +6243,6 @@
     midi:absoluteTick 121344 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6857,7 +6250,6 @@
     midi:absoluteTick 121344 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6879,7 +6271,6 @@
     midi:absoluteTick 122880 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6887,7 +6278,6 @@
     midi:absoluteTick 122880 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6895,7 +6285,6 @@
     midi:absoluteTick 122880 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6903,7 +6292,6 @@
     midi:absoluteTick 122880 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6911,7 +6299,6 @@
     midi:absoluteTick 122880 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6919,7 +6306,6 @@
     midi:absoluteTick 122880 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6927,7 +6313,6 @@
     midi:absoluteTick 124416 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 1536 ;
     midi:velocity 0 .
 
@@ -6935,7 +6320,6 @@
     midi:absoluteTick 124416 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -6943,7 +6327,6 @@
     midi:absoluteTick 124416 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6951,7 +6334,6 @@
     midi:absoluteTick 124416 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -6959,7 +6341,6 @@
     midi:absoluteTick 124416 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6967,7 +6348,6 @@
     midi:absoluteTick 124416 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -6975,7 +6355,6 @@
     midi:absoluteTick 125440 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -6983,7 +6362,6 @@
     midi:absoluteTick 125440 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7005,7 +6383,6 @@
     midi:absoluteTick 125952 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7013,7 +6390,6 @@
     midi:absoluteTick 125952 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7021,7 +6397,6 @@
     midi:absoluteTick 125952 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7029,7 +6404,6 @@
     midi:absoluteTick 125952 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7037,7 +6411,6 @@
     midi:absoluteTick 125952 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7045,7 +6418,6 @@
     midi:absoluteTick 125952 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7053,7 +6425,6 @@
     midi:absoluteTick 126976 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -7061,7 +6432,6 @@
     midi:absoluteTick 126976 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7069,7 +6439,6 @@
     midi:absoluteTick 127488 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -7077,7 +6446,6 @@
     midi:absoluteTick 127488 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7085,7 +6453,6 @@
     midi:absoluteTick 127488 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7093,7 +6460,6 @@
     midi:absoluteTick 127488 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7101,7 +6467,6 @@
     midi:absoluteTick 127488 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7109,7 +6474,6 @@
     midi:absoluteTick 127488 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7117,7 +6481,6 @@
     midi:absoluteTick 128512 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -7125,7 +6488,6 @@
     midi:absoluteTick 128512 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7133,7 +6495,6 @@
     midi:absoluteTick 128717 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 205 ;
     midi:velocity 0 .
 
@@ -7155,7 +6516,6 @@
     midi:absoluteTick 129024 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7163,7 +6523,6 @@
     midi:absoluteTick 129024 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7171,7 +6530,6 @@
     midi:absoluteTick 129024 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7179,7 +6537,6 @@
     midi:absoluteTick 129024 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7187,7 +6544,6 @@
     midi:absoluteTick 129024 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7195,7 +6551,6 @@
     midi:absoluteTick 130048 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -7203,7 +6558,6 @@
     midi:absoluteTick 130048 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7211,7 +6565,6 @@
     midi:absoluteTick 130253 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 205 ;
     midi:velocity 0 .
 
@@ -7219,7 +6572,6 @@
     midi:absoluteTick 130560 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 307 ;
     midi:velocity 74 .
 
@@ -7227,7 +6579,6 @@
     midi:absoluteTick 130560 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7235,7 +6586,6 @@
     midi:absoluteTick 130560 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7243,7 +6593,6 @@
     midi:absoluteTick 130560 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7251,7 +6600,6 @@
     midi:absoluteTick 130560 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7259,7 +6607,6 @@
     midi:absoluteTick 131584 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -7267,7 +6614,6 @@
     midi:absoluteTick 131584 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7275,7 +6621,6 @@
     midi:absoluteTick 131789 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 205 ;
     midi:velocity 0 .
 
@@ -7297,7 +6642,6 @@
     midi:absoluteTick 132096 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7305,7 +6649,6 @@
     midi:absoluteTick 132096 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7313,7 +6656,6 @@
     midi:absoluteTick 132096 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7321,7 +6663,6 @@
     midi:absoluteTick 132096 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7329,7 +6670,6 @@
     midi:absoluteTick 132096 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7337,7 +6677,6 @@
     midi:absoluteTick 132864 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 768 ;
     midi:velocity 0 .
 
@@ -7345,7 +6684,6 @@
     midi:absoluteTick 132864 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7353,7 +6691,6 @@
     midi:absoluteTick 133120 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 256 ;
     midi:velocity 0 .
 
@@ -7361,7 +6698,6 @@
     midi:absoluteTick 133120 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7369,7 +6705,6 @@
     midi:absoluteTick 133325 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 205 ;
     midi:velocity 0 .
 
@@ -7377,7 +6712,6 @@
     midi:absoluteTick 133632 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 307 ;
     midi:velocity 74 .
 
@@ -7385,7 +6719,6 @@
     midi:absoluteTick 133632 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/53> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7393,7 +6726,6 @@
     midi:absoluteTick 133632 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7401,7 +6733,6 @@
     midi:absoluteTick 133632 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7409,7 +6740,6 @@
     midi:absoluteTick 133632 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7417,7 +6747,6 @@
     midi:absoluteTick 134400 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 768 ;
     midi:velocity 0 .
 
@@ -7425,7 +6754,6 @@
     midi:absoluteTick 134400 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7433,7 +6761,6 @@
     midi:absoluteTick 134656 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 256 ;
     midi:velocity 0 .
 
@@ -7441,7 +6768,6 @@
     midi:absoluteTick 134656 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7449,7 +6775,6 @@
     midi:absoluteTick 134861 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 205 ;
     midi:velocity 0 .
 
@@ -7471,7 +6796,6 @@
     midi:absoluteTick 135168 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/55> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7479,7 +6803,6 @@
     midi:absoluteTick 135168 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7487,7 +6810,6 @@
     midi:absoluteTick 135168 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7495,7 +6817,6 @@
     midi:absoluteTick 135168 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7503,7 +6824,6 @@
     midi:absoluteTick 135168 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7511,7 +6831,6 @@
     midi:absoluteTick 136192 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -7519,7 +6838,6 @@
     midi:absoluteTick 136192 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7527,7 +6845,6 @@
     midi:absoluteTick 136704 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -7535,7 +6852,6 @@
     midi:absoluteTick 136704 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7543,7 +6859,6 @@
     midi:absoluteTick 136704 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7551,7 +6866,6 @@
     midi:absoluteTick 136704 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7559,7 +6873,6 @@
     midi:absoluteTick 136704 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7567,7 +6880,6 @@
     midi:absoluteTick 136704 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7575,7 +6887,6 @@
     midi:absoluteTick 137728 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -7583,7 +6894,6 @@
     midi:absoluteTick 137728 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7605,7 +6915,6 @@
     midi:absoluteTick 138240 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7613,7 +6922,6 @@
     midi:absoluteTick 138240 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/59> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7621,7 +6929,6 @@
     midi:absoluteTick 138240 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7629,7 +6936,6 @@
     midi:absoluteTick 138240 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7637,7 +6943,6 @@
     midi:absoluteTick 138240 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7645,7 +6950,6 @@
     midi:absoluteTick 138752 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -7653,7 +6957,6 @@
     midi:absoluteTick 139264 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -7661,7 +6964,6 @@
     midi:absoluteTick 139761 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -7669,7 +6971,6 @@
     midi:absoluteTick 139776 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -7677,7 +6978,6 @@
     midi:absoluteTick 140276 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -7685,7 +6985,6 @@
     midi:absoluteTick 140286 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -7693,7 +6992,6 @@
     midi:absoluteTick 140288 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -7701,7 +6999,6 @@
     midi:absoluteTick 140288 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7709,7 +7006,6 @@
     midi:absoluteTick 141302 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -7731,7 +7027,6 @@
     midi:absoluteTick 141312 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7739,7 +7034,6 @@
     midi:absoluteTick 141312 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7747,7 +7041,6 @@
     midi:absoluteTick 141312 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7755,7 +7048,6 @@
     midi:absoluteTick 141824 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -7763,7 +7055,6 @@
     midi:absoluteTick 142336 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -7771,7 +7062,6 @@
     midi:absoluteTick 142833 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -7779,7 +7069,6 @@
     midi:absoluteTick 142848 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -7787,7 +7076,6 @@
     midi:absoluteTick 143348 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -7795,7 +7083,6 @@
     midi:absoluteTick 143358 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -7803,7 +7090,6 @@
     midi:absoluteTick 143360 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -7811,7 +7097,6 @@
     midi:absoluteTick 143360 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7819,7 +7104,6 @@
     midi:absoluteTick 143872 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -7827,7 +7111,6 @@
     midi:absoluteTick 143872 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 52 .
 
@@ -7835,7 +7118,6 @@
     midi:absoluteTick 144000 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 128 ;
     midi:velocity 59 .
 
@@ -7843,7 +7125,6 @@
     midi:absoluteTick 144064 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/74> ;
-    midi:scaleDegree 1 ;
     midi:tick 64 ;
     midi:velocity 0 .
 
@@ -7851,7 +7132,6 @@
     midi:absoluteTick 144128 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 64 ;
     midi:velocity 67 .
 
@@ -7859,7 +7139,6 @@
     midi:absoluteTick 144192 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 64 ;
     midi:velocity 0 .
 
@@ -7867,7 +7146,6 @@
     midi:absoluteTick 144256 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 64 ;
     midi:velocity 74 .
 
@@ -7875,7 +7153,6 @@
     midi:absoluteTick 144320 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 64 ;
     midi:velocity 0 .
 
@@ -7883,7 +7160,6 @@
     midi:absoluteTick 144374 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 54 ;
     midi:velocity 0 .
 
@@ -7905,7 +7181,6 @@
     midi:absoluteTick 144384 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7913,7 +7188,6 @@
     midi:absoluteTick 144384 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7921,7 +7195,6 @@
     midi:absoluteTick 144384 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -7929,7 +7202,6 @@
     midi:absoluteTick 144384 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -7937,7 +7209,6 @@
     midi:absoluteTick 144384 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -7945,7 +7216,6 @@
     midi:absoluteTick 144896 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -7953,7 +7223,6 @@
     midi:absoluteTick 145408 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -7961,7 +7230,6 @@
     midi:absoluteTick 145905 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -7969,7 +7237,6 @@
     midi:absoluteTick 145920 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -7977,7 +7244,6 @@
     midi:absoluteTick 146420 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -7985,7 +7251,6 @@
     midi:absoluteTick 146430 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -7993,7 +7258,6 @@
     midi:absoluteTick 146432 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -8001,7 +7265,6 @@
     midi:absoluteTick 146432 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8009,7 +7272,6 @@
     midi:absoluteTick 147446 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -8031,7 +7293,6 @@
     midi:absoluteTick 147456 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8039,7 +7300,6 @@
     midi:absoluteTick 147456 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8047,7 +7307,6 @@
     midi:absoluteTick 147456 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8055,7 +7314,6 @@
     midi:absoluteTick 147968 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -8063,7 +7321,6 @@
     midi:absoluteTick 148480 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -8071,7 +7328,6 @@
     midi:absoluteTick 148977 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -8079,7 +7335,6 @@
     midi:absoluteTick 148992 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -8087,7 +7342,6 @@
     midi:absoluteTick 149492 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -8095,7 +7349,6 @@
     midi:absoluteTick 149502 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -8103,7 +7356,6 @@
     midi:absoluteTick 149504 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -8111,7 +7363,6 @@
     midi:absoluteTick 149504 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8119,7 +7370,6 @@
     midi:absoluteTick 150016 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 512 ;
     midi:velocity 0 .
 
@@ -8127,7 +7377,6 @@
     midi:absoluteTick 150016 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 52 .
 
@@ -8135,7 +7384,6 @@
     midi:absoluteTick 150144 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 128 ;
     midi:velocity 59 .
 
@@ -8143,7 +7391,6 @@
     midi:absoluteTick 150208 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/72> ;
-    midi:scaleDegree 7 ;
     midi:tick 64 ;
     midi:velocity 0 .
 
@@ -8151,7 +7398,6 @@
     midi:absoluteTick 150272 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 64 ;
     midi:velocity 67 .
 
@@ -8159,7 +7405,6 @@
     midi:absoluteTick 150336 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 64 ;
     midi:velocity 0 .
 
@@ -8167,7 +7412,6 @@
     midi:absoluteTick 150400 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 64 ;
     midi:velocity 74 .
 
@@ -8175,7 +7419,6 @@
     midi:absoluteTick 150464 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 64 ;
     midi:velocity 0 .
 
@@ -8183,7 +7426,6 @@
     midi:absoluteTick 150518 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 54 ;
     midi:velocity 0 .
 
@@ -8205,7 +7447,6 @@
     midi:absoluteTick 150528 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8213,7 +7454,6 @@
     midi:absoluteTick 150528 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8221,7 +7461,6 @@
     midi:absoluteTick 150528 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8229,7 +7468,6 @@
     midi:absoluteTick 150528 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8237,7 +7475,6 @@
     midi:absoluteTick 150528 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8245,7 +7482,6 @@
     midi:absoluteTick 151040 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -8253,7 +7489,6 @@
     midi:absoluteTick 151552 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -8261,7 +7496,6 @@
     midi:absoluteTick 152049 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 497 ;
     midi:velocity 0 .
 
@@ -8269,7 +7503,6 @@
     midi:absoluteTick 152064 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 15 ;
     midi:velocity 62 .
 
@@ -8277,7 +7510,6 @@
     midi:absoluteTick 152564 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 500 ;
     midi:velocity 0 .
 
@@ -8285,7 +7517,6 @@
     midi:absoluteTick 152574 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -8293,7 +7524,6 @@
     midi:absoluteTick 152576 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 2 ;
     midi:velocity 62 .
 
@@ -8301,7 +7531,6 @@
     midi:absoluteTick 152576 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8309,7 +7538,6 @@
     midi:absoluteTick 153590 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 1014 ;
     midi:velocity 0 .
 
@@ -8331,7 +7559,6 @@
     midi:absoluteTick 153600 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/60> ;
-    midi:scaleDegree 7 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8339,7 +7566,6 @@
     midi:absoluteTick 153600 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8347,7 +7573,6 @@
     midi:absoluteTick 153600 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8355,7 +7580,6 @@
     midi:absoluteTick 154112 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 512 ;
     midi:velocity 62 .
 
@@ -8375,7 +7599,6 @@
     midi:absoluteTick 154624 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8389,7 +7612,6 @@
     midi:absoluteTick 155121 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 241 ;
     midi:velocity 0 .
 
@@ -8403,7 +7625,6 @@
     midi:absoluteTick 155136 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8417,7 +7638,6 @@
     midi:absoluteTick 155636 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 244 ;
     midi:velocity 0 .
 
@@ -8425,7 +7645,6 @@
     midi:absoluteTick 155646 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 10 ;
     midi:velocity 0 .
 
@@ -8439,7 +7658,6 @@
     midi:absoluteTick 155648 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8447,7 +7665,6 @@
     midi:absoluteTick 155648 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 66 .
 
@@ -8455,7 +7672,6 @@
     midi:absoluteTick 155648 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8469,7 +7685,6 @@
     midi:absoluteTick 155904 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/70> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8477,7 +7692,6 @@
     midi:absoluteTick 155904 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 69 .
 
@@ -8491,7 +7705,6 @@
     midi:absoluteTick 156160 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8499,7 +7712,6 @@
     midi:absoluteTick 156160 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 71 .
 
@@ -8507,7 +7719,6 @@
     midi:absoluteTick 156160 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8515,7 +7726,6 @@
     midi:absoluteTick 156416 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 256 ;
     midi:velocity 0 .
 
@@ -8523,7 +7733,6 @@
     midi:absoluteTick 156416 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8531,7 +7740,6 @@
     midi:absoluteTick 156662 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 246 ;
     midi:velocity 0 .
 
@@ -8539,7 +7747,6 @@
     midi:absoluteTick 156662 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/58> ;
-    midi:scaleDegree 6 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8561,7 +7768,6 @@
     midi:absoluteTick 156672 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8569,7 +7775,6 @@
     midi:absoluteTick 156672 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/62> ;
-    midi:scaleDegree 1 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8577,7 +7782,6 @@
     midi:absoluteTick 156672 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8585,7 +7789,6 @@
     midi:absoluteTick 156672 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8593,7 +7796,6 @@
     midi:absoluteTick 156672 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 62 .
 
@@ -8601,7 +7803,6 @@
     midi:absoluteTick 157696 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -8609,7 +7810,6 @@
     midi:absoluteTick 157696 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/73> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8617,7 +7817,6 @@
     midi:absoluteTick 158720 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/73> ;
-    midi:scaleDegree "None" ;
     midi:tick 1024 ;
     midi:velocity 0 .
 
@@ -8625,7 +7824,6 @@
     midi:absoluteTick 158720 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8647,7 +7845,6 @@
     midi:absoluteTick 159744 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/71> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8655,7 +7852,6 @@
     midi:absoluteTick 159744 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8663,7 +7859,6 @@
     midi:absoluteTick 161280 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/69> ;
-    midi:scaleDegree 5 ;
     midi:tick 1536 ;
     midi:velocity 0 .
 
@@ -8671,7 +7866,6 @@
     midi:absoluteTick 161280 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8679,7 +7873,6 @@
     midi:absoluteTick 161920 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/67> ;
-    midi:scaleDegree 4 ;
     midi:tick 640 ;
     midi:velocity 0 .
 
@@ -8687,7 +7880,6 @@
     midi:absoluteTick 161920 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8709,7 +7901,6 @@
     midi:absoluteTick 162816 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/65> ;
-    midi:scaleDegree 3 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8717,7 +7908,6 @@
     midi:absoluteTick 162816 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 74 .
 
@@ -8739,7 +7929,6 @@
     midi:absoluteTick 165888 ;
     midi:channel 0 ;
     midi:note <http://purl.org/midi-ld/notes/64> ;
-    midi:scaleDegree 2 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8747,7 +7936,6 @@
     midi:absoluteTick 165888 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/57> ;
-    midi:scaleDegree 5 ;
     midi:tick 0 ;
     midi:velocity 0 .
 
@@ -8755,7 +7943,6 @@
     midi:absoluteTick 165888 ;
     midi:channel 1 ;
     midi:note <http://purl.org/midi-ld/notes/61> ;
-    midi:scaleDegree "None" ;
     midi:tick 0 ;
     midi:velocity 0 .
 

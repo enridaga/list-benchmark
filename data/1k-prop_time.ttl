@@ -12,16 +12,15 @@
         prov:Entity ;
     midi:format 0 ;
     midi:hasTrack <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> ;
-    midi:key "d minor" ;
     midi:resolution 1024 ;
-    prov:generatedAtTime "2018-11-16T17:54:48.302745"^^xsd:dateTime ;
+    prov:generatedAtTime "2018-11-18T00:34:58.277051"^^xsd:dateTime ;
     prov:wasAttributedTo <https://github.com/midi-ld/midi2rdf> ;
     prov:wasDerivedFrom <http://purl.org/midi-ld/file/8cf9897535d79e68c33a3076aa06d073> ;
     prov:wasGeneratedBy <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073-activity> .
 
 <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073-activity> a prov:Activity ;
-    prov:endedAtTime "2018-11-16T17:54:48.302745"^^xsd:dateTime ;
-    prov:startedAtTime "2018-11-16T17:54:47.956893"^^xsd:dateTime ;
+    prov:endedAtTime "2018-11-18T00:34:58.277051"^^xsd:dateTime ;
+    prov:startedAtTime "2018-11-18T00:34:58.153648"^^xsd:dateTime ;
     prov:used <http://purl.org/midi-ld/file/8cf9897535d79e68c33a3076aa06d073> ;
     prov:wasAssociatedWith <https://github.com/midi-ld/midi2rdf> .
 
