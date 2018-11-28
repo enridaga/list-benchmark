@@ -44,7 +44,9 @@ suite=${3}
 times=${4:-1}
 interval=${5:-5}
 interrupt=${6:-300} # almost 5 minutes
-result="results/$experimentID."$(basename "$suite")
+result="results/$experimentID."$(basename "${suite%.*}")
+
+[[ -d results ]] || mkdir results
 rm $result.* 2> /dev/null
 
 printf "Experiment ID: $experimentID \n\
