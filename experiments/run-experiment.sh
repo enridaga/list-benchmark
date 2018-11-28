@@ -28,9 +28,8 @@ function monitor {
 }
 
 [ -z "$1" ] && echo "Missing arg 1: PID to monitor!" && exit 1
-[ -z "$2" ] && echo "Missing arg 2: suite to execute!" && exit 1
-[ -z "$3" ] && echo "Missing arg 3: query endpoint!" && exit 1
-[ -z "$4" ] && echo "Missing arg 4: target graph!" && exit 1
+[ -z "$2" ] && echo "Missing arg 2: experiment ID!" && exit 1
+[ -z "$3" ] && echo "Missing arg 3: suite to execute!" && exit 1
 
 mpid=$1
 
@@ -40,24 +39,20 @@ else
     echo "Process $mpid does not exists" >&2 && exit 2
 fi
 
-suite=${2}
-endpoint=${3}
-graph=${4}
-export QUERY_ENDPOINT=$endpoint
-export QUERY_GRAPH=$graph
-times=${5:-1}
-interval=${6:-5}
-interrupt=${7:-300} # almost 5 minutes
-result=results/$(basename "$suite")
+experimentID=${2}
+suite=${3}
+times=${4:-1}
+interval=${5:-5}
+interrupt=${6:-300} # almost 5 minutes
+result="results/$experimentID."$(basename "$suite")
 rm $result.* 2> /dev/null
 
-printf "Running suite: $suite \n\
-Querying endpoint: $endpoint \n\
-Target graph: $graph \n\
+printf "Experiment ID: $experimentID \n\
+Suite: $suite \n\
 Repeating $times times \n\
 Wait $interval seconds between each run \n\
 Timeout: $interrupt seconds \n\
-Writing to $result*"
+Writing to $result*\n"
 
 count=0
 while IFS= read -r experiment

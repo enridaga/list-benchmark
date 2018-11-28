@@ -15,4 +15,4 @@ query=`cat $queryfile|setGraph`
 >&2 echo "Query: $query"
 >&2 echo "-----------------------------------"
 query=`echo $query|encodeURIComponent`
->&2 time curl -v "$endpoint" -d query="$query"
+time curl -v "$endpoint" -d query="$query"
