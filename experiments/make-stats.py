@@ -23,7 +23,7 @@ while i <= len(experiments):
     x = 1
     experiment = experiments[i-1]
     while True:
-        outputFile = "results/" + eprefix + ".output." + str(i) + "." + str(x)
+        outputFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
         if(os.path.exists(outputFile)):
             with open(statFile, 'a') as the_file:
                 timeInfo = os.popen("tail -3 " + outputFile).readlines()
