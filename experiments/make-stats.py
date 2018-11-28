@@ -3,18 +3,18 @@
 import sys
 import os.path
 
-suite = sys.argv[1]
-print 'Suite:', suite
+eprefix = sys.argv[1]
+print 'eprefix:', eprefix
 print 'Argument List:', str(sys.argv)
 
-fileOb = open(suite,"r")
+fileOb = open(eprefix,"r")
 experiments = fileOb.read().splitlines()
 
 # Duration of each execution
 i = 1
 while i <= len(experiments):
     print "Experiment ", str(i), ": ", experiments[i-1]
-    statFile = "results/" + suite + ".stats." + str(i) + ".csv"
+    statFile = "results/" + eprefix + ".stats." + str(i) + ".csv"
     try:
         os.remove(statFile)
     except OSError:
@@ -23,7 +23,7 @@ while i <= len(experiments):
     x = 1
     experiment = experiments[i-1]
     while True:
-        outputFile = "results/" + suite + ".output." + str(i) + "." + str(x)
+        outputFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
         if(os.path.exists(outputFile)):
             with open(statFile, 'a') as the_file:
                 timeInfo = os.popen("tail -3 " + outputFile).readlines()
