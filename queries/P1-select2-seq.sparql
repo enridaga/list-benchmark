@@ -16,5 +16,5 @@ FROM <list:benchmark:1k:seq>
 WHERE {
    ?track a midi:Track .
    ?track midi:hasEvents [ ?seq ?event ] .
-   BIND (SUBSTR(str(?seq), 45) AS ?index) # Super ugly patch that depends on the RDF namespace
+   BIND (SUBSTR(str(?seq), 45) AS ?index)
 } ORDER BY xsd:integer(?index)
