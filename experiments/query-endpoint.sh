@@ -10,7 +10,9 @@ function setGraph {
 queryfile=$1
 endpoint=$QUERY_ENDPOINT
 query=`cat $queryfile|setGraph`
-echo "Querying $endpoint, file $queryfile"
-echo "Query: $query"
+>&2 echo "-----------------------------------"
+>&2 echo "Querying $endpoint, file $queryfile"
+>&2 echo "Query: $query"
+>&2 echo "-----------------------------------"
 query=`echo $query|encodeURIComponent`
-time curl -v "$endpoint" -d query="$query"
+>&2 time curl -v "$endpoint" -d query="$query"
