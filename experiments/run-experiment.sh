@@ -27,26 +27,37 @@ function monitor {
 	fi
 }
 
-[ -z "$1" ] && echo "Missing PID to monitor!" && exit 1
-[ -z "$2" ] && echo "Missing suite to execute!" && exit 1
+[ -z "$1" ] && echo "Missing arg 1: PID to monitor!" && exit 1
+[ -z "$2" ] && echo "Missing arg 2: suite to execute!" && exit 1
+[ -z "$3" ] && echo "Missing arg 3: query endpoint!" && exit 1
+[ -z "$4" ] && echo "Missing arg 4: target graph!" && exit 1
 
 mpid=$1
 
 if [ -n "$(ps -p $mpid -o pid=)" ]; then
-    echo "Process exists"
+    echo "Monitoring PID: $mpid"
 else
     echo "Process $mpid does not exists" >&2 && exit 2
 fi
 
-suite=${2:-./experiments.txt}
-times=${3:-1}
-interval=${4:-5}
-interrupt=${5:-300} # almost 5 minutes
+suite=${2}
+endpoint=${3}
+graph=${4}
+export QUERY_ENDPOINT=$endpoint
+export QUERY_GRAPH=$graph
+times=${5:-1}
+interval=${6:-5}
+interrupt=${7:-300} # almost 5 minutes
 result=results/$(basename "$suite")
 rm $result.* 2> /dev/null
-rm -f $result.monitor.* 2> /dev/null
 
-echo "Running suite: $suite, reapeating each experiment $times times, timeout $interrupt seconds, writing results to $result"
+printf "Running suite: $suite \n\
+Querying endpoint: $endpoint \n\
+Target graph: $graph \n\
+Repeating $times times \n\
+Wait $interval seconds between each run \n\
+Timeout: $interrupt seconds \n\
+Writing to $result*"
 
 count=0
 while IFS= read -r experiment
@@ -60,7 +71,7 @@ do
     exec 1<>$result.monitor.$count.$a
     errcho "$count $a - $experiment"
     echo "#$count #$a - $experiment"
-    $experiment > $result.output.$count.$a 2>&1 &
+    $experiment > $result.output.$count.$a 2>$result.error.$count.$a &
 	epid=$!
     monitor $epid $interrupt $mpid
   done
