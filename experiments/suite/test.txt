@@ -1,0 +1,2 @@
+./query-endpoint.sh ../queries/test-query.sparql
+./query-endpoint.sh ../queries/test-query2.sparql
