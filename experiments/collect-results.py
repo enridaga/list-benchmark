@@ -136,8 +136,10 @@ def makeStats(collection):
 print 'Argument List:', str(sys.argv)
 # fileOb = open(eprefix,"r")
 # experiments = fileOb.read().splitlines()
-
-resultsFile = "collect-results.csv"
+if len(sys.argv) < 2:
+    print "provide results- postfix file name."
+    exit(1)
+resultsFile = "results-"+sys.argv[1]+".csv"
 try:
     os.remove(resultsFile)
 except OSError:
