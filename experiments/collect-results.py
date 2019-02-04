@@ -7,18 +7,17 @@ import re
 from datetime import datetime
 ###################
 def timeToMs(t):
-    print t
+    # print t
+    ms = '-1'
     try:
         minutes = t.split("m")[0]
         seconds = t.split("m")[1].split('.')[0]
         milliseconds = t.split("m")[1].split('.')[1].replace('s','')
-    except OSError:
-        print t
-        exit(1)
-    print '- milliseconds ' + milliseconds + ' ' + str(int(milliseconds))
-    print '- seconds ' + seconds + ' ' + str(int(seconds))
-    print '- minutes ' + minutes + ' ' + str(int(minutes))
-    ms = (minutes * 60 * 1000) + (seconds * 1000) + milliseconds
+        ms = (int(minutes) * 60 * 1000) + (int(seconds) * 1000) + int(milliseconds)
+    except IndexError as err:
+        print '- ERROR: ' + str(err)
+        # exit(1)
+        ms = -1
     return ms
     
 def makeTimeStats(experiment):
@@ -41,16 +40,22 @@ def makeTimeStats(experiment):
         experiment = experiments[i-1]
         while True:
             outputFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
-            print "Reading from ", outputFile
             if(os.path.exists(outputFile)):
+                print "Reading from ", outputFile
                 with open(statFile, 'a') as the_file:
                     timeInfo = os.popen("tail -3 " + outputFile).readlines()
-                    timeInfo = "".join(timeInfo).split("\n")
-                    timeInfo = "\t".join(timeInfo).split("\t")
-                    timeToMs(timeInfo[1])
-                    timeInfo = [timeInfo[1], timeInfo[3], timeInfo[5]]
-                    line = str(x) + "," + ",".join(timeInfo)
-                    #print line
+                    try:
+                        timeInfo = "".join(timeInfo).split("\n")
+                        timeInfo = "\t".join(timeInfo).split("\t")
+                        # print timeInfo
+                        ms1 = timeToMs(timeInfo[1])
+                        ms2 = timeToMs(timeInfo[3])
+                        ms3 = timeToMs(timeInfo[5])
+                        timeInfo = [str(ms1),str(ms2),str(ms3)]
+                        line = str(x) + "," + ",".join(timeInfo)
+                        #print line
+                    except IndexError as err:
+                        line = str(x) +',E,E,E'
                     the_file.write(line + "\n")
             else:
                 break;
