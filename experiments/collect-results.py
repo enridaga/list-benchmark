@@ -125,7 +125,7 @@ def makeStats(collection):
             else:
                 break;
             x += 1
-        results.append([collection[1][0],collection[1][1],collection[1][2], str(i), eprefix, rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
+        results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
         i += 1
         # Move to next query
     return results
@@ -148,12 +148,11 @@ except OSError:
 # LIST OF EXPERIMENTS (BACKEND+MODEL+SUITE) BEING EXECUTED
 fnames = glob.glob("results/*.output.*") 
 collectionIds = [re.sub(r'results/([^\.]+)\..*', r'\1', x) for x in fnames]
-
+collectionIds = set(collectionIds)
 # print experimentIds
 collections = tuple((element, element.split('-')) for element in collectionIds)
 for collection in collections:
     makeTimeStats(collection)
-
 
 with open(resultsFile, 'a') as res_file:
     headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
