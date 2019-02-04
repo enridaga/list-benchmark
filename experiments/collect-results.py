@@ -5,6 +5,8 @@ import os.path
 import glob
 import re
 from datetime import datetime
+from statistics import mean
+from statistics import pstdev
 ###################
 def timeToMs(t):
     # print t
@@ -16,32 +18,29 @@ def timeToMs(t):
         ms = (int(minutes) * 60 * 1000) + (int(seconds) * 1000) + int(milliseconds)
     except IndexError as err:
         print '- ERROR: ' + str(err)
-        # exit(1)
         ms = -1
     return ms
     
-def makeTimeStats(experiment):
+def makeTimeStats(collection):
     # Duration of each execution
-    repetitions = glob.glob('suite/' + experiment[0] + ".*.output.1")
-    print 'Building stats for:' + experiment[0]
-    fileOb = open("suite/" + experiment[1][2] + ".txt","r")
+    print 'Collecting time stats for collection:' + collection[0]
+    fileOb = open("suite/" + collection[1][2] + ".txt","r")
     experiments = fileOb.read().splitlines()
-    eprefix = experiment[0] + '.' + experiment[1][2] 
+    eprefix = collection[0] + '.' + collection[1][2] 
     i = 1
     while i <= len(experiments):
-        print "Experiment ", str(i), ": ", experiments[i-1]
+        print "Experiment", str(i), ":", experiments[i-1]
         statFile = "results/" + eprefix + ".stats." + str(i) + ".csv"
         try:
             os.remove(statFile)
         except OSError:
             pass
-        print "Writing to ", statFile
+        print "Experiment time stats", statFile
         x = 1
-        experiment = experiments[i-1]
         while True:
             outputFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
             if(os.path.exists(outputFile)):
-                print "Reading from ", outputFile
+                print "Execution", outputFile
                 with open(statFile, 'a') as the_file:
                     timeInfo = os.popen("tail -3 " + outputFile).readlines()
                     try:
@@ -61,22 +60,105 @@ def makeTimeStats(experiment):
                 break;
             x += 1
         i += 1
+    
+        
+def makeStats(collection):
+    # Duration of each execution
+    print 'Collecting stats for collection:' + collection[0]
+    fileOb = open("suite/" + collection[1][2] + ".txt","r")
+    experiments = fileOb.read().splitlines()
+    eprefix = collection[0] + '.' + collection[1][2] 
+    i = 1
+    results = []
+    while i <= len(experiments):
+        print "Experiment", str(i), ":", experiments[i-1]
+        timeStatFile = "results/" + eprefix + ".stats." + str(i) + ".csv"
+        print "Time stats file", timeStatFile
+        try:
+            trows = open(timeStatFile,"r")
+            rt_seq=[]
+            for trow in trows:
+                rt=int(trow.split(',')[1])
+                rt_seq.append(rt)
+            rt_mean = mean(rt_seq)
+            rt_pstdev = pstdev(rt_seq)
+        except ValueError as err:
+            print str(err)
+            rt_mean = -1
+            rt_pstdev = -1
 
+        # Collect data from executions
+        cpu_max = []
+        cpu_avg = []
+        rss_max = []
+        rss_avg = []
+        x = 1
+        while True:
+            monitorFile = "results/" + eprefix + ".monitor." + str(i) + "." + str(x)
+            if(os.path.exists(monitorFile)):
+                print "Monitor file", monitorFile
+                # Compute values for each execution
+                mrows = open(monitorFile,"r")
+                _cpu_max = -1
+                _cpu_values = []
+                _rss_max = -1
+                _rss_values = []                
+                for mrow in mrows:
+                    if mrow.startswith('#'):
+                        continue
+                    mrow_ = mrow.strip()
+                    mrow_ = re.split(" +",mrow_)
+                    # pid,%cpu,%mem,vsz,rss
+                    _cpu_val = float(mrow_[1])
+                    _cpu_values.append(_cpu_val)
+                    if _cpu_val > _cpu_max:
+                        _cpu_max = _cpu_val
+                    _rss_val = float(mrow_[4])
+                    _rss_values.append(_rss_val)
+                    if _rss_val > _rss_max:
+                        _rss_max = _rss_val
+                    # print mrow_
+                cpu_max.append(_cpu_max)
+                cpu_avg.append(mean(_cpu_values))
+                rss_max.append(_rss_max)
+                rss_avg.append(mean(_rss_values))
+            else:
+                break;
+            x += 1
+        results.append([collection[1][0],collection[1][1],collection[1][2], str(i), eprefix, rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
+        i += 1
+        # Move to next query
+    return results
 ####################
 
 #eprefix = sys.argv[1]
 #print 'eprefix:', eprefix
 print 'Argument List:', str(sys.argv)
-print "TODO!"
 # fileOb = open(eprefix,"r")
 # experiments = fileOb.read().splitlines()
-fnames = glob.glob("results/*.output.*") 
 
-experimentIds = [re.sub(r'results/([^\.]+)\..*', r'\1', x) for x in fnames]
+resultsFile = "collect-results.csv"
+try:
+    os.remove(resultsFile)
+except OSError:
+    pass
+
+# LIST OF EXPERIMENTS (BACKEND+MODEL+SUITE) BEING EXECUTED
+fnames = glob.glob("results/*.output.*") 
+collectionIds = [re.sub(r'results/([^\.]+)\..*', r'\1', x) for x in fnames]
 
 # print experimentIds
+collections = tuple((element, element.split('-')) for element in collectionIds)
+for collection in collections:
+    makeTimeStats(collection)
 
-experiments = tuple((element, element.split('-')) for element in experimentIds)
-for experiment in experiments:
-    makeTimeStats(experiment)
 
+with open(resultsFile, 'a') as res_file:
+    headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
+    line = ",".join(str(x) for x in headers)
+    res_file.write(line + "\n")
+    for collection in collections:
+        rows = makeStats(collection)
+        for row in rows:
+            line = ",".join(str(x) for x in row)
+            res_file.write(line + "\n")
