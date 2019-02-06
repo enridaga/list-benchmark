@@ -17,7 +17,7 @@ def timeToMs(t):
         milliseconds = t.split("m")[1].split('.')[1].replace('s','')
         ms = (int(minutes) * 60 * 1000) + (int(seconds) * 1000) + int(milliseconds)
     except IndexError as err:
-        print '- ERROR: ' + str(err)
+        print '[ERROR] ' + str(err)
         ms = -1
     return ms
     
@@ -38,11 +38,11 @@ def makeTimeStats(collection):
         print "Experiment time stats", statFile
         x = 1
         while True:
-            outputFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
-            if(os.path.exists(outputFile)):
-                print "Execution", outputFile
+            errorFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
+            if(os.path.exists(errorFile)):
+                print "Execution", errorFile
                 with open(statFile, 'a') as the_file:
-                    timeInfo = os.popen("tail -3 " + outputFile).readlines()
+                    timeInfo = os.popen("tail -3 " + errorFile).readlines()
                     try:
                         timeInfo = "".join(timeInfo).split("\n")
                         timeInfo = "\t".join(timeInfo).split("\t")
@@ -93,10 +93,20 @@ def makeStats(collection):
         rss_max = []
         rss_avg = []
         x = 1
+        isOK = True
         while True:
             monitorFile = "results/" + eprefix + ".monitor." + str(i) + "." + str(x)
             if(os.path.exists(monitorFile)):
-                print "Monitor file", monitorFile
+                outputFile = "results/" + eprefix + ".output." + str(i) + "." + str(x)
+                print "Output file", outputFile
+                print "Monitor file", monitorFile                                
+                # Check Query returned some output
+                output_as_string = open(outputFile, 'r').read()
+                if '<binding' not in output_as_string:
+                    # Experiment must return some output
+                    print "[ERROR] Empty result set!"
+                    isOK = False
+                    break
                 # Compute values for each execution
                 mrows = open(monitorFile,"r")
                 _cpu_max = -1
@@ -125,7 +135,10 @@ def makeStats(collection):
             else:
                 break;
             x += 1
-        results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
+        if isOK :
+            results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(isOK), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
+        else:
+            results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(isOK),'0','0','0','0','0','0','0','0','0','0'])
         i += 1
         # Move to next query
     return results
@@ -155,7 +168,7 @@ for collection in collections:
     makeTimeStats(collection)
 
 with open(resultsFile, 'a') as res_file:
-    headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
+    headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','RESULTS','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
     line = ",".join(str(x) for x in headers)
     res_file.write(line + "\n")
     for collection in collections:
