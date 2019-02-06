@@ -16,4 +16,6 @@ query=`cat $queryfile|setGraph`
 >&2 echo "-----------------------------------"
 query=`echo $query|encodeURIComponent`
 # TODO There is a problem, sometimes time is not written to the error file
-time curl -s -v "$endpoint" -d query="$query"
+time (
+	curl -s -v "$endpoint" -d query="$query"
+)
