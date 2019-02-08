@@ -9,7 +9,7 @@ export QUERY_ENDPOINT=http://localhost:8890/sparql
 for file in $(ls -Sr ../data/*)
 do
     echo "Performing tests on data $file"
-	# there should be only files anyway
+    # there should be only files anyway
     if [[ -f $file ]]; then
 		data=$(basename "${file%.*}")
 		export QUERY_GRAPH="data:$data"
