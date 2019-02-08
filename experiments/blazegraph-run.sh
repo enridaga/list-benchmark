@@ -18,6 +18,6 @@ do
 		eid=blazegraph-$data
 		suite=${arr[1]}.txt
 		# script PID experimentID suite times interval timeout
-		./run-experiment.sh $server_pid $eid suite/$suite 1 5 300
+		./run-experiment.sh $server_pid $eid suite/$suite 10 5 300
     fi
 done
