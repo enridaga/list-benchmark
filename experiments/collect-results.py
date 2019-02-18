@@ -24,6 +24,7 @@ def timeToMs(t):
 def makeTimeStats(collection):
     # Duration of each execution
     print 'Collecting time stats for collection:' + collection[0]
+    #print collection
     fileOb = open("suite/" + collection[1][2] + ".txt","r")
     experiments = fileOb.read().splitlines()
     eprefix = collection[0] + '.' + collection[1][2] 
@@ -74,6 +75,9 @@ def makeStats(collection):
         print "Experiment", str(i), ":", experiments[i-1]
         timeStatFile = "results/" + eprefix + ".stats." + str(i) + ".csv"
         print "Time stats file", timeStatFile
+        if not os.path.exists(timeStatFile):
+            print "[ERROR] Time stats file does not exist! Skipping."
+            break
         try:
             trows = open(timeStatFile,"r")
             rt_seq=[]
@@ -93,52 +97,54 @@ def makeStats(collection):
         rss_max = []
         rss_avg = []
         x = 1
-        isOK = True
+        broken = 0
         while True:
             monitorFile = "results/" + eprefix + ".monitor." + str(i) + "." + str(x)
-            if(os.path.exists(monitorFile)):
+            if not os.path.exists(monitorFile):
+                break
+            else:
                 outputFile = "results/" + eprefix + ".output." + str(i) + "." + str(x)
                 print "Output file", outputFile
                 print "Monitor file", monitorFile                                
                 # Check Query returned some output
                 output_as_string = open(outputFile, 'r').read()
-                if '<binding' not in output_as_string:
-                    # Experiment must return some output
+                if '<binding' in output_as_string:
+                    # Compute values for each execution
+                    mrows = open(monitorFile,"r")
+                    _cpu_max = -1
+                    _cpu_values = []
+                    _rss_max = -1
+                    _rss_values = []                
+                    for mrow in mrows:
+                        if mrow.startswith('#'):
+                            continue
+                        mrow_ = mrow.strip()
+                        mrow_ = re.split(" +",mrow_)
+                        # pid,%cpu,%mem,vsz,rss
+                        _cpu_val = float(mrow_[1])
+                        _cpu_values.append(_cpu_val)
+                        if _cpu_val > _cpu_max:
+                            _cpu_max = _cpu_val
+                        _rss_val = float(mrow_[4])
+                        _rss_values.append(_rss_val)
+                        if _rss_val > _rss_max:
+                            _rss_max = _rss_val
+                        # print mrow_
+                    cpu_max.append(_cpu_max)
+                    cpu_avg.append(mean(_cpu_values))
+                    rss_max.append(_rss_max)
+                    rss_avg.append(mean(_rss_values))
+                else:
                     print "[ERROR] Empty result set!"
-                    isOK = False
-                    break
-                # Compute values for each execution
-                mrows = open(monitorFile,"r")
-                _cpu_max = -1
-                _cpu_values = []
-                _rss_max = -1
-                _rss_values = []                
-                for mrow in mrows:
-                    if mrow.startswith('#'):
-                        continue
-                    mrow_ = mrow.strip()
-                    mrow_ = re.split(" +",mrow_)
-                    # pid,%cpu,%mem,vsz,rss
-                    _cpu_val = float(mrow_[1])
-                    _cpu_values.append(_cpu_val)
-                    if _cpu_val > _cpu_max:
-                        _cpu_max = _cpu_val
-                    _rss_val = float(mrow_[4])
-                    _rss_values.append(_rss_val)
-                    if _rss_val > _rss_max:
-                        _rss_max = _rss_val
-                    # print mrow_
-                cpu_max.append(_cpu_max)
-                cpu_avg.append(mean(_cpu_values))
-                rss_max.append(_rss_max)
-                rss_avg.append(mean(_rss_values))
-            else:
-                break;
+                    broken += 1
+            if broken > 0:
+                # Experiment must return some output
+                cpu_max.append(0)
+                cpu_avg.append(0)
+                rss_max.append(0)
+                rss_avg.append(0)
             x += 1
-        if isOK :
-            results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(isOK), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
-        else:
-            results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(isOK),'0','0','0','0','0','0','0','0','0','0'])
+        results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(broken), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
         i += 1
         # Move to next query
     return results
@@ -162,13 +168,14 @@ except OSError:
 fnames = glob.glob("results/*.output.*") 
 collectionIds = [re.sub(r'results/([^\.]+)\..*', r'\1', x) for x in fnames]
 collectionIds = set(collectionIds)
-# print experimentIds
 collections = tuple((element, element.split('-')) for element in collectionIds)
+# We first prepare time statistics from all executions
 for collection in collections:
     makeTimeStats(collection)
 
+# exit()
 with open(resultsFile, 'a') as res_file:
-    headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','RESULTS','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
+    headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','BROKEN','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
     line = ",".join(str(x) for x in headers)
     res_file.write(line + "\n")
     for collection in collections:
