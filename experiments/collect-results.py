@@ -76,7 +76,7 @@ def makeStats(collection):
         timeStatFile = "results/" + eprefix + ".stats." + str(i) + ".csv"
         print "Time stats file", timeStatFile
         if not os.path.exists(timeStatFile):
-            print "[ERROR] Time stats file does not exist! Skipping."
+            print "[ERROR] Time stats file does not exist! Skipping", eprefix
             break
         try:
             trows = open(timeStatFile,"r")
@@ -103,9 +103,10 @@ def makeStats(collection):
             if not os.path.exists(monitorFile):
                 break
             else:
+                print "Execution " + str(x) 
                 outputFile = "results/" + eprefix + ".output." + str(i) + "." + str(x)
-                print "Output file", outputFile
-                print "Monitor file", monitorFile                                
+                #print "Output file", outputFile
+                #print "Monitor file", monitorFile                                
                 # Check Query returned some output
                 output_as_string = open(outputFile, 'r').read()
                 if '<binding' in output_as_string:
@@ -135,7 +136,7 @@ def makeStats(collection):
                     rss_max.append(_rss_max)
                     rss_avg.append(mean(_rss_values))
                 else:
-                    print "[ERROR] Empty result set!"
+                    print "[ERROR] Empty result set!", outputFile
                     broken += 1
             if broken > 0:
                 # Experiment must return some output
@@ -143,8 +144,11 @@ def makeStats(collection):
                 cpu_avg.append(0)
                 rss_max.append(0)
                 rss_avg.append(0)
-            x += 1
-        results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(broken), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
+            x += 10
+        # Remove the k from the end
+        sz = collection[1][1]
+        sz = sz[:-len(sz)]
+        results.append([collection[1][0],sz,collection[1][2], eprefix, str(i), str(broken), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
         i += 1
         # Move to next query
     return results
