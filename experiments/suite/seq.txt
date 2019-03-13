@@ -1,1 +1,3 @@
-./query-endpoint.sh ../queries/P1-select2-seq.sparql
+./query-endpoint.sh ../queries/ALL-SEQ.sparql
+./query-endpoint.sh ../queries/A950-SEQ.sparql
+./query-endpoint.sh ../queries/W100_850-SEQ.sparql
