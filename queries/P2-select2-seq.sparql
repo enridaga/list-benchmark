@@ -12,9 +12,11 @@ SELECT
 	?event
 	?attribute
 	?value
-FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+FROM <list:benchmark:1k:seq>
 WHERE {
    ?track a midi:Track .
    ?track midi:hasEvents [ ?seq ?event ] .
    BIND (xsd:int(SUBSTR(str(?seq), 45)) AS ?index)
 } ORDER BY ?index
+LIMIT %LIMIT% # Set to 1 for random access
+OFFSET %OFFSET%

@@ -8,13 +8,10 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT
-	?track
 	?event
-	?attribute
-	?value
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
-   ?track a midi:Track .
-   ?track midi:hasEvents [ ?seq ?event ] .
-   BIND (xsd:int(SUBSTR(str(?seq), 45)) AS ?index)
-} ORDER BY ?index
+   [] a midi:Track ;
+         midi:hasEvent ?event .
+   ?event midi:absoluteTime ?time .
+} ORDER BY ?time
