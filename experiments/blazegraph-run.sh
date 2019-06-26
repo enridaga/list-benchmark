@@ -1,12 +1,13 @@
 #!/bin/bash
 
 [ -z "$1" ] && echo "Specify Blazegraph PID" && exit 1
+[ -z "$2" ] && grep=".ttl" || grep="$2" 
 
 server_pid=$1
 
 # Run experiments
 export QUERY_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
-for file in $(ls -Sr ../data/*)
+for file in $(ls -Sr ../data/*|grep "$grep")
 do
     echo "Performing tests on data $file"
 	# there should be only files anyway

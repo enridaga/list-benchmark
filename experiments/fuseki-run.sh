@@ -1,12 +1,12 @@
 #!/bin/bash
 
 [ -z "$1" ] && echo "Specify PID" && exit 1
-
+[ -z "$3" ] && grep=".ttl" || grep="$3" 
 fuseki_pid=$1
 prefix=${2:-fuseki}
 # Run experiments
 export QUERY_ENDPOINT=http://localhost:3030/ds/sparql
-for file in $(ls -Sr ../data/*)
+for file in $(ls -Sr ../data/*|grep "$grep")
 do
     echo "Performing tests on data $file"
     # there should be only files anyway

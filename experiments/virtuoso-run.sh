@@ -1,12 +1,13 @@
 #!/bin/bash
 
-[ -z "$1" ] && echo "Specify Virtuoso PID" && exit 1
+[ -z "$1" ] && echo "Specify Virtuoso PID" && exit 1 
+[ -z "$2" ] && grep=".ttl" || grep="$2" 
 
 virtuoso_pid=$1
 
 # Run experiments
 export QUERY_ENDPOINT=http://localhost:8890/sparql
-for file in $(ls -Sr ../data/*)
+for file in $(ls -Sr ../data/*|grep "$grep")
 do
     echo "Performing tests on data $file"
     # there should be only files anyway
