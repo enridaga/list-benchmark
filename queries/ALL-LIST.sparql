@@ -8,11 +8,14 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT
-	DISTINCT ?event
+	?event (count(?mid) as ?i)
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
    [] a midi:Track ;
         midi:hasEvents ?events .
-   ?events rdf:rest*/rdf:first ?event .
-	 BIND (xsd:integer(SUBSTR(str(?event), 77)) AS ?id)
-} ORDER BY ?id
+   ?events rdf:rest* ?mid .
+   ?mid rdf:rest* ?elt .
+   ?elt rdf:first ?event
+} 
+GROUP BY ?event
+ORDER BY ?i
