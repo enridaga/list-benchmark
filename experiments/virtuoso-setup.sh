@@ -2,7 +2,7 @@
 
 
 # Prepare data
-for file in ../data/*
+for file in ../data/*.ttl
 do
 	# there should be only files anyway
     if [[ -f $file ]]; then

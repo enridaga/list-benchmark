@@ -5,7 +5,7 @@
 home=$1
 properties=$(realpath blazegraph.properties)
 # Prepare data
-for file in ../data/*
+for file in ../data/*.ttl
 do 
     echo "Loading $file"
     # there should be only files anyway
