@@ -14,7 +14,7 @@ function setTrack {
 }
 
 queryfile=$1
-endpoint=$QUERY_ENDPOINT
+endpoint=$UPDATE_ENDPOINT
 query=`cat $queryfile|setGraph|setTrack`
 >&2 echo "-----------------------------------"
 >&2 echo "Querying $endpoint, file $queryfile"
@@ -22,5 +22,5 @@ query=`cat $queryfile|setGraph|setTrack`
 >&2 echo "-----------------------------------"
 query=`echo $query|encodeURIComponent`
 time (
-	curl -s -v "$endpoint" -d query="$query" -H "Accept:application/xml,application/sparql-results+xml,application/rdf+xml"
+	curl -s -v "$endpoint" -d update="$query" -H "Accept:application/xml,application/sparql-results+xml,application/rdf+xml"
 )

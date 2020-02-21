@@ -1,3 +1,0 @@
-./query-endpoint.sh ../queries/ALL-LIST.sparql
-./query-endpoint.sh ../queries/A950-LIST.sparql
-./query-endpoint.sh ../queries/W100_850-LIST.sparql

@@ -18,7 +18,7 @@ do
 		eid=$prefix-$data
 		suite=${arr[1]}.txt
 		# script PID experimentID suite times interval timeout
-		#echo $eid
+		# echo $eid
 		./run-experiment.sh $fuseki_pid $eid suite/$suite 10 5 300
     fi
 done
