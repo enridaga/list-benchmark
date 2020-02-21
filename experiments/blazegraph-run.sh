@@ -7,6 +7,7 @@ server_pid=$1
 
 # Run experiments
 export QUERY_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
+export UPDATE_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
 for file in $(ls -Sr ../data/*.ttl|grep "$grep")
 do
     echo "Performing tests on data $file"
@@ -24,6 +25,6 @@ do
 		# script PID experimentID suite times interval timeout
 		#echo "./run-experiment.sh $server_pid $eid suite/$suite 10 5 300"
 		#./run-experiment.sh $server_pid $eid suite/$suite 10 5 300
-		./run-experiment.sh $server_pid $eid suite/$suite 1 5 60
+		./run-experiment.sh $server_pid $eid suite/$suite 10 5 300
     fi
 done
