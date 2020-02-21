@@ -28,8 +28,8 @@ function monitor {
 }
 
 [ -z "$1" ] && echo "Missing arg 1: PID to monitor!" && exit 1
-[ -z "$2" ] && echo "Missing arg 2: experiment ID!" && exit 1
-[ -z "$3" ] && echo "Missing arg 3: suite to execute!" && exit 1
+[ -z "$2" ] && echo "Missing arg 2: experiment ID (e.g. blazegraph, fuseki-mem)!" && exit 1
+[ -z "$3" ] && echo "Missing arg 3: suite to execute (e.g. suite/seq.txt)!" && exit 1
 
 mpid=$1
 

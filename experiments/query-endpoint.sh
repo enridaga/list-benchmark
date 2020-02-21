@@ -7,9 +7,15 @@ function setGraph {
 	graph=$QUERY_GRAPH
 	sed "s,$ghost,$graph,g"
 }
+function setTrack {
+	ghost="http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00"
+	track=$QUERY_TRACK
+	sed "s,$ghost,$track,g"	
+}
+
 queryfile=$1
 endpoint=$QUERY_ENDPOINT
-query=`cat $queryfile|setGraph`
+query=`cat $queryfile|setGraph|setTrack`
 >&2 echo "-----------------------------------"
 >&2 echo "Querying $endpoint, file $queryfile"
 >&2 echo "Query: $query"
