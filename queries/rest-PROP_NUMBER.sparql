@@ -1,0 +1,18 @@
+prefix midi: <http://purl.org/midi-ld/midi#>
+prefix midi-note: <http://purl.org/midi-ld/notes/>
+prefix midi-prog: <http://purl.org/midi-ld/programs/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+	?event
+FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WHERE {
+   <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
+         midi:hasEvent ?event .
+   ?event midi:absoluteTick ?tick
+   FILTER (?tick > 1)
+} ORDER BY ?tick
