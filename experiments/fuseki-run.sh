@@ -17,6 +17,8 @@ do
 		echo "Graph: "$QUERY_GRAPH
 		export QUERY_TRACK=$(./get_query_track.sh $data)
 		echo "Track: "$QUERY_TRACK
+		export QUERY_RANDOM=$(./get_query_random_number.sh $data)
+		echo "Random: "$QUERY_RANDOM
 		line="${data//-/$IFS}"
 		arr=($line)
 		eid=$prefix-$data

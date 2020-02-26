@@ -7,7 +7,7 @@ virtuoso_pid=$1
 
 # Run experiments
 export QUERY_ENDPOINT=http://localhost:8890/sparql
-export UPDATE_ENDPOINT=http://localhost:8890/sparql
+export UPDATE_ENDPOINT=http://localhost:8890/sparql-graph-crud-auth
 for file in $(ls -Sr ../data/*.ttl|grep "$grep")
 do
     echo "Performing tests on data $file"
@@ -18,6 +18,8 @@ do
 		echo "Graph: "$QUERY_GRAPH
 		export QUERY_TRACK=$(./get_query_track.sh $data)
 		echo "Track: "$QUERY_TRACK
+		export QUERY_RANDOM=$(./get_query_random_number.sh $data)
+		echo "Random: "$QUERY_RANDOM
 		line="${data//-/$IFS}"
 		arr=($line)
 		eid=virtuoso-$data

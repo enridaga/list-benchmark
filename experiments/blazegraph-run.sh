@@ -18,6 +18,8 @@ do
 		echo "Graph: "$QUERY_GRAPH
 		export QUERY_TRACK=$(./get_query_track.sh $data)
 		echo "Track: "$QUERY_TRACK
+		export QUERY_RANDOM=$(./get_data_random_number.sh $data)
+		echo "Random: "$QUERY_RANDOM
 		line="${data//-/$IFS}"
 		arr=($line)
 		eid=blazegraph-$data
@@ -25,6 +27,6 @@ do
 		# script PID experimentID suite times interval timeout
 		#echo "./run-experiment.sh $server_pid $eid suite/$suite 10 5 300"
 		#./run-experiment.sh $server_pid $eid suite/$suite 10 5 300
-		./run-experiment.sh $server_pid $eid suite/$suite 10 5 300
+		./run-experiment.sh $server_pid $eid suite/$suite 1 1 5
     fi
 done

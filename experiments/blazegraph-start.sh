@@ -4,4 +4,4 @@
 home=$1
 properties=$(realpath blazegraph.properties)
 cd $home
-java -server -Xmx2G -jar -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 blazegraph.jar
+java -server -Xmx4G -jar -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 blazegraph.jar
