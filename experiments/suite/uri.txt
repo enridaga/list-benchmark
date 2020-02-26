@@ -1,0 +1,9 @@
+./query-endpoint.sh ../queries/first-URI.sparql
+./query-endpoint.sh ../queries/get-URI.sparql
+./query-endpoint.sh ../queries/rest-URI.sparql
+./query-endpoint.sh ../queries/prev-URI.sparql
+./update-endpoint.sh ../queries/append-URI.sparql
+./update-endpoint.sh ../queries/append_front-URI.sparql
+./update-endpoint.sh ../queries/popoff-URI.sparql
+./update-endpoint.sh ../queries/set-URI.sparql
+./update-endpoint.sh ../queries/remove_at-URI.sparql

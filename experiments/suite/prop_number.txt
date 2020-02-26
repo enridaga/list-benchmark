@@ -1,0 +1,9 @@
+./query-endpoint.sh ../queries/first-prop_number.sparql
+./query-endpoint.sh ../queries/get-prop_number.sparql
+./query-endpoint.sh ../queries/rest-prop_number.sparql
+./query-endpoint.sh ../queries/prev-prop_number.sparql
+./update-endpoint.sh ../queries/append-prop_number.sparql
+./update-endpoint.sh ../queries/append_front-prop_number.sparql
+./update-endpoint.sh ../queries/popoff-prop_number.sparql
+./update-endpoint.sh ../queries/set-prop_number.sparql
+./update-endpoint.sh ../queries/remove_at-prop_number.sparql
