@@ -6,7 +6,6 @@ prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-# 23789
 
 SELECT
 	?event
@@ -15,5 +14,7 @@ WHERE {
     <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
           midi:hasEvent ?event .
     ?event midi:absoluteTick ?tick .
-    FILTER (?tick < 23789)
+    FILTER (?tick < 23768)
 } ORDER BY ?tick
+
+# 23789
