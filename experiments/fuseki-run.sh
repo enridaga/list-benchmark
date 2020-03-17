@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source prepare_query_functions.sh
 [ -z "$1" ] && echo "Specify PID" && exit 1
 [ -z "$3" ] && grep=".ttl" || grep="$3" 
 fuseki_pid=$1
@@ -13,18 +13,14 @@ do
     # there should be only files anyway
     if [[ -f $file ]]; then
 		data=$(basename "${file%.*}")
-		export QUERY_GRAPH="data:$data"
-		echo "Graph: "$QUERY_GRAPH
-		export QUERY_TRACK=$(./get_query_track.sh $data)
-		echo "Track: "$QUERY_TRACK
-		export QUERY_RANDOM=$(./get_query_random_number.sh $data)
-		echo "Random: "$QUERY_RANDOM
+		prepareEnvironment $data
+ 		echo " > params: "$QUERY_GRAPH" "$QUERY_TRACK" "$QUERY_RANDOM
 		line="${data//-/$IFS}"
 		arr=($line)
 		eid=$prefix-$data
 		suite=${arr[1]}.txt
 		# script PID experimentID suite times interval timeout
-		# echo $eid
+		#echo "./run-experiment.sh $fuseki_pid $eid suite/$suite 10 5 300"
 		./run-experiment.sh $fuseki_pid $eid suite/$suite 10 5 300
     fi
 done

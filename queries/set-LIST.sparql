@@ -8,15 +8,30 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
-DELETE {
-	?events rdf:_23789 ?event
+DELETE
+{
+  	?elt rdf:first ?event .
 }
-INSERT
-	{ 
-		?events rdf:_23789 <http://example.org/set-event-23789> .
-	}
+INSERT {
+	?before rdf:first <http://example.org/set-event-23789>
+}
 WHERE {
-    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
-          midi:hasEvents ?events . 
-		  ?events rdf:_23789 ?event  .
+  	?elt rdf:first ?event .
+	{{
+		SELECT ?elt WHERE {{
+			SELECT
+				?elt (count(?mid) as ?i)
+			WHERE {
+			   <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
+			        midi:hasEvents ?events .
+			   ?events rdf:rest* ?mid .
+			   ?mid rdf:rest* ?elt .
+			} 
+			GROUP BY ?elt
+		}}
+		ORDER BY ?i
+		LIMIT 1
+		OFFSET 23789
+	}}
 }
+
