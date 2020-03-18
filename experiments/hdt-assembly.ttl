@@ -1,0 +1,122 @@
+# Licensed under the terms of http://www.apache.org/licenses/LICENSE-2.0
+
+## Basic Fuseki configuration file for HDT files.
+## 
+## Remember that you need hdt-java.jar and hdt-jena.jar when you launch Fuseki.
+##
+
+@prefix :        <#> .
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix hdt:      <http://www.rdfhdt.org/fuseki#> .
+
+[] rdf:type fuseki:Server ;
+   # Timeout - server-wide default: milliseconds.
+   # Format 1: "1000" -- 1 second timeout
+   # Format 2: "10000,60000" -- 10s timeout to first result, then 60s timeout for the rest of query.
+   # See java doc for ARQ.queryTimeout
+   # ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "10000" ] ;
+
+   # IMPORTANT: Import the HDT Assembler
+   ja:loadClass "org.rdfhdt.hdtjena.HDTGraphAssembler" ;
+
+   fuseki:services (
+     <#service1>
+   ) .
+
+# HDT Classes
+hdt:HDTGraph rdfs:subClassOf ja:Graph .
+
+## ---------------------------------------------------------------
+## Create a Read-Only Dataset composed by many RDF Graphs, each from an HDT File.
+
+<#service1> rdf:type fuseki:Service ;
+    fuseki:name                     "hdtservice" ;
+    fuseki:serviceQuery             "query" ;
+    fuseki:serviceUpdate             "update" ;
+    fuseki:serviceReadGraphStore    "get" ;
+    fuseki:dataset                   <#dataset> ;
+    .
+    
+<#dataset> rdf:type ja:RDFDataset ;
+    rdfs:label "Lists Benchmark Datasets" .
+####
+<#dataset> ja:namedGraph [ ja:graphName <data:120k-list> ; ja:graph <#120k-list> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:120k-prop_number> ; ja:graph <#120k-prop_number> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:120k-prop_time> ; ja:graph <#120k-prop_time> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:120k-seq> ; ja:graph <#120k-seq> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:120k-sop> ; ja:graph <#120k-sop> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:120k-uri> ; ja:graph <#120k-uri> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:1k-list> ; ja:graph <#1k-list> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:1k-prop_number> ; ja:graph <#1k-prop_number> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:1k-prop_time> ; ja:graph <#1k-prop_time> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:1k-seq> ; ja:graph <#1k-seq> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:1k-sop> ; ja:graph <#1k-sop> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:1k-uri> ; ja:graph <#1k-uri> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:30k-list> ; ja:graph <#30k-list> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:30k-prop_number> ; ja:graph <#30k-prop_number> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:30k-prop_time> ; ja:graph <#30k-prop_time> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:30k-seq> ; ja:graph <#30k-seq> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:30k-sop> ; ja:graph <#30k-sop> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:30k-uri> ; ja:graph <#30k-uri> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:60k-list> ; ja:graph <#60k-list> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:60k-prop_number> ; ja:graph <#60k-prop_number> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:60k-prop_time> ; ja:graph <#60k-prop_time> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:60k-seq> ; ja:graph <#60k-seq> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:60k-sop> ; ja:graph <#60k-sop> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:60k-uri> ; ja:graph <#60k-uri> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:90k-list> ; ja:graph <#90k-list> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:90k-prop_number> ; ja:graph <#90k-prop_number> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:90k-prop_time> ; ja:graph <#90k-prop_time> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:90k-seq> ; ja:graph <#90k-seq> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:90k-sop> ; ja:graph <#90k-sop> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:90k-uri> ; ja:graph <#90k-uri> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:ghostbusters-list> ; ja:graph <#ghostbusters-list> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:ghostbusters-prop_number> ; ja:graph <#ghostbusters-prop_number> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:ghostbusters-prop_time> ; ja:graph <#ghostbusters-prop_time> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:ghostbusters-seq> ; ja:graph <#ghostbusters-seq> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:ghostbusters-sop> ; ja:graph <#ghostbusters-sop> ] .
+<#dataset> ja:namedGraph [ ja:graphName <data:ghostbusters-uri> ; ja:graph <#ghostbusters-uri> ] .
+
+####
+<#120k-list> rdf:type hdt:HDTGraph ; hdt:fileName "../data/120k-list.ttl.hdt" ; hdt:keepInMemory "true" .
+<#120k-prop_number> rdf:type hdt:HDTGraph ; hdt:fileName "../data/120k-prop_number.ttl.hdt" ; hdt:keepInMemory "true" .
+<#120k-prop_time> rdf:type hdt:HDTGraph ; hdt:fileName "../data/120k-prop_time.ttl.hdt" ; hdt:keepInMemory "true" .
+<#120k-seq> rdf:type hdt:HDTGraph ; hdt:fileName "../data/120k-seq.ttl.hdt" ; hdt:keepInMemory "true" .
+<#120k-sop> rdf:type hdt:HDTGraph ; hdt:fileName "../data/120k-sop.ttl.hdt" ; hdt:keepInMemory "true" .
+<#120k-uri> rdf:type hdt:HDTGraph ; hdt:fileName "../data/120k-uri.ttl.hdt" ; hdt:keepInMemory "true" .
+<#1k-list> rdf:type hdt:HDTGraph ; hdt:fileName "../data/1k-list.ttl.hdt" ; hdt:keepInMemory "true" .
+<#1k-prop_number> rdf:type hdt:HDTGraph ; hdt:fileName "../data/1k-prop_number.ttl.hdt" ; hdt:keepInMemory "true" .
+<#1k-prop_time> rdf:type hdt:HDTGraph ; hdt:fileName "../data/1k-prop_time.ttl.hdt" ; hdt:keepInMemory "true" .
+<#1k-seq> rdf:type hdt:HDTGraph ; hdt:fileName "../data/1k-seq.ttl.hdt" ; hdt:keepInMemory "true" .
+<#1k-sop> rdf:type hdt:HDTGraph ; hdt:fileName "../data/1k-sop.ttl.hdt" ; hdt:keepInMemory "true" .
+<#1k-uri> rdf:type hdt:HDTGraph ; hdt:fileName "../data/1k-uri.ttl.hdt" ; hdt:keepInMemory "true" .
+<#30k-list> rdf:type hdt:HDTGraph ; hdt:fileName "../data/30k-list.ttl.hdt" ; hdt:keepInMemory "true" .
+<#30k-prop_number> rdf:type hdt:HDTGraph ; hdt:fileName "../data/30k-prop_number.ttl.hdt" ; hdt:keepInMemory "true" .
+<#30k-prop_time> rdf:type hdt:HDTGraph ; hdt:fileName "../data/30k-prop_time.ttl.hdt" ; hdt:keepInMemory "true" .
+<#30k-seq> rdf:type hdt:HDTGraph ; hdt:fileName "../data/30k-seq.ttl.hdt" ; hdt:keepInMemory "true" .
+<#30k-sop> rdf:type hdt:HDTGraph ; hdt:fileName "../data/30k-sop.ttl.hdt" ; hdt:keepInMemory "true" .
+<#30k-uri> rdf:type hdt:HDTGraph ; hdt:fileName "../data/30k-uri.ttl.hdt" ; hdt:keepInMemory "true" .
+<#60k-list> rdf:type hdt:HDTGraph ; hdt:fileName "../data/60k-list.ttl.hdt" ; hdt:keepInMemory "true" .
+<#60k-prop_number> rdf:type hdt:HDTGraph ; hdt:fileName "../data/60k-prop_number.ttl.hdt" ; hdt:keepInMemory "true" .
+<#60k-prop_time> rdf:type hdt:HDTGraph ; hdt:fileName "../data/60k-prop_time.ttl.hdt" ; hdt:keepInMemory "true" .
+<#60k-seq> rdf:type hdt:HDTGraph ; hdt:fileName "../data/60k-seq.ttl.hdt" ; hdt:keepInMemory "true" .
+<#60k-sop> rdf:type hdt:HDTGraph ; hdt:fileName "../data/60k-sop.ttl.hdt" ; hdt:keepInMemory "true" .
+<#60k-uri> rdf:type hdt:HDTGraph ; hdt:fileName "../data/60k-uri.ttl.hdt" ; hdt:keepInMemory "true" .
+<#90k-list> rdf:type hdt:HDTGraph ; hdt:fileName "../data/90k-list.ttl.hdt" ; hdt:keepInMemory "true" .
+<#90k-prop_number> rdf:type hdt:HDTGraph ; hdt:fileName "../data/90k-prop_number.ttl.hdt" ; hdt:keepInMemory "true" .
+<#90k-prop_time> rdf:type hdt:HDTGraph ; hdt:fileName "../data/90k-prop_time.ttl.hdt" ; hdt:keepInMemory "true" .
+<#90k-seq> rdf:type hdt:HDTGraph ; hdt:fileName "../data/90k-seq.ttl.hdt" ; hdt:keepInMemory "true" .
+<#90k-sop> rdf:type hdt:HDTGraph ; hdt:fileName "../data/90k-sop.ttl.hdt" ; hdt:keepInMemory "true" .
+<#90k-uri> rdf:type hdt:HDTGraph ; hdt:fileName "../data/90k-uri.ttl.hdt" ; hdt:keepInMemory "true" .
+<#ghostbusters-list> rdf:type hdt:HDTGraph ; hdt:fileName "../data/ghostbusters-list.ttl.hdt" ; hdt:keepInMemory "true" .
+<#ghostbusters-prop_number> rdf:type hdt:HDTGraph ; hdt:fileName "../data/ghostbusters-prop_number.ttl.hdt" ; hdt:keepInMemory "true" .
+<#ghostbusters-prop_time> rdf:type hdt:HDTGraph ; hdt:fileName "../data/ghostbusters-prop_time.ttl.hdt" ; hdt:keepInMemory "true" .
+<#ghostbusters-seq> rdf:type hdt:HDTGraph ; hdt:fileName "../data/ghostbusters-seq.ttl.hdt" ; hdt:keepInMemory "true" .
+<#ghostbusters-sop> rdf:type hdt:HDTGraph ; hdt:fileName "../data/ghostbusters-sop.ttl.hdt" ; hdt:keepInMemory "true" .
+<#ghostbusters-uri> rdf:type hdt:HDTGraph ; hdt:fileName "../data/ghostbusters-uri.ttl.hdt" ; hdt:keepInMemory "true" .
+
+

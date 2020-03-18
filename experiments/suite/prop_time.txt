@@ -1,0 +1,9 @@
+./query-endpoint.sh ../queries/first-prop_time.sparql
+./query-endpoint.sh ../queries/get-prop_time.sparql
+./query-endpoint.sh ../queries/rest-prop_time.sparql
+./query-endpoint.sh ../queries/prev-prop_time.sparql
+./update-endpoint.sh ../queries/append-prop_time.sparql
+./update-endpoint.sh ../queries/append_front-prop_time.sparql
+./update-endpoint.sh ../queries/popoff-prop_time.sparql
+./update-endpoint.sh ../queries/set-prop_time.sparql
+./update-endpoint.sh ../queries/remove_at-prop_time.sparql
