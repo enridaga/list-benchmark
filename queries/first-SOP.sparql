@@ -16,4 +16,4 @@ WHERE {
 		midi:hasEvent ?event .
 		FILTER NOT EXISTS { ?event sequence:follows [] }.
 } 
-}
+
