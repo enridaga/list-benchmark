@@ -1,0 +1,9 @@
+./query-endpoint.sh ../queries/first-SOP.sparql
+./query-endpoint.sh ../queries/get-SOP.sparql
+./query-endpoint.sh ../queries/rest-SOP.sparql
+./query-endpoint.sh ../queries/prev-SOP.sparql
+./update-endpoint.sh ../queries/append-SOP.sparql
+./update-endpoint.sh ../queries/append_front-SOP.sparql
+./update-endpoint.sh ../queries/popoff-SOP.sparql
+./update-endpoint.sh ../queries/set-SOP.sparql
+./update-endpoint.sh ../queries/remove_at-SOP.sparql
