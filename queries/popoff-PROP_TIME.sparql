@@ -7,24 +7,42 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073>
 DELETE {
-	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?first .
+	<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?first .
 }
 INSERT
 	{
 		?event midi:absoluteTime ?shifted .
 	}
-WHERE
-	{
-		BIND ((?time - (?secondTime - ?firstTime)) as ?shifted) .
-    {{SELECT ?event (MIN(?time) AS ?firstTime) (MAX(?time) AS ?secondTime) WHERE {
-  		GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> {
-  		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
-        midi:hasEvent ?event .
-        ?event midi:absoluteTime ?time .
-  		}} GROUP BY ?event ORDER BY ASC(?time) LIMIT 2
-      }}
-	}
+WHERE {
+{
+SELECT ?first ?firstTime ?second ?secondTime ?event ((?time - (?secondTime - ?firstTime)) as ?shifted) WHERE {
 
-#  GRAPH <data:30k-seq>
+GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
+		<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+			midi:hasEvent ?event .
+			?event midi:absoluteTime ?time .
+		}
+
+# First event and its time
+{SELECT (?event AS ?first) (MIN(?time) AS ?firstTime) WHERE {
+  GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+			midi:hasEvent ?event .
+			?event midi:absoluteTime ?time .
+  }
+} ORDER BY ASC(?time) LIMIT 1 OFFSET 0 }
+
+# Second event and its time
+{SELECT (?event AS ?second) (MIN(?time) AS ?secondTime) WHERE {
+  GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+			midi:hasEvent ?event .
+			?event midi:absoluteTime ?time .
+  }
+} ORDER BY ASC(?time) LIMIT 1 OFFSET 1 }
+
+}
+}
+}

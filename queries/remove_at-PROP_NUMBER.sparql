@@ -7,26 +7,21 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
-DELETE {
-	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?first .
-}
-INSERT
-	{
-		?event midi:absoluteTick ?shifted .
-	}
-WHERE
-	{
-		BIND ((?tick - (?secondTick - ?firstTick)) as ?shifted) .
-    {{SELECT ?event (MIN(?tick) AS ?firstTick) (MAX(?tick) AS ?secondTick) WHERE {
-  		GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> {
-  		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
-        midi:hasEvent ?event .
-        ?event midi:absoluteTick ?tick .
-  		} ORDER BY ASC(?tick) LIMIT 2 OFFSET 23789
-      }
-  	}}
-	}
+# Element to remove: 0
 
-#  GRAPH <data:30k-seq>
-# 23789
+WITH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073>
+DELETE {
+	<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?event .
+}
+WHERE {
+
+{
+SELECT ?event WHERE {
+  GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+			midi:hasEvent ?event .
+			?event midi:absoluteTick 0 .
+  }
+}
+}
+}
