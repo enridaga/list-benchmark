@@ -15,6 +15,7 @@ function monitor {
 	MPID=$3
 	errcho "Monitoring $MPID for experiment $process (will interrupt in $MS seconds)"
 	#trap "kill $process" EXIT
+	kill="pkill -TERM -P $process"
 	if [ ! -z "$process" ]
 	then
 	  SECONDS=0
@@ -23,7 +24,7 @@ function monitor {
 		ps -p $MPID -o pid,%cpu,%mem,vsz,rss|sed 1d
 		#sleep 0.2
 	  done
-	  [ "$SECONDS" -gt "$MS" ] && kill $process && errcho " Interrupted." || errcho " Done."
+	  [ "$SECONDS" -gt "$MS" ] && $kill && errcho " Interrupted." || errcho " Done."
 	fi
 }
 
