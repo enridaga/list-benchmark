@@ -4,12 +4,29 @@ function encodeURIComponent {
 }
 function prepareEnvironment {
 	data=$1
+	db=${2:-fuseki}
 	export QUERY_GRAPH="data:$data"
 #	echo "Graph: "$QUERY_GRAPH
 	export QUERY_TRACK=$(getQueryTrack $data)
 #	echo "Track: "$QUERY_TRACK
 	export QUERY_RANDOM=$(getDataRandomNumber $data)
 #	echo "Random: "$QUERY_RANDOM
+
+	if [[ "$2" = "blazegraph" ]]; then
+		export QUERY_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
+		export UPDATE_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
+	elif [[ "$2" = "virtuoso" ]]; then
+		export QUERY_ENDPOINT=http://localhost:8890/sparql
+		export UPDATE_ENDPOINT=http://localhost:8890/sparql-graph-crud-auth
+	elif [[ "$2" = "fuseki" ]]; then
+		export QUERY_ENDPOINT=http://localhost:3030/ds/sparql
+		export UPDATE_ENDPOINT=http://localhost:3030/ds/update
+	elif [[ "$2" = "hdt" ]]; then
+		export QUERY_ENDPOINT=http://localhost:3030/hdtservice/query
+		export UPDATE_ENDPOINT=http://localhost:3030/hdtservice/update
+	fi
+	
+	echo "Environment ($1, $2): graph:$QUERY_GRAPH track$QUERY_TRACK random:$QUERY_RANDOM endpoint:$QUERY_ENDPOINT update:$UPDATE_ENDPOINT"
 }
 function getQueryTrack {
 	h=""
