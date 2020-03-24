@@ -6,15 +6,13 @@ source prepare_query_functions.sh
 virtuoso_pid=$1
 
 # Run experiments
-export QUERY_ENDPOINT=http://localhost:8890/sparql
-export UPDATE_ENDPOINT=http://localhost:8890/sparql-graph-crud-auth
 for file in $(ls -Sr ../data/*.ttl|grep "$grep")
 do
     echo "Performing tests on data $file"
     # there should be only files anyway
     if [[ -f $file ]]; then
 		data=$(basename "${file%.*}")
-		prepareEnvironment $data
+		prepareEnvironment $data virtuoso
  		echo " > params: "$QUERY_GRAPH" "$QUERY_TRACK" "$QUERY_RANDOM
 		line="${data//-/$IFS}"
 		arr=($line)

@@ -5,15 +5,13 @@ source prepare_query_functions.sh
 fuseki_pid=$1
 prefix=hdt
 # Run experiments
-export QUERY_ENDPOINT=http://localhost:3030/hdtservice/query
-export UPDATE_ENDPOINT=http://localhost:3030/hdtservice/update
 for file in $(ls -Sr ../data/*.ttl|grep "$grep")
 do
     echo "Performing tests on data $file"
     # there should be only files anyway
     if [[ -f $file ]]; then
 		data=$(basename "${file%.*}")
-		prepareEnvironment $data
+		prepareEnvironment $data hdt
  		echo " > params: "$QUERY_GRAPH" "$QUERY_TRACK" "$QUERY_RANDOM
 		line="${data//-/$IFS}"
 		arr=($line)
