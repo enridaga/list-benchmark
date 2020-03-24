@@ -66,8 +66,8 @@ do
     sleep $interval
     exec 1<&-
     exec 1<>$result.monitor.$count.$a
-    errcho "$count $a - $experiment"
-    echo "#$count #$a - $experiment"
+    errcho "$count $a - $experiment - $experimentID - $suite"
+    echo "#$count #$a - $experiment - $experimentID - $suite"
     $experiment > $result.output.$count.$a 2>$result.error.$count.$a &
 	epid=$!
     monitor $epid $interrupt $mpid
