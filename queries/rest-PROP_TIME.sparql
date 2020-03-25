@@ -13,6 +13,6 @@ FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
          midi:hasEvent ?event .
-   ?event midi:absoluteTime ?time
+   ?event prov:generatedAtTime ?time
    FILTER (?time > 1)
 } ORDER BY ?time

@@ -20,7 +20,7 @@ SELECT ?event WHERE {
   GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
     <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
 			midi:hasEvent ?event .
-			?event midi:absoluteTick 0 .
+			?event midi:id 0 .
   }
 }
 }
