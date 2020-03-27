@@ -17,7 +17,7 @@ function prepareEnvironment {
 		export UPDATE_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
 	elif [[ "$2" = "virtuoso" ]]; then
 		export QUERY_ENDPOINT=http://localhost:8890/sparql
-		export UPDATE_ENDPOINT=http://localhost:8890/sparql-graph-crud-auth
+		export UPDATE_ENDPOINT=http://localhost:8890/sparql
 	elif [[ "$2" = "fuseki" ]]; then
 		export QUERY_ENDPOINT=http://localhost:3030/ds/sparql
 		export UPDATE_ENDPOINT=http://localhost:3030/ds/update
