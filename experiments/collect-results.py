@@ -105,11 +105,17 @@ def makeStats(collection):
             else:
                 print "> execution ", eprefix, ' ', str(x) 
                 outputFile = "results/" + eprefix + ".output." + str(i) + "." + str(x)
+                outerrFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
                 #print "Output file", outputFile
                 #print "Monitor file", monitorFile                                
                 # Check Query returned some output
                 output_as_string = open(outputFile, 'r').read()
-                if '<binding' in output_as_string:
+                error_as_string = open(outerrFile, 'r').read()
+                #
+                if not '< HTTP/1.1 200' in error_as_string:
+                    print "[ERROR] HTTP != 200", outputFile
+                    broken += 1
+                elif ( '<binding' in output_as_string or 'COMMIT' in output_as_string or 'Success' in output_as_string):
                     # Compute values for each execution
                     mrows = open(monitorFile,"r")
                     _cpu_max = -1
@@ -136,7 +142,7 @@ def makeStats(collection):
                     rss_max.append(_rss_max)
                     rss_avg.append(mean(_rss_values))
                 else:
-                    print "[ERROR] Empty result set!", outputFile
+                    print "[ERROR] Wrong result set!", outputFile
                     broken += 1
             if broken > 0:
                 # Experiment must return some output
