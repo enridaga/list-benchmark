@@ -21,7 +21,10 @@ function prepareEnvironment {
 	elif [[ "$2" = "fuseki" ]]; then
 		export QUERY_ENDPOINT=http://localhost:3030/ds/sparql
 		export UPDATE_ENDPOINT=http://localhost:3030/ds/update
-	elif [[ "$2" = "hdt" ]]; then
+	 elif [[ "$2" = "fuseki_mem" ]]; then
+                export QUERY_ENDPOINT=http://localhost:3030/ds/sparql
+                export UPDATE_ENDPOINT=http://localhost:3030/ds/update
+	elif [[ "$2" = "fuseki_hdt" ]]; then
 		export QUERY_ENDPOINT=http://localhost:3030/hdtservice/query
 		export UPDATE_ENDPOINT=http://localhost:3030/hdtservice/update
 	fi
