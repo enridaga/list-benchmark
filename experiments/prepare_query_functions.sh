@@ -33,8 +33,14 @@ function prepareEnvironment {
 }
 function getQueryTrack {
 	h=""
-	if [[ "$1" =~ ^1k ]]; then
+	if [[ "$1" =~ ^500k ]]; then
+		h=2cd69189bac4d80794712e72163e41ca
+	elif [[ "$1" =~ ^1k ]]; then
 		h=8cf9897535d79e68c33a3076aa06d073
+	elif [[ "$1" =~ ^2k ]]; then
+		h=5852cf759bfec96f87ca413bbe5675a3
+	elif [[ "$1" =~ ^3k ]]; then
+		h=40720ece4674c452f23ffc201c8e09b4
 	elif [[ "$1" =~ ^5k ]]; then
 		h=0e9cfde5c7dadfed841afac9392756f0
 	elif [[ "$1" =~ ^10k ]]; then
@@ -55,8 +61,14 @@ function getQueryTrack {
 }
 function getDataRandomNumber {
 	h=""
-	if [[ "$1" =~ ^1k ]]; then
+	if [[ "$1" =~ ^500k ]]; then
+		h=0332
+	elif [[ "$1" =~ ^1k ]]; then
 		h=0657
+	elif [[ "$1" =~ ^2k ]]; then
+		h=1222
+	elif [[ "$1" =~ ^3k ]]; then
+		h=2472
 	elif [[ "$1" =~ ^5k ]]; then
 		h=3789
 	elif [[ "$1" =~ ^10k ]]; then
