@@ -99,7 +99,7 @@ function setTrack {
 }
 function setOffset {
 	ghost="OFFSET 23789"
-	random=$QUERY_RANDOM
+	random=${QUERY_RANDOM#0}
 	random="OFFSET $(($random-1))"
 	sed "s,$ghost,$random,g"
 }
