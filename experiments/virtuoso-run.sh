@@ -6,7 +6,7 @@ source prepare_query_functions.sh
 virtuoso_pid=$1
 
 # Run experiments
-for file in $(ls -Sr ../data/*.ttl|grep "$grep")
+for file in $(ls -Sr ../data/*.ttl|grep -E "$grep")
 do
     echo "Performing tests on data $file"
     # there should be only files anyway

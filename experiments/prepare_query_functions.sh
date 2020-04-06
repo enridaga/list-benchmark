@@ -29,12 +29,18 @@ function prepareEnvironment {
 		export UPDATE_ENDPOINT=http://localhost:3030/hdtservice/update
 	fi
 	
-	echo "Environment ($1, $2): graph:$QUERY_GRAPH track$QUERY_TRACK random:$QUERY_RANDOM endpoint:$QUERY_ENDPOINT update:$UPDATE_ENDPOINT"
+	#echo "Environment ($1, $2): graph:$QUERY_GRAPH track:$QUERY_TRACK random:$QUERY_RANDOM endpoint:$QUERY_ENDPOINT update:$UPDATE_ENDPOINT"
 }
 function getQueryTrack {
 	h=""
 	if [[ "$1" =~ ^1k ]]; then
 		h=8cf9897535d79e68c33a3076aa06d073
+	elif [[ "$1" =~ ^5k ]]; then
+		h=0e9cfde5c7dadfed841afac9392756f0
+	elif [[ "$1" =~ ^10k ]]; then
+		h=b1e7f60beea64ba369606b2d2fda5d1b
+	elif [[ "$1" =~ ^15k ]]; then		
+		h=9466cde331fa183bd10f1426cb6db6cd
 	elif [[ "$1" =~ ^30k ]]; then
 		h=2473e18eec6cc55b82c5dddab3bea353
 	elif [[ "$1" =~ ^60k ]]; then
@@ -51,6 +57,12 @@ function getDataRandomNumber {
 	h=""
 	if [[ "$1" =~ ^1k ]]; then
 		h=0657
+	elif [[ "$1" =~ ^5k ]]; then
+		h=3789
+	elif [[ "$1" =~ ^10k ]]; then
+		h=7322
+	elif [[ "$1" =~ ^15k ]]; then
+		h=12328
 	elif [[ "$1" =~ ^30k ]]; then
 		h=19432
 	elif [[ "$1" =~ ^60k ]]; then
