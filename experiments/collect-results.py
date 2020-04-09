@@ -153,7 +153,7 @@ def makeStats(collection):
             x += 1
         
         # If any broken, null time stats
-        if x > 1:
+        if broken > 1:
             rt_mean = "E"
             rt_pstdev = "E"
             
