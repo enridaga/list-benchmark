@@ -151,6 +151,12 @@ def makeStats(collection):
                 rss_max.append(0)
                 rss_avg.append(0)
             x += 1
+        
+        # If any broken, null time stats
+        if x > 1:
+            rt_mean = "E"
+            rt_pstdev = "E"
+            
         results.append([collection[1][0],collection[1][1],collection[1][2], eprefix, str(i), str(broken), rt_mean, rt_pstdev, mean(cpu_max),pstdev(cpu_max),mean(cpu_avg),pstdev(cpu_avg),mean(rss_max),pstdev(rss_max),mean(rss_avg),pstdev(rss_avg)])
         i += 1
         # Move to next query
