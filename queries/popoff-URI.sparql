@@ -23,6 +23,7 @@ INSERT
 	}
 WHERE 
 	{ 
+		BIND (<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event0000> as ?popthis) .
 		OPTIONAL { ?popthis ?p1 ?o1 }
 		OPTIONAL { ?olduri ?p ?o }
 		{{
@@ -34,6 +35,5 @@ WHERE
 			FILTER (?index > 0) .
 		}	
 		}} .
-		BIND (<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event0000> as ?popthis)
 	}
 
