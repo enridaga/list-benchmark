@@ -1,0 +1,6 @@
+SELECT ?X (count(?task) as ?T)
+FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> 
+WHERE {
+	?X a <http://data.open.ac.uk/musow/ontology/type/Collection> ;
+	<http://data.open.ac.uk/musow/ontology/situation/task> ?task
+} GROUP BY ?X
