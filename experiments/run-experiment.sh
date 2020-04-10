@@ -45,6 +45,7 @@ suite=${3}
 times=${4:-1}
 interval=${5:-5}
 interrupt=${6:-300} # almost 5 minutes
+doonly=($7)
 result="results/$experimentID."$(basename "${suite%.*}")
 
 [[ -d results ]] || mkdir results
@@ -57,10 +58,23 @@ Wait $interval seconds between each run \n\
 Timeout: $interrupt seconds \n\
 Writing to $result*\n"
 
+doall=true
+if [ ${#doonly[@]} -eq 0 ]; then
+        echo "Doing all experiments in suite"
+else
+        echo "Doing experiments: "$7
+	doall=false
+fi
+
 count=0
 while IFS= read -r experiment
 do
   count=$((count+1))
+
+  if [[ ( ! "$doall" = true ) && ( ! " ${doonly[@]} " =~ " ${count} " ) ]]; then
+     continue
+  fi
+
   if [ ! -z "$experiment" ]; then
   for a in `seq $times`
   do
