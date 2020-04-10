@@ -1,5 +1,5 @@
 #!/bin/bash
-isql=/data-tmp/virtuoso/virtuoso-opensource/bin/isql
+isql=/data/databases/virtuoso/virtuoso-opensource/bin/isql
 endpoint=http://localhost:8890/sparql-graph-crud-auth
 graph=$2
 file=$1

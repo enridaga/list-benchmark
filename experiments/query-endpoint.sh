@@ -10,5 +10,5 @@ query=`cat $queryfile|prepareQuery`
 >&2 echo "-----------------------------------"
 query=`echo $query|encodeURIComponent`
 time (
-	curl -s -v "$endpoint" -d query="$query" -H "Accept:application/xml,application/sparql-results+xml,application/rdf+xml"
+	curl --connect-timeout 300 -m 300 -s -v "$endpoint" -d query="$query" -H "Accept:application/xml,application/sparql-results+xml,application/rdf+xml"
 )

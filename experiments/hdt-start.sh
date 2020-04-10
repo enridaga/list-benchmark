@@ -9,4 +9,4 @@ CP=$( echo $CP | sed 's/ /:/g' )
 export CLASSPATH=".:$CP:$CLASSPATH"
 #echo $CLASSPATH
 assembly="hdt-assembly.ttl"
-java -server -Xmx4G org.rdfhdt.hdt.fuseki.FusekiHDTCmd --pages=$BASE/pages --config="$assembly" /dataset
+java -server -Xmx12G org.rdfhdt.hdt.fuseki.FusekiHDTCmd --pages=$BASE/pages --config="$assembly" /dataset
