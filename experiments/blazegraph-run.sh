@@ -3,7 +3,7 @@ source prepare_query_functions.sh
 
 [ -z "$1" ] && echo "Specify Blazegraph PID" && exit 1
 [ -z "$2" ] && grep=".ttl" || grep="$2" 
-
+queries="$3"
 server_pid=$1
 
 # Run experiments
@@ -21,7 +21,7 @@ do
 		suite=${arr[1]}.txt
 		# script PID experimentID suite times interval timeout
 		#echo "./run-experiment.sh $server_pid $eid suite/$suite 10 5 300"
-		./run-experiment.sh $server_pid $eid suite/$suite 10 1 300
+		./run-experiment.sh $server_pid $eid suite/$suite 10 1 300 "$queries"
 		#./run-experiment.sh $server_pid $eid suite/$suite 1 1 10
     fi
 done

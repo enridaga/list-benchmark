@@ -3,6 +3,7 @@ source prepare_query_functions.sh
 [ -z "$1" ] && echo "Specify PID" && exit 1
 [ -z "$3" ] && grep=".ttl" || grep="$3" 
 fuseki_pid=$1
+queries="$4"
 prefix=hdt
 # Run experiments
 for file in $(ls -Sr ../data/*.ttl|grep "$grep")
@@ -19,6 +20,6 @@ do
 		suite=${arr[1]}.txt
 		# script PID experimentID suite times interval timeout
 		#echo "./run-experiment.sh $fuseki_pid $eid suite/$suite 10 5 300"
-		./run-experiment.sh $fuseki_pid $eid suite/$suite 10 5 300
+		./run-experiment.sh $fuseki_pid $eid suite/$suite 10 5 300 "$queries"
     fi
 done
