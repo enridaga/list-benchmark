@@ -38,7 +38,7 @@ def makeTimeStats(collection):
             pass
         print "Experiment time stats", statFile
         x = 1
-        while True:
+        while x <= 10: # ten repetitions
             errorFile = "results/" + eprefix + ".error." + str(i) + "." + str(x)
             if(os.path.exists(errorFile)):
                 print "execution stats", errorFile
@@ -58,7 +58,7 @@ def makeTimeStats(collection):
                         line = str(x) +',E,E,E'
                     the_file.write(line + "\n")
             else:
-                break;
+                pass;
             x += 1
         i += 1
     
