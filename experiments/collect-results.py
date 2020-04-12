@@ -77,6 +77,8 @@ def makeStats(collection):
         print "Time stats file", timeStatFile
         if not os.path.exists(timeStatFile):
             print "[ERROR] Time stats file does not exist! Skipping", eprefix
+            # Move to the next experiment
+            i += 1
             continue
         try:
             trows = open(timeStatFile,"r")
