@@ -21676,10 +21676,94 @@ Collecting stats for collection:fuseki-500k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-500k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.7.csv
+> execution  fuseki-500k-uri.uri   1
+> execution  fuseki-500k-uri.uri   2
+> execution  fuseki-500k-uri.uri   3
+> execution  fuseki-500k-uri.uri   4
+> execution  fuseki-500k-uri.uri   5
+> execution  fuseki-500k-uri.uri   6
+> execution  fuseki-500k-uri.uri   7
+> execution  fuseki-500k-uri.uri   8
+> execution  fuseki-500k-uri.uri   9
+> execution  fuseki-500k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-500k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-500k-uri.uri.stats.9.csv
+> execution  fuseki-500k-uri.uri   1
+> execution  fuseki-500k-uri.uri   2
+> execution  fuseki-500k-uri.uri   3
+> execution  fuseki-500k-uri.uri   4
+> execution  fuseki-500k-uri.uri   5
+> execution  fuseki-500k-uri.uri   6
+> execution  fuseki-500k-uri.uri   7
+> execution  fuseki-500k-uri.uri   8
+> execution  fuseki-500k-uri.uri   9
+> execution  fuseki-500k-uri.uri   10
 Collecting stats for collection:fuseki-5k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-5k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.7.csv
+> execution  fuseki-5k-uri.uri   1
+> execution  fuseki-5k-uri.uri   2
+> execution  fuseki-5k-uri.uri   3
+> execution  fuseki-5k-uri.uri   4
+> execution  fuseki-5k-uri.uri   5
+> execution  fuseki-5k-uri.uri   6
+> execution  fuseki-5k-uri.uri   7
+> execution  fuseki-5k-uri.uri   8
+> execution  fuseki-5k-uri.uri   9
+> execution  fuseki-5k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-5k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-5k-uri.uri.stats.9.csv
+> execution  fuseki-5k-uri.uri   1
+> execution  fuseki-5k-uri.uri   2
+> execution  fuseki-5k-uri.uri   3
+> execution  fuseki-5k-uri.uri   4
+> execution  fuseki-5k-uri.uri   5
+> execution  fuseki-5k-uri.uri   6
+> execution  fuseki-5k-uri.uri   7
+> execution  fuseki-5k-uri.uri   8
+> execution  fuseki-5k-uri.uri   9
+> execution  fuseki-5k-uri.uri   10
 Collecting stats for collection:fuseki-1k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/fuseki-1k-prop_number.prop_number.stats.1.csv
@@ -23863,6 +23947,39 @@ Collecting stats for collection:fuseki_mem-1k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 2 : ./query-endpoint.sh ../queries/get-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 3 : ./query-endpoint.sh ../queries/rest-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 4 : ./query-endpoint.sh ../queries/prev-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.4.csv
+> execution  fuseki_mem-1k-prop_number.prop_number   1
+> execution  fuseki_mem-1k-prop_number.prop_number   2
+> execution  fuseki_mem-1k-prop_number.prop_number   3
+> execution  fuseki_mem-1k-prop_number.prop_number   4
+> execution  fuseki_mem-1k-prop_number.prop_number   5
+> execution  fuseki_mem-1k-prop_number.prop_number   6
+> execution  fuseki_mem-1k-prop_number.prop_number   7
+> execution  fuseki_mem-1k-prop_number.prop_number   8
+> execution  fuseki_mem-1k-prop_number.prop_number   9
+> execution  fuseki_mem-1k-prop_number.prop_number   10
+Experiment 5 : ./update-endpoint.sh ../queries/append-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 8 : ./update-endpoint.sh ../queries/set-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-PROP_NUMBER.sparql
+Time stats file results/fuseki_mem-1k-prop_number.prop_number.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_number.prop_number
 Collecting stats for collection:blazegraph-120k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/blazegraph-120k-prop_number.prop_number.stats.1.csv
@@ -25601,10 +25718,94 @@ Collecting stats for collection:fuseki_mem-2k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-2k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.7.csv
+> execution  fuseki_mem-2k-uri.uri   1
+> execution  fuseki_mem-2k-uri.uri   2
+> execution  fuseki_mem-2k-uri.uri   3
+> execution  fuseki_mem-2k-uri.uri   4
+> execution  fuseki_mem-2k-uri.uri   5
+> execution  fuseki_mem-2k-uri.uri   6
+> execution  fuseki_mem-2k-uri.uri   7
+> execution  fuseki_mem-2k-uri.uri   8
+> execution  fuseki_mem-2k-uri.uri   9
+> execution  fuseki_mem-2k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-2k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki_mem-2k-uri.uri.stats.9.csv
+> execution  fuseki_mem-2k-uri.uri   1
+> execution  fuseki_mem-2k-uri.uri   2
+> execution  fuseki_mem-2k-uri.uri   3
+> execution  fuseki_mem-2k-uri.uri   4
+> execution  fuseki_mem-2k-uri.uri   5
+> execution  fuseki_mem-2k-uri.uri   6
+> execution  fuseki_mem-2k-uri.uri   7
+> execution  fuseki_mem-2k-uri.uri   8
+> execution  fuseki_mem-2k-uri.uri   9
+> execution  fuseki_mem-2k-uri.uri   10
 Collecting stats for collection:fuseki-2k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-2k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.7.csv
+> execution  fuseki-2k-uri.uri   1
+> execution  fuseki-2k-uri.uri   2
+> execution  fuseki-2k-uri.uri   3
+> execution  fuseki-2k-uri.uri   4
+> execution  fuseki-2k-uri.uri   5
+> execution  fuseki-2k-uri.uri   6
+> execution  fuseki-2k-uri.uri   7
+> execution  fuseki-2k-uri.uri   8
+> execution  fuseki-2k-uri.uri   9
+> execution  fuseki-2k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-2k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-2k-uri.uri.stats.9.csv
+> execution  fuseki-2k-uri.uri   1
+> execution  fuseki-2k-uri.uri   2
+> execution  fuseki-2k-uri.uri   3
+> execution  fuseki-2k-uri.uri   4
+> execution  fuseki-2k-uri.uri   5
+> execution  fuseki-2k-uri.uri   6
+> execution  fuseki-2k-uri.uri   7
+> execution  fuseki-2k-uri.uri   8
+> execution  fuseki-2k-uri.uri   9
+> execution  fuseki-2k-uri.uri   10
 Collecting stats for collection:blazegraph-60k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/blazegraph-60k-prop_number.prop_number.stats.1.csv
@@ -27922,6 +28123,30 @@ Collecting stats for collection:fuseki-90k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-90k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.7.csv
+> execution  fuseki-90k-uri.uri   1
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-90k-uri.uri.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-90k-uri.uri
 Collecting stats for collection:fuseki_mem-10k-list
 Experiment 1 : ./query-endpoint.sh ../queries/first-LIST.sparql
 Time stats file results/fuseki_mem-10k-list.list.stats.1.csv
@@ -29685,6 +29910,39 @@ Collecting stats for collection:fuseki_mem-1k-seq
 Experiment 1 : ./query-endpoint.sh ../queries/first-SEQ.sparql
 Time stats file results/fuseki_mem-1k-seq.seq.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 2 : ./query-endpoint.sh ../queries/get-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 3 : ./query-endpoint.sh ../queries/rest-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 4 : ./query-endpoint.sh ../queries/prev-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.4.csv
+> execution  fuseki_mem-1k-seq.seq   1
+> execution  fuseki_mem-1k-seq.seq   2
+> execution  fuseki_mem-1k-seq.seq   3
+> execution  fuseki_mem-1k-seq.seq   4
+> execution  fuseki_mem-1k-seq.seq   5
+> execution  fuseki_mem-1k-seq.seq   6
+> execution  fuseki_mem-1k-seq.seq   7
+> execution  fuseki_mem-1k-seq.seq   8
+> execution  fuseki_mem-1k-seq.seq   9
+> execution  fuseki_mem-1k-seq.seq   10
+Experiment 5 : ./update-endpoint.sh ../queries/append-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 8 : ./update-endpoint.sh ../queries/set-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-SEQ.sparql
+Time stats file results/fuseki_mem-1k-seq.seq.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-seq.seq
 Collecting stats for collection:fuseki-10k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/fuseki-10k-prop_number.prop_number.stats.1.csv
@@ -30016,6 +30274,48 @@ Collecting stats for collection:fuseki-1k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-1k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.7.csv
+> execution  fuseki-1k-uri.uri   1
+> execution  fuseki-1k-uri.uri   2
+> execution  fuseki-1k-uri.uri   3
+> execution  fuseki-1k-uri.uri   4
+> execution  fuseki-1k-uri.uri   5
+> execution  fuseki-1k-uri.uri   6
+> execution  fuseki-1k-uri.uri   7
+> execution  fuseki-1k-uri.uri   8
+> execution  fuseki-1k-uri.uri   9
+> execution  fuseki-1k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-1k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-1k-uri.uri.stats.9.csv
+> execution  fuseki-1k-uri.uri   1
+> execution  fuseki-1k-uri.uri   2
+> execution  fuseki-1k-uri.uri   3
+> execution  fuseki-1k-uri.uri   4
+> execution  fuseki-1k-uri.uri   5
+> execution  fuseki-1k-uri.uri   6
+> execution  fuseki-1k-uri.uri   7
+> execution  fuseki-1k-uri.uri   8
+> execution  fuseki-1k-uri.uri   9
+> execution  fuseki-1k-uri.uri   10
 Collecting stats for collection:blazegraph-5k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
 Time stats file results/blazegraph-5k-sop.sop.stats.1.csv
@@ -31605,6 +31905,39 @@ Collecting stats for collection:fuseki-60k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-60k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.7.csv
+> execution  fuseki-60k-uri.uri   1
+> execution  fuseki-60k-uri.uri   2
+> execution  fuseki-60k-uri.uri   3
+> execution  fuseki-60k-uri.uri   4
+> execution  fuseki-60k-uri.uri   5
+> execution  fuseki-60k-uri.uri   6
+> execution  fuseki-60k-uri.uri   7
+> execution  fuseki-60k-uri.uri   8
+> execution  fuseki-60k-uri.uri   9
+> execution  fuseki-60k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-60k-uri.uri.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-uri.uri
 Collecting stats for collection:virtuoso-5k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/virtuoso-5k-uri.uri.stats.1.csv
@@ -32258,6 +32591,39 @@ Time stats file results/virtuoso-1k-sop.sop.stats.9.csv
 Collecting stats for collection:fuseki_mem-1k-list
 Experiment 1 : ./query-endpoint.sh ../queries/first-LIST.sparql
 Time stats file results/fuseki_mem-1k-list.list.stats.1.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 2 : ./query-endpoint.sh ../queries/get-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 3 : ./query-endpoint.sh ../queries/rest-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 4 : ./query-endpoint.sh ../queries/prev-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.4.csv
+> execution  fuseki_mem-1k-list.list   1
+> execution  fuseki_mem-1k-list.list   2
+> execution  fuseki_mem-1k-list.list   3
+> execution  fuseki_mem-1k-list.list   4
+> execution  fuseki_mem-1k-list.list   5
+> execution  fuseki_mem-1k-list.list   6
+> execution  fuseki_mem-1k-list.list   7
+> execution  fuseki_mem-1k-list.list   8
+> execution  fuseki_mem-1k-list.list   9
+> execution  fuseki_mem-1k-list.list   10
+Experiment 5 : ./update-endpoint.sh ../queries/append-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 8 : ./update-endpoint.sh ../queries/set-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-LIST.sparql
+Time stats file results/fuseki_mem-1k-list.list.stats.9.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-list.list
 Collecting stats for collection:fuseki-2k-list
 Experiment 1 : ./query-endpoint.sh ../queries/first-LIST.sparql
@@ -33456,6 +33822,39 @@ Collecting stats for collection:fuseki_mem-1k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
 Time stats file results/fuseki_mem-1k-sop.sop.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 2 : ./query-endpoint.sh ../queries/get-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 3 : ./query-endpoint.sh ../queries/rest-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 4 : ./query-endpoint.sh ../queries/prev-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.4.csv
+> execution  fuseki_mem-1k-sop.sop   1
+> execution  fuseki_mem-1k-sop.sop   2
+> execution  fuseki_mem-1k-sop.sop   3
+> execution  fuseki_mem-1k-sop.sop   4
+> execution  fuseki_mem-1k-sop.sop   5
+> execution  fuseki_mem-1k-sop.sop   6
+> execution  fuseki_mem-1k-sop.sop   7
+> execution  fuseki_mem-1k-sop.sop   8
+> execution  fuseki_mem-1k-sop.sop   9
+> execution  fuseki_mem-1k-sop.sop   10
+Experiment 5 : ./update-endpoint.sh ../queries/append-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 8 : ./update-endpoint.sh ../queries/set-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-SOP.sparql
+Time stats file results/fuseki_mem-1k-sop.sop.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-sop.sop
 Collecting stats for collection:blazegraph-15k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/blazegraph-15k-uri.uri.stats.1.csv
@@ -33660,6 +34059,48 @@ Collecting stats for collection:fuseki-3k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-3k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.7.csv
+> execution  fuseki-3k-uri.uri   1
+> execution  fuseki-3k-uri.uri   2
+> execution  fuseki-3k-uri.uri   3
+> execution  fuseki-3k-uri.uri   4
+> execution  fuseki-3k-uri.uri   5
+> execution  fuseki-3k-uri.uri   6
+> execution  fuseki-3k-uri.uri   7
+> execution  fuseki-3k-uri.uri   8
+> execution  fuseki-3k-uri.uri   9
+> execution  fuseki-3k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-3k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-3k-uri.uri.stats.9.csv
+> execution  fuseki-3k-uri.uri   1
+> execution  fuseki-3k-uri.uri   2
+> execution  fuseki-3k-uri.uri   3
+> execution  fuseki-3k-uri.uri   4
+> execution  fuseki-3k-uri.uri   5
+> execution  fuseki-3k-uri.uri   6
+> execution  fuseki-3k-uri.uri   7
+> execution  fuseki-3k-uri.uri   8
+> execution  fuseki-3k-uri.uri   9
+> execution  fuseki-3k-uri.uri   10
 Collecting stats for collection:blazegraph-30k-seq
 Experiment 1 : ./query-endpoint.sh ../queries/first-SEQ.sparql
 Time stats file results/blazegraph-30k-seq.seq.stats.1.csv
@@ -34932,6 +35373,39 @@ Collecting stats for collection:fuseki_mem-1k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-1k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.4.csv
+> execution  fuseki_mem-1k-uri.uri   1
+> execution  fuseki_mem-1k-uri.uri   2
+> execution  fuseki_mem-1k-uri.uri   3
+> execution  fuseki_mem-1k-uri.uri   4
+> execution  fuseki_mem-1k-uri.uri   5
+> execution  fuseki_mem-1k-uri.uri   6
+> execution  fuseki_mem-1k-uri.uri   7
+> execution  fuseki_mem-1k-uri.uri   8
+> execution  fuseki_mem-1k-uri.uri   9
+> execution  fuseki_mem-1k-uri.uri   10
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki_mem-1k-uri.uri.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-uri.uri
 Collecting stats for collection:fuseki_mem-30k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-30k-uri.uri.stats.1.csv
@@ -35953,6 +36427,39 @@ Collecting stats for collection:fuseki-30k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-30k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.7.csv
+> execution  fuseki-30k-uri.uri   1
+> execution  fuseki-30k-uri.uri   2
+> execution  fuseki-30k-uri.uri   3
+> execution  fuseki-30k-uri.uri   4
+> execution  fuseki-30k-uri.uri   5
+> execution  fuseki-30k-uri.uri   6
+> execution  fuseki-30k-uri.uri   7
+> execution  fuseki-30k-uri.uri   8
+> execution  fuseki-30k-uri.uri   9
+> execution  fuseki-30k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-30k-uri.uri.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-30k-uri.uri
 Collecting stats for collection:blazegraph-15k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/blazegraph-15k-prop_number.prop_number.stats.1.csv
@@ -35966,6 +36473,27 @@ Time stats file results/blazegraph-15k-prop_number.prop_number.stats.1.csv
 [ERROR] HTTP != 200 results/blazegraph-15k-prop_number.prop_number.output.1.4
 Experiment 2 : ./query-endpoint.sh ../queries/get-PROP_NUMBER.sparql
 Time stats file results/blazegraph-15k-prop_number.prop_number.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 3 : ./query-endpoint.sh ../queries/rest-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 4 : ./query-endpoint.sh ../queries/prev-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 5 : ./update-endpoint.sh ../queries/append-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 8 : ./update-endpoint.sh ../queries/set-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-PROP_NUMBER.sparql
+Time stats file results/blazegraph-15k-prop_number.prop_number.stats.9.csv
 [ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_number.prop_number
 Collecting stats for collection:fuseki_hdt-1k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
@@ -36516,6 +37044,39 @@ Time stats file results/virtuoso-500k-sop.sop.stats.9.csv
 Collecting stats for collection:fuseki-15k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-15k-uri.uri.stats.1.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.7.csv
+> execution  fuseki-15k-uri.uri   1
+> execution  fuseki-15k-uri.uri   2
+> execution  fuseki-15k-uri.uri   3
+> execution  fuseki-15k-uri.uri   4
+> execution  fuseki-15k-uri.uri   5
+> execution  fuseki-15k-uri.uri   6
+> execution  fuseki-15k-uri.uri   7
+> execution  fuseki-15k-uri.uri   8
+> execution  fuseki-15k-uri.uri   9
+> execution  fuseki-15k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-15k-uri.uri.stats.9.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-15k-uri.uri
 Collecting stats for collection:virtuoso-30k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
@@ -37908,6 +38469,48 @@ Collecting stats for collection:fuseki_mem-500k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-500k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.7.csv
+> execution  fuseki_mem-500k-uri.uri   1
+> execution  fuseki_mem-500k-uri.uri   2
+> execution  fuseki_mem-500k-uri.uri   3
+> execution  fuseki_mem-500k-uri.uri   4
+> execution  fuseki_mem-500k-uri.uri   5
+> execution  fuseki_mem-500k-uri.uri   6
+> execution  fuseki_mem-500k-uri.uri   7
+> execution  fuseki_mem-500k-uri.uri   8
+> execution  fuseki_mem-500k-uri.uri   9
+> execution  fuseki_mem-500k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-500k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki_mem-500k-uri.uri.stats.9.csv
+> execution  fuseki_mem-500k-uri.uri   1
+> execution  fuseki_mem-500k-uri.uri   2
+> execution  fuseki_mem-500k-uri.uri   3
+> execution  fuseki_mem-500k-uri.uri   4
+> execution  fuseki_mem-500k-uri.uri   5
+> execution  fuseki_mem-500k-uri.uri   6
+> execution  fuseki_mem-500k-uri.uri   7
+> execution  fuseki_mem-500k-uri.uri   8
+> execution  fuseki_mem-500k-uri.uri   9
+> execution  fuseki_mem-500k-uri.uri   10
 Collecting stats for collection:fuseki_hdt-1k-prop_time
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_TIME.sparql
 Time stats file results/fuseki_hdt-1k-prop_time.prop_time.stats.1.csv
@@ -38110,6 +38713,49 @@ Time stats file results/fuseki_hdt-1k-prop_time.prop_time.stats.9.csv
 Collecting stats for collection:fuseki_mem-1k-prop_time
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_TIME.sparql
 Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.1.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 2 : ./query-endpoint.sh ../queries/get-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 3 : ./query-endpoint.sh ../queries/rest-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 4 : ./query-endpoint.sh ../queries/prev-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.4.csv
+> execution  fuseki_mem-1k-prop_time.prop_time   1
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.1
+> execution  fuseki_mem-1k-prop_time.prop_time   2
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.2
+> execution  fuseki_mem-1k-prop_time.prop_time   3
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.3
+> execution  fuseki_mem-1k-prop_time.prop_time   4
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.4
+> execution  fuseki_mem-1k-prop_time.prop_time   5
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.5
+> execution  fuseki_mem-1k-prop_time.prop_time   6
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.6
+> execution  fuseki_mem-1k-prop_time.prop_time   7
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.7
+> execution  fuseki_mem-1k-prop_time.prop_time   8
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.8
+> execution  fuseki_mem-1k-prop_time.prop_time   9
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.9
+> execution  fuseki_mem-1k-prop_time.prop_time   10
+[ERROR] Wrong result set! results/fuseki_mem-1k-prop_time.prop_time.output.4.10
+Experiment 5 : ./update-endpoint.sh ../queries/append-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 8 : ./update-endpoint.sh ../queries/set-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-PROP_TIME.sparql
+Time stats file results/fuseki_mem-1k-prop_time.prop_time.stats.9.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-1k-prop_time.prop_time
 Collecting stats for collection:blazegraph-90k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
@@ -38796,6 +39442,15 @@ Time stats file results/blazegraph-90k-prop_time.prop_time.stats.5.csv
 [ERROR] HTTP != 200 results/blazegraph-90k-prop_time.prop_time.output.5.6
 Experiment 6 : ./update-endpoint.sh ../queries/append_front-PROP_TIME.sparql
 Time stats file results/blazegraph-90k-prop_time.prop_time.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-90k-prop_time.prop_time
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-PROP_TIME.sparql
+Time stats file results/blazegraph-90k-prop_time.prop_time.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-90k-prop_time.prop_time
+Experiment 8 : ./update-endpoint.sh ../queries/set-PROP_TIME.sparql
+Time stats file results/blazegraph-90k-prop_time.prop_time.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-90k-prop_time.prop_time
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-PROP_TIME.sparql
+Time stats file results/blazegraph-90k-prop_time.prop_time.stats.9.csv
 [ERROR] Time stats file does not exist! Skipping blazegraph-90k-prop_time.prop_time
 Collecting stats for collection:fuseki_mem-2k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
@@ -40722,6 +41377,48 @@ Collecting stats for collection:fuseki-10k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki-10k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.7.csv
+> execution  fuseki-10k-uri.uri   1
+> execution  fuseki-10k-uri.uri   2
+> execution  fuseki-10k-uri.uri   3
+> execution  fuseki-10k-uri.uri   4
+> execution  fuseki-10k-uri.uri   5
+> execution  fuseki-10k-uri.uri   6
+> execution  fuseki-10k-uri.uri   7
+> execution  fuseki-10k-uri.uri   8
+> execution  fuseki-10k-uri.uri   9
+> execution  fuseki-10k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-10k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki-10k-uri.uri.stats.9.csv
+> execution  fuseki-10k-uri.uri   1
+> execution  fuseki-10k-uri.uri   2
+> execution  fuseki-10k-uri.uri   3
+> execution  fuseki-10k-uri.uri   4
+> execution  fuseki-10k-uri.uri   5
+> execution  fuseki-10k-uri.uri   6
+> execution  fuseki-10k-uri.uri   7
+> execution  fuseki-10k-uri.uri   8
+> execution  fuseki-10k-uri.uri   9
+> execution  fuseki-10k-uri.uri   10
 Collecting stats for collection:fuseki_mem-5k-list
 Experiment 1 : ./query-endpoint.sh ../queries/first-LIST.sparql
 Time stats file results/fuseki_mem-5k-list.list.stats.1.csv
@@ -40944,6 +41641,48 @@ Collecting stats for collection:fuseki_mem-10k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-10k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.7.csv
+> execution  fuseki_mem-10k-uri.uri   1
+> execution  fuseki_mem-10k-uri.uri   2
+> execution  fuseki_mem-10k-uri.uri   3
+> execution  fuseki_mem-10k-uri.uri   4
+> execution  fuseki_mem-10k-uri.uri   5
+> execution  fuseki_mem-10k-uri.uri   6
+> execution  fuseki_mem-10k-uri.uri   7
+> execution  fuseki_mem-10k-uri.uri   8
+> execution  fuseki_mem-10k-uri.uri   9
+> execution  fuseki_mem-10k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-10k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki_mem-10k-uri.uri.stats.9.csv
+> execution  fuseki_mem-10k-uri.uri   1
+> execution  fuseki_mem-10k-uri.uri   2
+> execution  fuseki_mem-10k-uri.uri   3
+> execution  fuseki_mem-10k-uri.uri   4
+> execution  fuseki_mem-10k-uri.uri   5
+> execution  fuseki_mem-10k-uri.uri   6
+> execution  fuseki_mem-10k-uri.uri   7
+> execution  fuseki_mem-10k-uri.uri   8
+> execution  fuseki_mem-10k-uri.uri   9
+> execution  fuseki_mem-10k-uri.uri   10
 Collecting stats for collection:fuseki-2k-prop_time
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_TIME.sparql
 Time stats file results/fuseki-2k-prop_time.prop_time.stats.1.csv
@@ -41558,6 +42297,27 @@ Time stats file results/blazegraph-10k-sop.sop.stats.1.csv
 Experiment 2 : ./query-endpoint.sh ../queries/get-SOP.sparql
 Time stats file results/blazegraph-10k-sop.sop.stats.2.csv
 [ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 3 : ./query-endpoint.sh ../queries/rest-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 4 : ./query-endpoint.sh ../queries/prev-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 5 : ./update-endpoint.sh ../queries/append-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 8 : ./update-endpoint.sh ../queries/set-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-SOP.sparql
+Time stats file results/blazegraph-10k-sop.sop.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-10k-sop.sop
 Collecting stats for collection:virtuoso-10k-list
 Experiment 1 : ./query-endpoint.sh ../queries/first-LIST.sparql
 Time stats file results/virtuoso-10k-list.list.stats.1.csv
@@ -41973,6 +42733,24 @@ Time stats file results/fuseki-60k-list.list.stats.2.csv
 Experiment 3 : ./query-endpoint.sh ../queries/rest-LIST.sparql
 Time stats file results/fuseki-60k-list.list.stats.3.csv
 [ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
+Experiment 4 : ./query-endpoint.sh ../queries/prev-LIST.sparql
+Time stats file results/fuseki-60k-list.list.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
+Experiment 5 : ./update-endpoint.sh ../queries/append-LIST.sparql
+Time stats file results/fuseki-60k-list.list.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-LIST.sparql
+Time stats file results/fuseki-60k-list.list.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-LIST.sparql
+Time stats file results/fuseki-60k-list.list.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
+Experiment 8 : ./update-endpoint.sh ../queries/set-LIST.sparql
+Time stats file results/fuseki-60k-list.list.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-LIST.sparql
+Time stats file results/fuseki-60k-list.list.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping fuseki-60k-list.list
 Collecting stats for collection:virtuoso-2k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
 Time stats file results/virtuoso-2k-sop.sop.stats.1.csv
@@ -42186,10 +42964,61 @@ Time stats file results/blazegraph-15k-prop_time.prop_time.stats.5.csv
 Experiment 6 : ./update-endpoint.sh ../queries/append_front-PROP_TIME.sparql
 Time stats file results/blazegraph-15k-prop_time.prop_time.stats.6.csv
 [ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_time.prop_time
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-PROP_TIME.sparql
+Time stats file results/blazegraph-15k-prop_time.prop_time.stats.7.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_time.prop_time
+Experiment 8 : ./update-endpoint.sh ../queries/set-PROP_TIME.sparql
+Time stats file results/blazegraph-15k-prop_time.prop_time.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_time.prop_time
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-PROP_TIME.sparql
+Time stats file results/blazegraph-15k-prop_time.prop_time.stats.9.csv
+[ERROR] Time stats file does not exist! Skipping blazegraph-15k-prop_time.prop_time
 Collecting stats for collection:fuseki_mem-5k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-5k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.7.csv
+> execution  fuseki_mem-5k-uri.uri   1
+> execution  fuseki_mem-5k-uri.uri   2
+> execution  fuseki_mem-5k-uri.uri   3
+> execution  fuseki_mem-5k-uri.uri   4
+> execution  fuseki_mem-5k-uri.uri   5
+> execution  fuseki_mem-5k-uri.uri   6
+> execution  fuseki_mem-5k-uri.uri   7
+> execution  fuseki_mem-5k-uri.uri   8
+> execution  fuseki_mem-5k-uri.uri   9
+> execution  fuseki_mem-5k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-5k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki_mem-5k-uri.uri.stats.9.csv
+> execution  fuseki_mem-5k-uri.uri   1
+> execution  fuseki_mem-5k-uri.uri   2
+> execution  fuseki_mem-5k-uri.uri   3
+> execution  fuseki_mem-5k-uri.uri   4
+> execution  fuseki_mem-5k-uri.uri   5
+> execution  fuseki_mem-5k-uri.uri   6
+> execution  fuseki_mem-5k-uri.uri   7
+> execution  fuseki_mem-5k-uri.uri   8
+> execution  fuseki_mem-5k-uri.uri   9
+> execution  fuseki_mem-5k-uri.uri   10
 Collecting stats for collection:fuseki-10k-sop
 Experiment 1 : ./query-endpoint.sh ../queries/first-SOP.sparql
 Time stats file results/fuseki-10k-sop.sop.stats.1.csv
@@ -45761,6 +46590,48 @@ Collecting stats for collection:fuseki_mem-3k-uri
 Experiment 1 : ./query-endpoint.sh ../queries/first-URI.sparql
 Time stats file results/fuseki_mem-3k-uri.uri.stats.1.csv
 [ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 2 : ./query-endpoint.sh ../queries/get-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.2.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 3 : ./query-endpoint.sh ../queries/rest-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.3.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 4 : ./query-endpoint.sh ../queries/prev-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.4.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 5 : ./update-endpoint.sh ../queries/append-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.5.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 6 : ./update-endpoint.sh ../queries/append_front-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.6.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 7 : ./update-endpoint.sh ../queries/popoff-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.7.csv
+> execution  fuseki_mem-3k-uri.uri   1
+> execution  fuseki_mem-3k-uri.uri   2
+> execution  fuseki_mem-3k-uri.uri   3
+> execution  fuseki_mem-3k-uri.uri   4
+> execution  fuseki_mem-3k-uri.uri   5
+> execution  fuseki_mem-3k-uri.uri   6
+> execution  fuseki_mem-3k-uri.uri   7
+> execution  fuseki_mem-3k-uri.uri   8
+> execution  fuseki_mem-3k-uri.uri   9
+> execution  fuseki_mem-3k-uri.uri   10
+Experiment 8 : ./update-endpoint.sh ../queries/set-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.8.csv
+[ERROR] Time stats file does not exist! Skipping fuseki_mem-3k-uri.uri
+Experiment 9 : ./update-endpoint.sh ../queries/remove_at-URI.sparql
+Time stats file results/fuseki_mem-3k-uri.uri.stats.9.csv
+> execution  fuseki_mem-3k-uri.uri   1
+> execution  fuseki_mem-3k-uri.uri   2
+> execution  fuseki_mem-3k-uri.uri   3
+> execution  fuseki_mem-3k-uri.uri   4
+> execution  fuseki_mem-3k-uri.uri   5
+> execution  fuseki_mem-3k-uri.uri   6
+> execution  fuseki_mem-3k-uri.uri   7
+> execution  fuseki_mem-3k-uri.uri   8
+> execution  fuseki_mem-3k-uri.uri   9
+> execution  fuseki_mem-3k-uri.uri   10
 Collecting stats for collection:fuseki_mem-30k-prop_number
 Experiment 1 : ./query-endpoint.sh ../queries/first-PROP_NUMBER.sparql
 Time stats file results/fuseki_mem-30k-prop_number.prop_number.stats.1.csv
