@@ -114,38 +114,43 @@ def makeStats(collection):
                 output_as_string = open(outputFile, 'r').read()
                 error_as_string = open(outerrFile, 'r').read()
                 #
-                if not '< HTTP/1.1 200' in error_as_string:
-                    print "[ERROR] HTTP != 200", outputFile
+                try:
+                    if not '< HTTP/1.1 200' in error_as_string:
+                        print "[ERROR] HTTP != 200", outputFile
+                        broken += 1
+                    elif ( '<binding' in output_as_string or 'COMMIT' in output_as_string or 'Success' in output_as_string):
+                        # Compute values for each execution
+                        mrows = open(monitorFile,"r")
+                        _cpu_max = -1
+                        _cpu_values = []
+                        _rss_max = -1
+                        _rss_values = []                
+                        for mrow in mrows:
+                            if mrow.startswith('#'):
+                                continue
+                            mrow_ = mrow.strip()
+                            mrow_ = re.split(" +",mrow_)
+                            # pid,%cpu,%mem,vsz,rss
+                            _cpu_val = float(mrow_[1])
+                            _cpu_values.append(_cpu_val)
+                            if _cpu_val > _cpu_max:
+                                _cpu_max = _cpu_val
+                            _rss_val = float(mrow_[4])
+                            _rss_values.append(_rss_val)
+                            if _rss_val > _rss_max:
+                                _rss_max = _rss_val
+                            # print mrow_
+                        cpu_max.append(_cpu_max)
+                        cpu_avg.append(mean(_cpu_values))
+                        rss_max.append(_rss_max)
+                        rss_avg.append(mean(_rss_values))
+                    else:
+                        print "[ERROR] Wrong result set!", outputFile
+                        broken += 1
+                except:
+                    print "[ERROR] Exception occurred while reading ", monitorFile
                     broken += 1
-                elif ( '<binding' in output_as_string or 'COMMIT' in output_as_string or 'Success' in output_as_string):
-                    # Compute values for each execution
-                    mrows = open(monitorFile,"r")
-                    _cpu_max = -1
-                    _cpu_values = []
-                    _rss_max = -1
-                    _rss_values = []                
-                    for mrow in mrows:
-                        if mrow.startswith('#'):
-                            continue
-                        mrow_ = mrow.strip()
-                        mrow_ = re.split(" +",mrow_)
-                        # pid,%cpu,%mem,vsz,rss
-                        _cpu_val = float(mrow_[1])
-                        _cpu_values.append(_cpu_val)
-                        if _cpu_val > _cpu_max:
-                            _cpu_max = _cpu_val
-                        _rss_val = float(mrow_[4])
-                        _rss_values.append(_rss_val)
-                        if _rss_val > _rss_max:
-                            _rss_max = _rss_val
-                        # print mrow_
-                    cpu_max.append(_cpu_max)
-                    cpu_avg.append(mean(_cpu_values))
-                    rss_max.append(_rss_max)
-                    rss_avg.append(mean(_rss_values))
-                else:
-                    print "[ERROR] Wrong result set!", outputFile
-                    broken += 1
+                
             if broken > 0:
                 # Experiment must return some output
                 cpu_max.append(0)
@@ -174,6 +179,12 @@ if len(sys.argv) < 2:
     print "provide results- postfix file name."
     exit(1)
 resultsFile = "results-"+sys.argv[1]+".csv"
+if len(sys.argv) > 2:
+    filt = sys.argv[2]
+else:
+    filt = False
+resultsFile = "results-"+sys.argv[1]+".csv"
+
 try:
     os.remove(resultsFile)
 except OSError:
@@ -183,6 +194,7 @@ except OSError:
 fnames = glob.glob("results/*.output.*") 
 collectionIds = [re.sub(r'results/([^\.]+)\..*', r'\1', x) for x in fnames]
 collectionIds = set(collectionIds)
+
 collections = tuple((element, element.split('-')) for element in collectionIds)
 # We first prepare time statistics from all executions
 for collection in collections:
