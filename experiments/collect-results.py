@@ -114,7 +114,6 @@ def makeStats(collection):
                 output_as_string = open(outputFile, 'r').read()
                 error_as_string = open(outerrFile, 'r').read()
                 #
-                try:
                     if not '< HTTP/1.1 200' in error_as_string:
                         print "[ERROR] HTTP != 200", outputFile
                         broken += 1
@@ -128,17 +127,21 @@ def makeStats(collection):
                         for mrow in mrows:
                             if mrow.startswith('#'):
                                 continue
-                            mrow_ = mrow.strip()
-                            mrow_ = re.split(" +",mrow_)
-                            # pid,%cpu,%mem,vsz,rss
-                            _cpu_val = float(mrow_[1])
-                            _cpu_values.append(_cpu_val)
-                            if _cpu_val > _cpu_max:
-                                _cpu_max = _cpu_val
-                            _rss_val = float(mrow_[4])
-                            _rss_values.append(_rss_val)
-                            if _rss_val > _rss_max:
-                                _rss_max = _rss_val
+                            try:
+                                mrow_ = mrow.strip()
+                                mrow_ = re.split(" +",mrow_)
+                                # pid,%cpu,%mem,vsz,rss
+                                _cpu_val = float(mrow_[1])
+                                _cpu_values.append(_cpu_val)
+                                if _cpu_val > _cpu_max:
+                                    _cpu_max = _cpu_val
+                                _rss_val = float(mrow_[4])
+                                _rss_values.append(_rss_val)
+                                if _rss_val > _rss_max:
+                                    _rss_max = _rss_val
+                            except:
+                                print "[ERROR] Exception occurred while reading ", monitorFile, sys.exc_info()[0], mrow
+                                pass
                             # print mrow_
                         cpu_max.append(_cpu_max)
                         cpu_avg.append(mean(_cpu_values))
@@ -147,9 +150,6 @@ def makeStats(collection):
                     else:
                         print "[ERROR] Wrong result set!", outputFile
                         broken += 1
-                except:
-                    print "[ERROR] Exception occurred while reading ", monitorFile, sys.exc_info()[0]
-                    broken += 1
                 
             if broken > 0:
                 # Experiment must return some output
