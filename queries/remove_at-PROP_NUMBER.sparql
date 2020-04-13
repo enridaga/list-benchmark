@@ -7,9 +7,9 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
-WITH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073>
+WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 DELETE {
-	<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?e .
+	<http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track00> midi:hasEvent ?e .
 	?e midi:id 23789 .
 	?event midi:id ?oldId
 }
@@ -21,7 +21,7 @@ WHERE {
 {
 SELECT ?event ?oldId ?newId WHERE {
 
-	<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+	<http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784/track00> a midi:Track ;
 			midi:hasEvent ?event .
 			?event midi:id ?oldId .
 	FILTER ( ?oldId > 23789 ) .
