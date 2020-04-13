@@ -114,42 +114,42 @@ def makeStats(collection):
                 output_as_string = open(outputFile, 'r').read()
                 error_as_string = open(outerrFile, 'r').read()
                 #
-                    if not '< HTTP/1.1 200' in error_as_string:
-                        print "[ERROR] HTTP != 200", outputFile
-                        broken += 1
-                    elif ( '<binding' in output_as_string or 'COMMIT' in output_as_string or 'Success' in output_as_string):
-                        # Compute values for each execution
-                        mrows = open(monitorFile,"r")
-                        _cpu_max = -1
-                        _cpu_values = []
-                        _rss_max = -1
-                        _rss_values = []                
-                        for mrow in mrows:
-                            if mrow.startswith('#'):
-                                continue
-                            try:
-                                mrow_ = mrow.strip()
-                                mrow_ = re.split(" +",mrow_)
-                                # pid,%cpu,%mem,vsz,rss
-                                _cpu_val = float(mrow_[1])
-                                _cpu_values.append(_cpu_val)
-                                if _cpu_val > _cpu_max:
-                                    _cpu_max = _cpu_val
-                                _rss_val = float(mrow_[4])
-                                _rss_values.append(_rss_val)
-                                if _rss_val > _rss_max:
-                                    _rss_max = _rss_val
-                            except:
-                                print "[ERROR] Exception occurred while reading ", monitorFile, sys.exc_info()[0], mrow
-                                pass
-                            # print mrow_
-                        cpu_max.append(_cpu_max)
-                        cpu_avg.append(mean(_cpu_values))
-                        rss_max.append(_rss_max)
-                        rss_avg.append(mean(_rss_values))
-                    else:
-                        print "[ERROR] Wrong result set!", outputFile
-                        broken += 1
+                if not '< HTTP/1.1 200' in error_as_string:
+                    print "[ERROR] HTTP != 200", outputFile
+                    broken += 1
+                elif ( '<binding' in output_as_string or 'COMMIT' in output_as_string or 'Success' in output_as_string):
+                    # Compute values for each execution
+                    mrows = open(monitorFile,"r")
+                    _cpu_max = -1
+                    _cpu_values = []
+                    _rss_max = -1
+                    _rss_values = []                
+                    for mrow in mrows:
+                        if mrow.startswith('#'):
+                            continue
+                        try:
+                            mrow_ = mrow.strip()
+                            mrow_ = re.split(" +",mrow_)
+                            # pid,%cpu,%mem,vsz,rss
+                            _cpu_val = float(mrow_[1])
+                            _cpu_values.append(_cpu_val)
+                            if _cpu_val > _cpu_max:
+                                _cpu_max = _cpu_val
+                            _rss_val = float(mrow_[4])
+                            _rss_values.append(_rss_val)
+                            if _rss_val > _rss_max:
+                                _rss_max = _rss_val
+                        except:
+                            print "[ERROR] Exception occurred while reading ", monitorFile, sys.exc_info()[0], mrow
+                            pass
+                        # print mrow_
+                    cpu_max.append(_cpu_max)
+                    cpu_avg.append(mean(_cpu_values))
+                    rss_max.append(_rss_max)
+                    rss_avg.append(mean(_rss_values))
+                else:
+                    print "[ERROR] Wrong result set!", outputFile
+                    broken += 1
                 
             if broken > 0:
                 # Experiment must return some output
