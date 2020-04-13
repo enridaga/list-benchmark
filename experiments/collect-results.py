@@ -148,7 +148,7 @@ def makeStats(collection):
                         print "[ERROR] Wrong result set!", outputFile
                         broken += 1
                 except:
-                    print "[ERROR] Exception occurred while reading ", monitorFile
+                    print "[ERROR] Exception occurred while reading ", monitorFile, sys.exc_info()[0]
                     broken += 1
                 
             if broken > 0:
@@ -191,16 +191,20 @@ except OSError:
     pass
 
 # LIST OF EXPERIMENTS (BACKEND+MODEL+SUITE) BEING EXECUTED
-fnames = glob.glob("results/*.output.*") 
+if filt:
+    fnames = glob.glob("results/*" + filt + "*.output.*") 
+else:
+    fnames = glob.glob("results/*.output.*") 
 collectionIds = [re.sub(r'results/([^\.]+)\..*', r'\1', x) for x in fnames]
 collectionIds = set(collectionIds)
 
 collections = tuple((element, element.split('-')) for element in collectionIds)
+print("Collecting results:", collections)
+
 # We first prepare time statistics from all executions
 for collection in collections:
     makeTimeStats(collection)
 
-# exit()
 with open(resultsFile, 'a') as res_file:
     headers = ['ENGINE','SIZE','MODEL','PREFIX','QUERY','BROKEN','TIME_AVG','TIME_STD','CPU_MAX_AVG','CPU_MAX_STD','CPU_AVG_AVG','CPU_AVG_STD','RSS_MAX_AVG','RSS_MAX_STD','RSS_AVG_AVG','RSS_AVG_STD']
     line = ",".join(str(x) for x in headers)
