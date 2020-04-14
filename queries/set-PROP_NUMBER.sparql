@@ -9,7 +9,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 DELETE {
-	?event midi:absoluteTick 23789 .
+	?event midi:id 23789 .
 }
 INSERT
 	{
@@ -22,5 +22,3 @@ WHERE {
 		  ?event midi:id 23789 .
 }
 
-#  GRAPH <data:30k-seq>
-# index: 23789

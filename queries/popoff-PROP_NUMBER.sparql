@@ -10,9 +10,9 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 # http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073
 
 
-WITH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073>
+WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 DELETE {
-	<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?first .
+	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?first .
 }
 INSERT {
 	?event midi:id ?shifted .
@@ -22,16 +22,16 @@ WHERE {
 {
 SELECT ?first ?firstTick ?second ?secondTick ?event ((?tick - (?secondTick - ?firstTick)) as ?shifted) WHERE {
 
-GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-		<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> {
+		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
 			midi:hasEvent ?event .
 			?event midi:id ?tick .
 		}
 
 # First event and its tick
 {SELECT (?event AS ?first) (MIN(?tick) AS ?firstTick) WHERE {
-  GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+  GRAPH <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353> {
+    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
 			midi:hasEvent ?event .
 			?event midi:id ?tick .
   }
@@ -39,8 +39,8 @@ GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
 
 # Second event and its tick
 {SELECT (?event AS ?second) (MIN(?tick) AS ?secondTick) WHERE {
-  GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+  GRAPH <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353> {
+    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
 			midi:hasEvent ?event .
 			?event midi:id ?tick .
   }
