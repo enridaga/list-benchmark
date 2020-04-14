@@ -19,7 +19,7 @@ WHERE
 	{{SELECT ?events (MAX(?tick)+1 as ?next) WHERE {
 		GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> {
 		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
-			midi:hasEvents ?events .
+			midi:hasEvent ?events .
 			?events ?seq ?event .
       ?events midi:id ?tick .
 		}} GROUP BY ?events
