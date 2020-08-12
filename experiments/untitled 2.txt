@@ -1,0 +1,36 @@
+Experiments to reproduce (prioritized)
+
+
+
+F	*	uri / 7 9 [done]
+M	*	uri / 7 9 [done]
+M	1k	* / 4 [done]
+
+V	500	*	/ 5 [done]
+V	500	seq	/ 4 7 [done]
+V	*	uri / 7 9 [done]
+
+
+BZ	500k	list 5 6 7 8 9
+Bz	*	uri / 7 9
+BZ	10k * / 1 2 3 4 5 
+
+F	10k list / 5
+
+--
+Eventually
+
+
+BZ	10k		list 4 5 6
+BZ	10k		uri 1 4 5 6
+BZ	10k		prop_number 4 5 6
+BZ	10k		seq 4 5 6
+BZ	* 		sop 8
+
+BZ	10k	list
+
+
+V	500k	seq 
+
+
+
