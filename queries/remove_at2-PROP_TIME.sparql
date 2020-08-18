@@ -1,0 +1,27 @@
+prefix midi: <http://purl.org/midi-ld/midi#>
+prefix midi-note: <http://purl.org/midi-ld/notes/>
+prefix midi-prog: <http://purl.org/midi-ld/programs/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Element to remove: 0.0
+
+WITH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073>
+DELETE {
+	<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> prov:generatedAtTime ?event .
+}
+WHERE {
+
+{
+SELECT ?event WHERE {
+  GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+			midi:hasEvent ?event .
+			?event prov:generatedAtTime 0.0 .
+  }
+}
+}
+}
