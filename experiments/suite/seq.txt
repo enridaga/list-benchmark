@@ -1,9 +1,12 @@
 ./query-endpoint.sh ../queries/first-SEQ.sparql
 ./query-endpoint.sh ../queries/get-SEQ.sparql
+./query-endpoint.sh ../queries/get2-SEQ.sparql
 ./query-endpoint.sh ../queries/rest-SEQ.sparql
 ./query-endpoint.sh ../queries/prev-SEQ.sparql
 ./update-endpoint.sh ../queries/append-SEQ.sparql
 ./update-endpoint.sh ../queries/append_front-SEQ.sparql
 ./update-endpoint.sh ../queries/popoff-SEQ.sparql
 ./update-endpoint.sh ../queries/set-SEQ.sparql
+./update-endpoint.sh ../queries/set2-SEQ.sparql
 ./update-endpoint.sh ../queries/remove_at-SEQ.sparql
+./update-endpoint.sh ../queries/remove_at2-SEQ.sparql
