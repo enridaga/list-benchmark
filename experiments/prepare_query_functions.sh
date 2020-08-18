@@ -59,7 +59,7 @@ function getQueryTrack {
 
 	echo "http://purl.org/midi-ld/piece/$h/track00"
 }
-function getDataRandomNumber {
+function getDataUpperNumber {
 	h=""
 	if [[ "$1" =~ ^500k ]]; then
 		h=0332
@@ -87,6 +87,34 @@ function getDataRandomNumber {
 
 	echo "$h"
 }
+function getDataLowerNumber {
+	h=""
+	if [[ "$1" =~ ^500k ]]; then
+		h=168 #0332
+	elif [[ "$1" =~ ^1k ]]; then
+		h=0343 #0657
+	elif [[ "$1" =~ ^2k ]]; then
+		h=778 #1222
+	elif [[ "$1" =~ ^3k ]]; then
+		h=528 #2472
+	elif [[ "$1" =~ ^5k ]]; then
+		h=1211 #3789
+	elif [[ "$1" =~ ^10k ]]; then
+		h=2678 #7322
+	elif [[ "$1" =~ ^15k ]]; then
+		h=2672 #12328
+	elif [[ "$1" =~ ^30k ]]; then
+		h=10568 #19432
+	elif [[ "$1" =~ ^60k ]]; then
+		h=13211 #46789
+	elif [[ "$1" =~ ^90k ]]; then
+		h=27013 #62987
+	elif [[ "$1" =~ ^120k ]]; then
+		h=41766 #78234
+	fi
+
+	echo "$h"
+}
 function setGraph {
 	ghost="http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784"
 	graph=$QUERY_GRAPH
@@ -97,22 +125,38 @@ function setTrack {
 	track=$QUERY_TRACK
 	sed "s,$ghost,$track,g"	
 }
-function setOffset {
+function setOffsetUpper {
 	ghost="OFFSET 23789"
 	random=${QUERY_RANDOM#0}
 	random="OFFSET $(($random-1))"
 	sed "s,$ghost,$random,g"
 }
-function setRandom {
+function setRandomUpper {
 	ghost="23789"
 	random=$QUERY_RANDOM
 	sed "s,$ghost,$random,g"
 }
-function setSeq {
+function setSeqUpper {
 	ghost="23789"
 	number=${QUERY_RANDOM#0}
 	sed "s,:_$ghost,:_$number,g"
 }
+function setOffsetLower {
+	ghost="OFFSET 1789"
+	random=${QUERY_RANDOM#0}
+	random="OFFSET $(($random-1))"
+	sed "s,$ghost,$random,g"
+}
+function setRandomLower {
+	ghost="1789"
+	random=$QUERY_RANDOM
+	sed "s,$ghost,$random,g"
+}
+function setSeqLower {
+	ghost="1789"
+	number=${QUERY_RANDOM#0}
+	sed "s,:_$ghost,:_$number,g"
+}
 function prepareQuery {
-	setGraph|setTrack|setOffset|setSeq|setRandom
+	setGraph|setTrack|setOffsetUpper|setSeqUpper|setRandomUpper|setOffsetLower|setSeqLower|setRandomLower
 }
