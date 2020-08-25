@@ -1,12 +1,12 @@
 ./query-endpoint.sh ../queries/first-PROP_TIME.sparql
 ./query-endpoint.sh ../queries/get-PROP_TIME.sparql
-./query-endpoint.sh ../queries/get2-PROP_TIME.sparql
 ./query-endpoint.sh ../queries/rest-PROP_TIME.sparql
 ./query-endpoint.sh ../queries/prev-PROP_TIME.sparql
 ./update-endpoint.sh ../queries/append-PROP_TIME.sparql
 ./update-endpoint.sh ../queries/append_front-PROP_TIME.sparql
 ./update-endpoint.sh ../queries/popoff-PROP_TIME.sparql
 ./update-endpoint.sh ../queries/set-PROP_TIME.sparql
-./update-endpoint.sh ../queries/set2-PROP_TIME.sparql
 ./update-endpoint.sh ../queries/remove_at-PROP_TIME.sparql
 ./update-endpoint.sh ../queries/remove_at2-PROP_TIME.sparql
+./query-endpoint.sh ../queries/get2-PROP_TIME.sparql
+./update-endpoint.sh ../queries/set2-PROP_TIME.sparql

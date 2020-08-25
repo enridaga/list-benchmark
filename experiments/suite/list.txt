@@ -1,12 +1,12 @@
 ./query-endpoint.sh ../queries/first-LIST.sparql
 ./query-endpoint.sh ../queries/get-LIST.sparql
-./query-endpoint.sh ../queries/get2-LIST.sparql
 ./query-endpoint.sh ../queries/rest-LIST.sparql
 ./query-endpoint.sh ../queries/prev-LIST.sparql
 ./update-endpoint.sh ../queries/append-LIST.sparql
 ./update-endpoint.sh ../queries/append_front-LIST.sparql
 ./update-endpoint.sh ../queries/popoff-LIST.sparql
 ./update-endpoint.sh ../queries/set-LIST.sparql
-./update-endpoint.sh ../queries/set2-LIST.sparql
 ./update-endpoint.sh ../queries/remove_at-LIST.sparql
 ./update-endpoint.sh ../queries/remove_at2-LIST.sparql
+./query-endpoint.sh ../queries/get2-LIST.sparql
+./update-endpoint.sh ../queries/set2-LIST.sparql
