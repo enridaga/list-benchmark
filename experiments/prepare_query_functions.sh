@@ -91,13 +91,13 @@ function getDataUpperNumber {
 function getDataLowerNumber {
 	h=""
 	if [[ "$1" =~ ^500k ]]; then
-		h=168 #0332
+		h=0168 #0332
 	elif [[ "$1" =~ ^1k ]]; then
 		h=0343 #0657
 	elif [[ "$1" =~ ^2k ]]; then
-		h=778 #1222
+		h=0778 #1222
 	elif [[ "$1" =~ ^3k ]]; then
-		h=528 #2472
+		h=0528 #2472
 	elif [[ "$1" =~ ^5k ]]; then
 		h=1211 #3789
 	elif [[ "$1" =~ ^10k ]]; then
