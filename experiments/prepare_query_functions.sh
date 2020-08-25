@@ -9,8 +9,9 @@ function prepareEnvironment {
 #	echo "Graph: "$QUERY_GRAPH
 	export QUERY_TRACK=$(getQueryTrack $data)
 #	echo "Track: "$QUERY_TRACK
-	export QUERY_RANDOM=$(getDataRandomNumber $data)
-#	echo "Random: "$QUERY_RANDOM
+	export QUERY_RANDOM_UPPER=$(getDataUpperNumber $data)
+	export QUERY_RANDOM_LOWER=$(getDataLowerNumber $data)
+	echo "Random: "$QUERY_RANDOM_UPPER" "$QUERY_RANDOM_LOWER
 
 	if [[ "$2" = "blazegraph" ]]; then
 		export QUERY_ENDPOINT=http://localhost:9999/blazegraph/namespace/kb/sparql
@@ -29,7 +30,7 @@ function prepareEnvironment {
 		export UPDATE_ENDPOINT=http://localhost:3030/hdtservice/update
 	fi
 	
-	#echo "Environment ($1, $2): graph:$QUERY_GRAPH track:$QUERY_TRACK random:$QUERY_RANDOM endpoint:$QUERY_ENDPOINT update:$UPDATE_ENDPOINT"
+	#echo "Environment ($1, $2): graph:$QUERY_GRAPH track:$QUERY_TRACK random:$QUERY_RANDOM_UPPER endpoint:$QUERY_ENDPOINT update:$UPDATE_ENDPOINT"
 }
 function getQueryTrack {
 	h=""
@@ -127,34 +128,34 @@ function setTrack {
 }
 function setOffsetUpper {
 	ghost="OFFSET 23789"
-	random=${QUERY_RANDOM#0}
+	random=${QUERY_RANDOM_UPPER#0}
 	random="OFFSET $(($random-1))"
 	sed "s,$ghost,$random,g"
 }
 function setRandomUpper {
 	ghost="23789"
-	random=$QUERY_RANDOM
+	random=$QUERY_RANDOM_UPPER
 	sed "s,$ghost,$random,g"
 }
 function setSeqUpper {
 	ghost="23789"
-	number=${QUERY_RANDOM#0}
+	number=${QUERY_RANDOM_UPPER#0}
 	sed "s,:_$ghost,:_$number,g"
 }
 function setOffsetLower {
 	ghost="OFFSET 1789"
-	random=${QUERY_RANDOM#0}
+	random=${QUERY_RANDOM_LOWER#0}
 	random="OFFSET $(($random-1))"
 	sed "s,$ghost,$random,g"
 }
 function setRandomLower {
 	ghost="1789"
-	random=$QUERY_RANDOM
+	random=$QUERY_RANDOM_LOWER
 	sed "s,$ghost,$random,g"
 }
 function setSeqLower {
 	ghost="1789"
-	number=${QUERY_RANDOM#0}
+	number=${QUERY_RANDOM_LOWER#0}
 	sed "s,:_$ghost,:_$number,g"
 }
 function prepareQuery {
