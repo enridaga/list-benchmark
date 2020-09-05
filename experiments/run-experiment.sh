@@ -49,7 +49,6 @@ doonly=($7)
 result="results/$experimentID."$(basename "${suite%.*}")
 
 [[ -d results ]] || mkdir results
-rm $result.* 2> /dev/null
 
 printf "Experiment ID: $experimentID \n\
 Suite: $suite \n\
@@ -79,6 +78,7 @@ do
   for a in `seq $times`
   do
     sleep $interval
+    rm "$result.monitor.$count.$a"
     exec 1<&-
     exec 1<>$result.monitor.$count.$a
     errcho "$count $a - $experiment - $experimentID - $suite"

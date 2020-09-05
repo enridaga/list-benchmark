@@ -5,8 +5,10 @@ source prepare_query_functions.sh
 queries="$4"
 fuseki_pid=$1
 prefix=${2:-fuseki}
+
+#echo $1 $2 $3 $4
 # Run experiments
-for file in $(ls -Sr ../data/*.ttl|grep "$grep")
+for file in $(ls -Sr ../data/*.ttl|grep -E "$grep")
 do
     echo "Performing tests on data $file"
     # there should be only files anyway
