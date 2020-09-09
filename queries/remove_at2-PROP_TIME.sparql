@@ -18,7 +18,7 @@ WHERE {
 {
 SELECT ?event WHERE {
   GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> 
 			midi:hasEvent ?event .
 			?event prov:generatedAtTime 0.0 .
   }

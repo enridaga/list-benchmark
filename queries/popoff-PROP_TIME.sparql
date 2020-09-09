@@ -20,16 +20,14 @@ WHERE {
 SELECT ?first ?firstTime ?second ?secondTime ?event ((?time - (?secondTime - ?firstTime)) as ?shifted) WHERE {
 
 GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-		<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
-			midi:hasEvent ?event .
+		<http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?event .
 			?event prov:generatedAtTime ?time .
 		}
 
 # First event and its time
 {SELECT (?event AS ?first) (MIN(?time) AS ?firstTime) WHERE {
   GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
-			midi:hasEvent ?event .
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?event .
 			?event prov:generatedAtTime ?time .
   }
 } ORDER BY ASC(?time) LIMIT 1 OFFSET 0 }
@@ -37,8 +35,7 @@ GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
 # Second event and its time
 {SELECT (?event AS ?second) (MIN(?time) AS ?secondTime) WHERE {
   GRAPH <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073> {
-    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> a midi:Track ;
-			midi:hasEvent ?event .
+    <http://purl.org/midi-ld/piece/8cf9897535d79e68c33a3076aa06d073/track00> midi:hasEvent ?event .
 			?event prov:generatedAtTime ?time .
   }
 } ORDER BY ASC(?time) LIMIT 1 OFFSET 1 }

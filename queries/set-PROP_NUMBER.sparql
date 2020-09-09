@@ -17,7 +17,7 @@ INSERT
 		<http://example.org/inserted-at-position> midi:id 23789 .
 	}
 WHERE {
-    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
+    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
           midi:hasEvent ?event .
 		  ?event midi:id 23789 .
 }

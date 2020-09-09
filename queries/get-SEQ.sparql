@@ -12,8 +12,7 @@ SELECT
 	?event
 FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
 WHERE {
-   <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
-         midi:hasEvents [ ?seq ?event ] .
+   <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvents [ ?seq ?event ] .
    BIND (xsd:integer(SUBSTR(str(?seq), 45)) AS ?index)
    FILTER (?index = 23789)
 } LIMIT 1

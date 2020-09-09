@@ -18,8 +18,7 @@ INSERT
 WHERE
 	{
 		BIND ((?time + 1) as ?shifted) .
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> a midi:Track ;
-		midi:hasEvents ?events .
+		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvents ?events .
 		?events prov:generatedAtTime ?time .
 	}
 #
