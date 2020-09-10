@@ -23,9 +23,19 @@ INSERT
 	}
 WHERE 
 	{  
-		BIND (iri(concat("http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event", str(?index + 1))) as ?newuri) .
 		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?olduri .
 		?olduri ?p ?o .
-		BIND (xsd:integer(SUBSTR(str(?olduri), 77)) AS ?index)
+		BIND (xsd:integer(SUBSTR(str(?olduri), 77)) AS ?index) .
+		BIND (?index + 1 AS ?newindex) .
+		BIND (
+			IF ( STRLEN(str(?newindex)) = 1, CONCAT("000",str(?newindex)), 
+				IF ( STRLEN(str(?newindex)) = 2, CONCAT("00",str(?newindex)), 
+					IF ( STRLEN(str(?newindex)) = 3, CONCAT("0",str(?newindex)), 
+						str(?newindex)
+					)
+				)
+			) AS ?strindex
+		)
+		BIND (iri(concat("http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event", ?strindex)) as ?newuri) .
 	}
 
