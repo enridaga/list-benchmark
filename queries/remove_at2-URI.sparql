@@ -7,9 +7,9 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <%%DATASET%%>
 DELETE {
-	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+	<%%TRACK%%> 
 		midi:hasEvent ?popthis ;
 		midi:hasEvent ?olduri .
 		?popthis ?p1 ?o1 .
@@ -17,21 +17,21 @@ DELETE {
 }
 INSERT
 	{ 
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+		<%%TRACK%%> 
 			midi:hasEvent ?newuri .
 		?newuri ?p ?o .
 	}
 WHERE 
 	{ 
-		BIND (<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event1789> as ?popthis)
+		BIND (<%%TRACK%%/event%%INDEX2%%> as ?popthis)
 		OPTIONAL { ?popthis ?p1 ?o1 }
 		OPTIONAL { ?olduri ?p ?o }
 		{{
 		SELECT ?olduri ?newuri WHERE {
-			<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+			<%%TRACK%%> 
 			midi:hasEvent ?olduri .
 			BIND (xsd:integer(SUBSTR(str(?olduri), 77)) AS ?index)
-			FILTER (?index > 1789) .
+			FILTER (?index > %%INDEX2%%) .
 			
 			BIND (?index-1 AS ?newindex)
 			BIND (
@@ -43,7 +43,7 @@ WHERE
 					)
 				) AS ?strindex
 			)
-			BIND (iri(concat("http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event", ?strindex)) as ?newuri) .
+			BIND (iri(concat("%%TRACK%%/event", ?strindex)) as ?newuri) .
 			
 		}	
 		}} .

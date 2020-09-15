@@ -95,9 +95,9 @@ function getDataLowerNumber {
 	elif [[ "$1" =~ ^1k ]]; then
 		h=0343 #0657
 	elif [[ "$1" =~ ^2k ]]; then
-		h=0778 #1222
+		h=0578 #1222
 	elif [[ "$1" =~ ^3k ]]; then
-		h=0528 #2472
+		h=0728 #2472
 	elif [[ "$1" =~ ^5k ]]; then
 		h=1211 #3789
 	elif [[ "$1" =~ ^10k ]]; then
@@ -117,44 +117,44 @@ function getDataLowerNumber {
 	echo "$h"
 }
 function setGraph {
-	ghost="http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784"
+	ghost="%%DATASET%%"
 	graph=$QUERY_GRAPH
 	sed "s,$ghost,$graph,g"
 }
 function setTrack {
-	ghost="http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00"
+	ghost="%%TRACK%%"
 	track=$QUERY_TRACK
 	sed "s,$ghost,$track,g"	
 }
 function setOffsetUpper {
-	ghost="OFFSET 23789"
+	ghost="OFFSET %%INDEX1%%"
 	random=${QUERY_RANDOM_UPPER#0}
 	random="OFFSET $(($random-1))"
 	sed "s,$ghost,$random,g"
 }
 function setRandomUpper {
-	ghost="23789"
+	ghost="%%INDEX1%%"
 	random=$QUERY_RANDOM_UPPER
 	sed "s,$ghost,$random,g"
 }
 function setSeqUpper {
-	ghost="23789"
+	ghost="%%INDEX1%%"
 	number=${QUERY_RANDOM_UPPER#0}
 	sed "s,:_$ghost,:_$number,g"
 }
 function setOffsetLower {
-	ghost="OFFSET 1789"
+	ghost="OFFSET %%INDEX2%%"
 	random=${QUERY_RANDOM_LOWER#0}
 	random="OFFSET $(($random-1))"
 	sed "s,$ghost,$random,g"
 }
 function setRandomLower {
-	ghost="1789"
+	ghost="%%INDEX2%%"
 	random=$QUERY_RANDOM_LOWER
 	sed "s,$ghost,$random,g"
 }
 function setSeqLower {
-	ghost="1789"
+	ghost="%%INDEX2%%"
 	number=${QUERY_RANDOM_LOWER#0}
 	sed "s,:_$ghost,:_$number,g"
 }

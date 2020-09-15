@@ -8,19 +8,19 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <%%DATASET%%>
 DELETE {
 	?event midi:id ?oldId
 }
 INSERT {
-    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent <http://example.org/prepended-event> .
+    <%%TRACK%%> midi:hasEvent <http://example.org/prepended-event> .
 		<http://example.org/prepended-event> midi:id 0 .
 	?event midi:id ?shifted .
 }
 WHERE
 	{
 		BIND ((?oldId + 1) as ?shifted) .
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?event .
+		<%%TRACK%%> midi:hasEvent ?event .
 		?event midi:id ?oldId .
 	}
 

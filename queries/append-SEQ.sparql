@@ -8,13 +8,13 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 INSERT
-	{ GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> { ?events ?property <http://example.org/appended-event> } }
+	{ GRAPH <%%DATASET%%> { ?events ?property <http://example.org/appended-event> } }
 WHERE 
 	{  
 	BIND (iri(concat("http://www.w3.org/1999/02/22-rdf-syntax-ns#_", str(?next))) as ?property) .
 	{{SELECT ?events (MAX(?index)+1 as ?next) WHERE {
-		GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> {
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvents ?events .
+		GRAPH <%%DATASET%%> {
+		<%%TRACK%%> midi:hasEvents ?events .
 			?events ?seq ?event .
 			BIND (xsd:integer(SUBSTR(str(?seq), 45)) AS ?index)
 		}} GROUP BY ?events

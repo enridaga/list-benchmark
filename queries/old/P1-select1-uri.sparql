@@ -23,7 +23,7 @@ SELECT
 	?scaleDegree
 	?velocity
 	?channel
-FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+FROM <%%DATASET%%>
 WHERE { 
    ?track a midi:Track ;
    midi:hasEvent ?event .

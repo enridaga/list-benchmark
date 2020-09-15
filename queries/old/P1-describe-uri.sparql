@@ -8,7 +8,7 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 
 DESCRIBE ?track ?event
-FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+FROM <%%DATASET%%>
 WHERE { 
    ?track a midi:Track .
    ?event a midi:Event  

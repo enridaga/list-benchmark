@@ -8,10 +8,10 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix sequence: <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <%%DATASET%%>
 DELETE
 {
-	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?event .
+	<%%TRACK%%> midi:hasEvent ?event .
 		?event sequence:precedes ?next .
 		?next sequence:follows ?event .
 		?prev sequence:precedes ?event .
@@ -22,23 +22,23 @@ INSERT {
 	?next sequence:follows ?prev .
 }
 WHERE {
-	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?event 
+	<%%TRACK%%> midi:hasEvent ?event 
 	OPTIONAL { ?event sequence:precedes ?next } .
 	OPTIONAL { ?event sequence:follows ?prev } .
 	{{
 		{{
 		SELECT ?event (count(?prev) as ?i)
 		WHERE {
-			<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+			<%%TRACK%%> 
 				midi:hasEvent ?event .
 				?event sequence:follows* ?prev .
 		} 
 		GROUP BY ?event
 		ORDER BY ?i
 		LIMIT 1
-		OFFSET 23789
+		OFFSET %%INDEX1%%
 		}}
 	}}
 }
 
-# VERSION WITH FILTER(?i = 23789) AND NO ORDER BY SAME PERFORMANCE!
+# VERSION WITH FILTER(?i = %%INDEX1%%) AND NO ORDER BY SAME PERFORMANCE!

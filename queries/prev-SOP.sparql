@@ -10,11 +10,11 @@ prefix sequence: <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#>
 
 SELECT
 	?event
-FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+FROM <%%DATASET%%>
 WHERE {{
 SELECT ?event (count(?prev) as ?i)
 WHERE {
-	<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+	<%%TRACK%%> 
 		midi:hasEvent ?event .
 		?event sequence:precedes+ ?prev .
 } GROUP BY ?event

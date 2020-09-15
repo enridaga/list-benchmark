@@ -10,7 +10,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?event WHERE {{
 SELECT
 	?event (count(?mid) as ?i)
-FROM <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+FROM <%%DATASET%%>
 WHERE {
    [] a midi:Track ;
         midi:hasEvents ?events .

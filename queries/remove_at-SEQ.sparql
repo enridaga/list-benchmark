@@ -7,9 +7,9 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <%%DATASET%%>
 DELETE {
-	?events rdf:_23789 ?remove
+	?events rdf:_%%INDEX1%% ?remove
 }
 INSERT
 	{ 
@@ -18,15 +18,15 @@ INSERT
 WHERE 
 	{  
 		BIND (iri(concat("http://www.w3.org/1999/02/22-rdf-syntax-ns#_", str(?index - 1))) as ?shifted) .
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+		<%%TRACK%%> 
 		midi:hasEvents ?events .
 		?events ?seq ?event .
 		BIND (xsd:integer(SUBSTR(str(?seq), 45)) AS ?index) .
-		FILTER ( ?index > 23789 ) .
+		FILTER ( ?index > %%INDEX1%% ) .
 		{{
 			SELECT ?remove WHERE {
-				<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
-				midi:hasEvents [ rdf:_23789 ?event ].
+				<%%TRACK%%> 
+				midi:hasEvents [ rdf:_%%INDEX1%% ?event ].
 			}
 		}}
 	}

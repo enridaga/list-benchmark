@@ -8,13 +8,13 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix sequence: <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <%%DATASET%%>
 INSERT
-	{ <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00>
+	{ <%%TRACK%%>
 		midi:hasEvent <http://example.org/appended-event-SOP> .
 		<http://example.org/appended-event-SOP> sequence:follows ?event .
 		?event sequence:precedes <http://example.org/appended-event-SOP> .
 } WHERE	{  
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?event .
+		<%%TRACK%%> midi:hasEvent ?event .
 		FILTER NOT EXISTS {?event sequence:precedes []}
 }

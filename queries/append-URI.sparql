@@ -8,14 +8,14 @@ prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 INSERT
-	{ GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> { 
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?uri } }
+	{ GRAPH <%%DATASET%%> { 
+		<%%TRACK%%> midi:hasEvent ?uri } }
 WHERE 
 	{  
-	BIND (iri(concat("http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00/event", str(?next))) as ?uri) .
+	BIND (iri(concat("%%TRACK%%/event", str(?next))) as ?uri) .
 	{{SELECT (MAX(?index)+1 as ?next) WHERE {
-		GRAPH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784> {
-		<http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> midi:hasEvent ?event .
+		GRAPH <%%DATASET%%> {
+		<%%TRACK%%> midi:hasEvent ?event .
 			BIND (xsd:integer(SUBSTR(str(?event), 77)) AS ?index)
 		}} 
 	}}			

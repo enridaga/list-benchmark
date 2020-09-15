@@ -7,16 +7,16 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
-WITH <http://purl.org/midi-ld/piece/2eb43ce7edf27b505bcc0dfb6c283784>
+WITH <%%DATASET%%>
 DELETE {
-	?events rdf:_1789 ?event
+	?events rdf:_%%INDEX2%% ?event
 }
 INSERT
 	{ 
-		?events rdf:_1789 <http://example.org/set-event-23789> .
+		?events rdf:_%%INDEX2%% <http://example.org/set-event-%%INDEX1%%> .
 	}
 WHERE {
-    <http://purl.org/midi-ld/piece/2473e18eec6cc55b82c5dddab3bea353/track00> 
+    <%%TRACK%%> 
           midi:hasEvents ?events . 
-		  ?events rdf:_1789 ?event  .
+		  ?events rdf:_%%INDEX2%% ?event  .
 }
