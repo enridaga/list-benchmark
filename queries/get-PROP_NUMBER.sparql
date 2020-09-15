@@ -15,4 +15,4 @@ WHERE {
    ?event midi:id ?tick
 } ORDER BY ASC(?tick)
 LIMIT 1
-OFFSET %%INDEX%%
+OFFSET %%INDEX1%%
