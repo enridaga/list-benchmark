@@ -13,7 +13,7 @@ DELETE {
 }
 INSERT
 	{ 
-		?events rdf:_%%INDEX2%% <http://example.org/set-event-%%INDEX1%%> .
+		?events rdf:_%%INDEX2%% <http://example.org/set-event-%%INDEX2%%> .
 	}
 WHERE {
     <%%TRACK%%> 

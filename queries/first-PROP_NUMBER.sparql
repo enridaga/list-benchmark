@@ -12,7 +12,7 @@ SELECT
 FROM <%%DATASET%%>
 WHERE {
    <%%TRACK%%> midi:hasEvent ?event .
-   ?event midi:id ?tick .
-} ORDER BY ASC(?tick) LIMIT 1
+   ?event midi:id 0 .
+} LIMIT 1
 
 # GRAPH <data:30k-seq>

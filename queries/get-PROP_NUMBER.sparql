@@ -12,7 +12,6 @@ SELECT
 FROM <%%DATASET%%>
 WHERE {
    <%%TRACK%%> midi:hasEvent ?event .
-   ?event midi:id ?tick
-} ORDER BY ASC(?tick)
+   ?event midi:id %%INDEX1%%
+}
 LIMIT 1
-OFFSET %%INDEX1%%

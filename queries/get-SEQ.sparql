@@ -12,7 +12,5 @@ SELECT
 	?event
 FROM <%%DATASET%%>
 WHERE {
-   <%%TRACK%%> midi:hasEvents [ ?seq ?event ] .
-   BIND (xsd:integer(SUBSTR(str(?seq), 45)) AS ?index)
-   FILTER (?index = %%INDEX1%%)
-} LIMIT 1
+   <%%TRACK%%> midi:hasEvents [ rdf:_%%INDEX1%% ?event ] 
+}
