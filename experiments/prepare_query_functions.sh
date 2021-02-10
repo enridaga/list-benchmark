@@ -142,6 +142,11 @@ function setSeqUpper {
 	number=${QUERY_RANDOM_UPPER#0}
 	sed "s,:_$ghost,:_$number,g"
 }
+function setPropUpper {
+	ghost="%%INDEX1%%"
+	number=${QUERY_RANDOM_UPPER#0}
+	sed "s,:id $ghost,:id $number,g"
+}
 function setOffsetLower {
 	ghost="OFFSET %%INDEX2%%"
 	random=${QUERY_RANDOM_LOWER#0}
@@ -158,6 +163,11 @@ function setSeqLower {
 	number=${QUERY_RANDOM_LOWER#0}
 	sed "s,:_$ghost,:_$number,g"
 }
+function setPropLower {
+	ghost="%%INDEX2%%"
+	number=${QUERY_RANDOM_LOWER#0}
+	sed "s,:id $ghost,:id $number,g"
+}
 function prepareQuery {
-	setGraph|setTrack|setOffsetUpper|setSeqUpper|setRandomUpper|setOffsetLower|setSeqLower|setRandomLower
+	setGraph|setTrack|setOffsetUpper|setSeqUpper|setPropUpper|setRandomUpper|setOffsetLower|setSeqLower|setPropLower|setRandomLower
 }
