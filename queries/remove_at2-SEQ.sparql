@@ -9,7 +9,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 WITH <%%DATASET%%>
 DELETE {
-	?events rdf:_%%INDEX2%% ?remove
+	?events rdf:_%%INDEX2%% ?remove .
 	?events ?seq ?event .
 }
 INSERT
